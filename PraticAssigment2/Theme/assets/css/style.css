@@ -1458,8 +1458,8 @@ PANELS CONFIGURATIONS
 }
 
 /* Majimi png */
-#wicker {
-	background: url(../img/wick.png) no-repeat center top;
+#majimi {
+	background: url(../img/majimi.jpg) no-repeat center top;
 	margin-top: -15px;
 	background-attachment: relative;
 	background-position: center center;
@@ -1476,13 +1476,13 @@ PANELS CONFIGURATIONS
 }
 
 
-#wicker .btn-clear-g {
+#majimi .btn-clear-g {
 	top: 15%;
 	right: 10px;
 	position: absolute;
 	margin-top: 5px;
 }
-#wicker .sp-title {
+#majimi .sp-title {
 	bottom: 15%;
 	left: 25px;
     position: absolute;
@@ -1491,7 +1491,7 @@ PANELS CONFIGURATIONS
     margin-right: 23px;
     
 }
-#wicker .sp-title h3 {
+#majimi .sp-title h3 {
 	font-weight: 900;
 }
 
@@ -1881,6 +1881,8 @@ background: #fffbcc !important;
 	padding: 10px;
 	box-shadow: 0px 3px 2px #aab2bd;
 	text-align: left;
+    border-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 label {
@@ -1890,7 +1892,7 @@ label {
 .form-horizontal.style-form .form-group {
 	border-bottom: 1px solid #eff2f7;
 	padding-bottom: 15px;
-	margin-bottom: 15px;
+	margin-bottom: 2px;
 }
 
 .round-form {
@@ -2360,6 +2362,7 @@ label {
     background: #68dff0;
     color: #fff;
     padding: 10px 0;
+    text-align: center;
 }
 
 
@@ -2416,4 +2419,36 @@ label {
   .custom-dropdown:hover .custom-dropdown-menu {
     display: block;
   }
-  
+  /* CSS ADICIONADO PELO DIOGO */   
+  .search-bar {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  .column {
+    float: left;
+    width: 33%;
+    border-right:1px solid rgb(102, 101, 101);
+  }
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  h4 {
+    text-align: center;
+  }
+  a {
+    text-decoration:none;   
+    color: #000;
+  }
+  a:hover {
+    text-decoration:underline;
+    color: #000;
+    
+  }
