@@ -2419,6 +2419,25 @@ label {
   .custom-dropdown:hover .custom-dropdown-menu {
     display: block;
   }
+
+  .ratingStars {
+    position: absolute;
+    margin-top: 5%;
+    font-size:20px
+  }
+  .ratingStars:hover {
+    color: #fab027;
+  }
+  .ratingStars:hover ~ .ratingStars {
+    color: #fab027;
+  }
+
+  .estilosSeriesFilmes {
+    margin-left: 0; 
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 25px; 
+  }
+
   /* CSS ADICIONADO PELO DIOGO */   
   .search-bar {
     margin: auto;
