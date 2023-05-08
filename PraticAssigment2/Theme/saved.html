@@ -24,6 +24,17 @@
     <link href="assets/css/style-responsive.css" rel="stylesheet">
 
     <script src="assets/js/chart-master/Chart.js"></script>
+
+    <script>
+        function showPopup() {
+          var popup = document.getElementById("popup");
+          popup.style.display = "block";
+        }
+        function hidePopup() {
+          var popup = document.getElementById("popup");
+          popup.style.display = "none";
+        }
+    </script>
 </head>
 
 <body>
@@ -294,6 +305,14 @@
         <!--main content start-->
         <section id="main-content">
             <section class="wrapper">
+                <div id="popup">
+                    <div id="popup-inner">
+                      <h4>De certeza que deseja remover a série da sua lista de guardados?</h4>
+                      <a href="index.html"><button style="background-color: green;">Sim</button></a>
+                      <button id="close-button" onclick="hidePopup()">Não</button>
+                    </div>
+                </div>
+
                 <h3>Guardados</h3>
 
                 <div class="row">
@@ -303,9 +322,14 @@
                             <div class="col-md-4 col-sm-4 mb">
                                 <div class="content-panel pn">
                                     <div id="bbad">
+                                        <div class="col-xs-4 col-xs-offset-8">
+                                            <button class="btn btn-sm btn-clear-g" onclick="showPopup()"
+                                                style="color:Black; background-color: rgba(255, 255, 255, 10); font-size: 14px;">REMOVER <i class="fa fa-minus-circle"></i></button>
+                                        </div>
                                         <div class="sp-title">
                                             <h3>Breaking Bad</h3>
                                         </div>
+                                        <img src="assets/img/netflix.png" style="width: 20%; height: 20%; top: 18%; right: 25px;"></img>
                                         <div class="play">
                                             <i class="fa fa-play-circle fa-3x"></i>
                                         </div>
