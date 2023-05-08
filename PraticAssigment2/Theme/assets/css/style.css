@@ -844,6 +844,10 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 	margin-bottom: 40px;
 }
 
+.mtbox2 {
+    margin-top: 80px;
+}
+
 .box1 {
 	padding: 15px;
 	text-align: center;
@@ -1341,8 +1345,22 @@ PANELS CONFIGURATIONS
     -o-background-size: cover;
     background-size: cover;
 }
-
-
+#bbad {
+	background: url(../img/breakingbad.jpg) no-repeat center top;
+	margin-top: -15px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 220px;
+	width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 #spotify .btn-clear-g {
 	top: 15%;
 	right: 10px;
@@ -1369,7 +1387,28 @@ PANELS CONFIGURATIONS
 	margin-left: 5px;
 	margin-top: 5px;
 }
-
+#bbad .btn-clear-g {
+	top: 15%;
+	right: 10px;
+	position: absolute;
+	margin-top: 5px;
+}
+#bbad .sp-title {
+	bottom: 15%;
+	left: 25px;
+	position: absolute;
+	color: #efefef;
+}
+#bbad .sp-title h3 {
+	font-weight: 900;
+}
+#bbad .play{
+	bottom: 18%;
+	right: 25px;
+	position: absolute;
+	color: #efefef;
+	font-size: 20px
+}
 /* GOSLING1 IMG */
 
 #gosler {
@@ -2439,6 +2478,37 @@ label {
     margin-left: 0; 
     font-family: 'Courier New', Courier, monospace; 
     font-size: 25px; 
+  }
+
+  select {
+    font-size: 16px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #555;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  select:hover {
+    border-color: #aaa;
+  }
+  
+  select:focus {
+    border-color: #0077cc;
+    box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+    outline: none;
+  }
+  
+  select option {
+    font-size: 16px;
+    background-color: #fff;
+    color: #555;
   }
 
   /* CSS ADICIONADO PELO DIOGO */   
