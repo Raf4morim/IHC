@@ -25,11 +25,16 @@
 
     <script src="assets/js/chart-master/Chart.js"></script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script>
+        function showPopup() {
+          var popup = document.getElementById("popup");
+          popup.style.display = "block";
+        }
+        function hidePopup() {
+          var popup = document.getElementById("popup");
+          popup.style.display = "none";
+        }
+    </script>
 </head>
 
 <body>
@@ -55,12 +60,12 @@
                 <!--  notification start -->
                 <ul class="nav top-menu">
                     <!-- settings start -->
-                    <li class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                    <li class="dropdownNotif">
+                        <a data-toggle="dropdownNotif" class="dropdownNotif-toggle" href="index.html#">
                             <i class="fa fa-tasks"></i>
                             <span class="badge bg-theme">4</span>
                         </a>
-                        <ul class="dropdown-menu extended tasks-bar">
+                        <ul class="dropdownNotif-menu extended tasks-bar">
                             <div class="notify-arrow notify-arrow-green"></div>
                             <li>
                                 <p class="green">You have 4 pending tasks</p>
@@ -130,13 +135,13 @@
 
 
                     <!-- settings end -->
-                    <!-- inbox dropdown start-->
-                    <li id="header_inbox_bar" class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                    <!-- inbox dropdownNotif start-->
+                    <li id="header_inbox_bar" class="dropdownNotif">
+                        <a data-toggle="dropdownNotif" class="dropdownNotif-toggle" href="index.html#">
                             <i class="fa fa-envelope-o"></i>
                             <span class="badge bg-theme">5</span>
                         </a>
-                        <ul class="dropdown-menu extended inbox">
+                        <ul class="dropdownNotif-menu extended inbox">
                             <div class="notify-arrow notify-arrow-green"></div>
                             <li>
                                 <p class="green">You have 5 new messages</p>
@@ -194,14 +199,14 @@
                             </li>
                         </ul>
                     </li>
-                    <!-- inbox dropdown end -->
-                    <li id="header_inbox_bar" class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                    <!-- inbox dropdownNotif end -->
+                    <li id="header_inbox_bar" class="dropdownNotif">
+                        <a data-toggle="dropdownNotif" class="dropdownNotif-toggle" href="index.html#">
                             <i class="fa fa-user"></i>
                         </a>
-                        <ul class="dropdown-menu extended inbox">
+                        <ul class="dropdownNotif-menu extended inbox">
                             <li>
-                                <a href="profile_with_data_and_skills.html">
+                                <a href="profile.html">
                                     <span>
                                         Gerir perfil
                                     </span>
@@ -225,7 +230,7 @@
                     </li>
                 </ul>
 
-                <!-- Create icon of user and dropdown menu -->
+                <!-- Create icon of user and dropdownNotif menu -->
 
                 <!--  notification end -->
             </div>
@@ -243,7 +248,7 @@
                 <!-- sidebar menu start-->
                 <ul class="sidebar-menu" id="nav-accordion">
 
-                    <p class="centered"><a href="profile_with_data_and_skills.html"><img src="assets/img/ui-sam.jpg" class="img-circle"
+                    <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle"
                                 width="60"></a></p>
                     <h5 class="centered">Diogo Silva</h5>
 
@@ -300,8 +305,17 @@
         <!--main content start-->
         <section id="main-content">
             <section class="wrapper">
-                <h3>Guardados</h3>
 
+                <!-- Pop up ao adicionar série -->
+                <div id="popup">
+                    <div id="popup-inner">
+                        <a href="saved.html"><i onclick="hidePopup()" class="fa fa-times-circle"></i></a>
+                        <h4 style="margin-top: 20px; margin-right:20px">A série foi adicionada com sucesso.</h4>
+                    </div>
+                </div>
+
+                <h3>Guardados</h3>
+                
                 <div class="row">
                     <div class="col-lg-9 main-chart">
 
@@ -310,16 +324,13 @@
                                 <i class="fa fa-plus-circle"
                                     style="scale: 400%; margin-left:50%; margin-bottom: 2% ; cursor: pointer;"></i>
                             </a>
+                            <h4 style="text-align: center;">Ainda não tem séries guardadas</h4>
                             <h4 style="text-align: center;">Clique para adicionar séries</h4>
                         </div>
                         </br></br></br></br>
                         <h4> Conteudo Explorar Default</h4>
                         <div class="row mt">
                             <!-- SERVER STATUS PANELS -->
-
-
-
-
                             <div class="col-md-4 col-sm-4 mb">
                                 <div class="content-panel pn">
                                     <div id="spotify">
@@ -342,14 +353,15 @@
 
                             <div class="col-md-4 col-sm-4 mb">
                                 <div class="content-panel pn">
-                                    <div id="spotify">
+                                    <div id="bbad">
                                         <div class="col-xs-4 col-xs-offset-8">
-                                            <button class="btn btn-sm btn-clear-g"
+                                            <button class="btn btn-sm btn-clear-g" onclick="showPopup()"
                                                 style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
                                         </div>
                                         <div class="sp-title">
-                                            <h3>Captain Marvel</h3>
+                                            <h3>Breaking Bad</h3>
                                         </div>
+                                        <img src="assets/img/netflix.png" style="width: 20%; height: 20%; top: 18%; right: 25px;"></img>
                                         <div class="play">
                                             <i class="fa fa-play-circle fa-3x"></i>
                                         </div>
@@ -358,7 +370,7 @@
                                         <p class="followers" style="text-align: center;"></i>Informação</p>
                                     </a>
                                 </div>
-                            </div><!-- /col-md-4 -->
+                            </div>   
 
                             <div class="col-md-4 col-sm-4 mb">
                                 <div class="content-panel pn">
@@ -484,7 +496,7 @@
         <!--main content end-->
         <!--footer start-->
         <footer class="site-footer">
-            <div class="text-center">
+            <div>
                 IHC - P4
                 <a href="index.html#" class="go-top">
                     <i class="fa fa-angle-up"></i>
