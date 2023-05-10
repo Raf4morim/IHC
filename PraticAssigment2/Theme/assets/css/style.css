@@ -2608,8 +2608,9 @@ label {
     background-color: #777;
     color: white;
     cursor: pointer;
-    padding: 18px;
-    width: 100%;
+    width: 98%;
+    margin-left: 15px;
+    margin-right: 200px;
     border: none;
     text-align: left;
     outline: none;
