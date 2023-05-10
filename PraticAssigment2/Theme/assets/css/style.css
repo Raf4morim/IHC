@@ -2577,6 +2577,63 @@ label {
     color: #000;
   }
 
+  #confirmation-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+#confirmation-popup-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#confirmation-popup h4 {
+    margin-top: 0;
+}
+
+#confirmation-popup p {
+    margin-bottom: 20px;
+}
+
+#confirmation-popup button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#confirmation-popup button:last-child {
+    background-color: red;
+}
+
+#confirmation-popup i {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 20px;
+    color: #777;
+}
+
+#confirmation-popup i:hover {
+    color: #000;
+}
+  
   /* CSS ADICIONADO PELO DIOGO */   
   .search-bar {
     margin: auto;

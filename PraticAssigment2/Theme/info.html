@@ -25,6 +25,17 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+	<script>
+        function showPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+        function hidePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+    </script>
 </head>
 
 <body>
@@ -304,6 +315,17 @@
       *********************************************************************************************************************************************************** -->
         <!--main content start-->
         <section id="main-content">
+
+            <!-- Pop up ao adicionar série -->
+			<div id="popup">
+				<div id="popup-inner">
+					<h4 style="margin-top: 20px; margin-right:20px">A série foi adicionada com sucesso.</h4>
+					<p>Deseja deslocar-se para a página dos guardados?</p>
+					<a href="saved.html"><button style="background-color: green;">Sim</button></a>
+					<a href="infoRemove.html"><button id="close-button" onclick="hidePopup()">Não</button></a>
+				</div>
+			</div>
+
             <section class="wrapper site-min-height">
                 <h3>Informação da série</h3>
                 <div class="row mt">
@@ -314,7 +336,7 @@
                                 <p>Disponível na <span style="color: red;">Netflix</span></p>
                             </div>
                             <a href="info.html#">
-                                <i class="fa fa-plus-circle"
+                                <i class="fa fa-plus-circle" onclick="showPopup()"
                                     style="scale: 400%; cursor: pointer; position: relative; margin-left: 40px; margin-bottom: 5px;"></i>
                             </a>    
                         </div>

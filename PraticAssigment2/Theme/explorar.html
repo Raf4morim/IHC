@@ -27,6 +27,17 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+	<script>
+        function showPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+        function hidePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+    </script>
 </head>
 
 <body>
@@ -304,21 +315,34 @@
       *********************************************************************************************************************************************************** -->
 		<!--main content start-->
 		<section id="main-content">
+
+			<!-- Pop up ao adicionar série -->
+			<div id="popup">
+				<div id="popup-inner">
+					<h4 style="margin-top: 20px; margin-right:20px">A série foi adicionada com sucesso.</h4>
+					<p>Deseja deslocar-se para a página dos guardados?</p>
+					<a href="saved.html"><button style="background-color: green;">Sim</button></a>
+					<button id="close-button" onclick="hidePopup()">Não</button>
+				</div>
+			</div>
+
 			<section class="wrapper site-min-height">
 				<h3>Descobre Novos Filmes e Series</h3>
 				<h4>Mais Vistos</h4>
 				<!-- 1st ROW OF PANELS -->
 				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-4 mb">
+					<div class="col-md-4 col-sm-4 mb">
 						<div class="content-panel pn">
-							<div id="spotify">
+							<div id="bbad">
 								<div class="col-xs-4 col-xs-offset-8">
-									<button class="btn btn-sm btn-clear-g"
+									<button class="btn btn-sm btn-clear-g" onclick="showPopup()"
 										style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
 								</div>
 								<div class="sp-title">
-									<h3>Captain Marvel</h3>
+									<h3>Breaking Bad</h3>
 								</div>
+								<img src="assets/img/netflix.png"
+									style="width: 20%; height: 20%; top: 18%; right: 25px;"></img>
 								<div class="play">
 									<i class="fa fa-play-circle fa-3x"></i>
 								</div>

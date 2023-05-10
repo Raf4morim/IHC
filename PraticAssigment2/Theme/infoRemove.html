@@ -15,17 +15,18 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
-    <link rel="stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css" />
-    <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">
 
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
 
-    <script src="assets/js/chart-master/Chart.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    <script>
+	<script>
         function showPopup() {
             var popup = document.getElementById("popup");
             popup.style.display = "block";
@@ -33,6 +34,16 @@
         function hidePopup() {
             var popup = document.getElementById("popup");
             popup.style.display = "none";
+        }
+        function showConfirmationPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+            var confirmationPopup = document.getElementById("confirmation-popup");
+            confirmationPopup.style.display = "block";
+        }
+        function hideConfirmationPopup() {
+            var confirmationPopup = document.getElementById("confirmation-popup");
+            confirmationPopup.style.display = "none";
         }
     </script>
 </head>
@@ -253,7 +264,7 @@
                     <h5 class="centered">Diogo Silva</h5>
 
                     <li class="mt">
-                        <a class="active" href="index.html">
+                        <a href="index.html">
                             <i class="fa fa-floppy-o"></i>
                             <span>Guardados</span>
                         </a>
@@ -272,25 +283,35 @@
                             <span>Calendário</span>
                         </a>
                     </li>
-
                     <li class="sub-menu">
-                        <a href="news.html">
+                        <a href="blank.html">
                             <i class="fa fa-book"></i>
                             <span>Últimas notícias</span>
                         </a>
-                    </li>
-
-                    <li class="sub-menu">
-                        <a href="settings.html">
-                            <i class="fa fa-tasks"></i>
-                            <span>Definições</span>
-                        </a>
+                        <!-- <ul class="sub">
+                        <li><a  href="blank.html">Blank Page</a></li>
+                        <li><a  href="login.html">Login</a></li>
+                        <li><a  href="lock_screen.html">Lock Screen</a></li>
+                    </ul> -->
                     </li>
                     <li class="sub-menu">
                         <a href="help.html">
+                            <i class="fa fa-tasks"></i>
+                            <span>Definições</span>
+                        </a>
+                        <!-- <ul class="sub">
+                        <li><a  href="help.html">Form Components</a></li>
+                    </ul> -->
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
                             <i class="fa fa-question-circle"></i>
                             <span>Ajuda</span>
                         </a>
+                        <ul class="sub">
+                            <li><a href="basic_table.html">Basic Table</a></li>
+                            <li><a href="responsive_table.html">Responsive Table</a></li>
+                        </ul>
                     </li>
 
                 </ul>
@@ -304,216 +325,117 @@
       *********************************************************************************************************************************************************** -->
         <!--main content start-->
         <section id="main-content">
-            <section class="wrapper">
-                <div id="popup">
-                    <div id="popup-inner">
-                        <h4>De certeza que deseja remover a série da sua lista de guardados?</h4>
-                        <a href="index.html"><button style="background-color: green;">Sim</button></a>
-                        <button id="close-button" onclick="hidePopup()">Não</button>
-                    </div>
+
+            <!-- Pop up ao adicionar série -->
+			<div id="popup">
+                <div id="popup-inner">
+                    <h4>De certeza que deseja remover a série da sua lista de guardados?</h4>
+                    <button style="background-color: green;" onclick="showConfirmationPopup()">Sim</button>
+                    <button id="close-button" onclick="hidePopup()">Não</button>
                 </div>
+            </div>
 
-                <h3>Guardados</h3>
+            <div id="confirmation-popup">
+                <div id="popup-inner">
+                    <a href="info.html"><i onclick="hideConfirmationPopup()" class="fa fa-times-circle"></i></a>
+                    <h4 style="margin-top: 20px; margin-right:20px">A série foi removida com sucesso.</h4>
+                </div>
+            </div>
 
-                <div class="row" style="margin-left: 20px;margin-right: 20px;">
-                    <!-- <div class="col-lg-9 main-chart"> -->
-                    <div class="row mtbox2">
-                        <div class="col-md-4 col-sm-4 mb">
-                            <div class="content-panel pn">
-                                <div id="bbad">
-                                    <div class="col-xs-4 col-xs-offset-8">
-                                        <button class="btn btn-sm btn-clear-g" onclick="showPopup()"
-                                            style="color:Black; background-color: rgba(255, 255, 255, 10); font-size: 14px;">REMOVER
-                                            <i class="fa fa-minus-circle"></i></button>
-                                    </div>
-                                    <div class="sp-title">
-                                        <h3>Breaking Bad</h3>
-                                    </div>
-                                    <img src="assets/img/netflix.png"
-                                        style="width: 20%; height: 20%; top: 18%; right: 25px;"></img>
-                                    <div class="play">
-                                        <i class="fa fa-play-circle fa-3x"></i>
-                                    </div>
-                                </div>
-                                <a href="infoRemove.html">
-                                    <p class="followers" style="text-align: center;"></i>Informação</p>
-                                </a>
+            <section class="wrapper site-min-height">
+                <h3>Informação da série</h3>
+                <div class="row mt">
+                    <div class="col-lg-12">
+                        <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+                            <div style="text-align: center;">
+                                <strong style="font-size: 25px; color: darkgreen;">Breaking Bad</strong>
+                                <p>Disponível na <span style="color: red;">Netflix</span></p>
                             </div>
+                            <a href="infoRemove.html#">
+                                <i class="fa fa-minus-circle" onclick="showPopup()"
+                                    style="scale: 400%; cursor: pointer; position: relative; margin-left: 40px; margin-bottom: 5px;"></i>
+                            </a>    
+                        </div>
+                        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+                            <img width="500" height="301" style="margin-top: 19px;" src="assets/img/BreakBad.jpg"></img>
+                            <video width="500" height="320" controls>
+                                <source src="assets/video/BreakBadTrailer.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+                            <p></p>
+                            <p></p>
+                            <u class="estilosSeriesFilmes" style="color: darkgreen">Cativante</u>
+                            <u class="estilosSeriesFilmes" style="color: darkgreen; margin-left: 10%">Cínico</u>
+                            <u class="estilosSeriesFilmes" style="color: darkgreen; margin-left: 10%">Psicológico</u>
+                        </div>
+                        <div style="margin-left: 7%; margin-right: 7%">    
+                            <h2>Descrição:</h2><span style="font-size: 16.5px;">Breaking Bad é uma série de televisão
+                                americana criada e produzida por Vince Gilligan. Ela retrata a vida do químico Walter
+                                White, um homem brilhante frustrado em dar aulas para adolescentes do ensino médio
+                                enquanto lida com um filho sofrendo de paralisia cerebral, uma esposa grávida e dívidas
+                                intermináveis. White, então, é diagnosticado com um câncer no pulmão - o que o leva a
+                                sofrer um colapso emocional e abraçar uma vida de crimes para pagar suas dívidas
+                                hospitalares e dar uma boa vida aos seus filhos. Walter resolve produzir metanfetamina
+                                de alta pureza com seu ex-aluno, Jesse Pinkman.</span>
+                            <h2 style="margin-top: 50px;">Avaliações e Comentários:</h2>
+                            <textarea style="width: 100%; height: 100px; margin-top: 10px;" placeholder="Escreva o seu comentário..."></textarea>
+                            <span class="fa fa-star ratingStars" style="right: 9%"></span>
+                            <span class="fa fa-star ratingStars" style="right: 11%"></span>
+                            <span class="fa fa-star ratingStars" style="right: 13%"></span>
+                            <span class="fa fa-star ratingStars" style="right: 15%"></span>
+                            <span class="fa fa-star ratingStars" style="right: 17%"></span>
+                        </div>
+                        <button type="submit" class="btn btn-theme" style="position:relative; left:1490px;">Enviar</button>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div style="margin-left: 10%; margin-right: 10%;">
+                            <a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle"
+                                width="40"></a>&nbsp&nbsp&nbspDiogo Silva&nbsp&nbsp&nbsp&nbsp
+                                <span class="fa fa-star" style="color:orange"></span>
+                                <span class="fa fa-star" style="color:orange"></span>
+                                <span class="fa fa-star" style="color:orange"></span>
+                                <span class="fa fa-star" style="color:orange"></span>
+                            </a>
+                            <p></p>
+                            <span style="margin-left:3%;margin-right: 10%; display: inline-block; border: 1px solid black; padding: 10px">Série Fantástica!</span>
+                        </div>
+                        <div style="margin-left: 10%;margin-top: 3%;">
+                            <a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle"
+                                width="40"></a>&nbsp&nbsp&nbspRafael Amorim&nbsp&nbsp&nbsp&nbsp
+                                <span class="fa fa-star" style="color:orange"></span>
+                                <span class="fa fa-star" style="color:orange"></span>
+                                <span class="fa fa-star" style="color:orange"></span>
+                            </a>
+                            <p></p>
+                            <span style="margin-left:3%; display: inline-block; border: 1px solid black; padding: 10px">Podia ser melhor.</span>
+                        </div>
+                        <div style="margin-left: 10%;margin-top: 3%;">
+                            <a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle"
+                                width="40"></a>&nbsp&nbsp&nbspTiago Alves&nbsp&nbsp&nbsp&nbsp
+                                <span class="fa fa-star" style="color:orange"></span>
+                                <span class="fa fa-star" style="color:orange"></span>
+                                <span class="fa fa-star" style="color:orange"></span>
+                                <span class="fa fa-star" style="color:orange"></span>
+                                <span class="fa fa-star" style="color:orange"></span>
+                            </a>
+                            <p></p>
+                            <span style="margin-left:3%; display: inline-block; border: 1px solid black; padding: 10px">Muito bom, aconselho toda a gente a ver do início ao fim!</span>
                         </div>
                     </div>
-                    <span style="font-size: 16px; margin-left: 50px;">Temporada</span>
-                    <select class="select-picker">
-                        <option>T1</option>
-                        <option>T2</option>
-                        <option>T3</option>
-                        <option>T4</option>
-                        <option>T5</option>
-                    </select>
-                    <i class="fa fa-angle-down"></i>
-
-                    <span style="font-size: 16px; margin-left: 35px">Episódio</span>
-                    <select class="select-picker">
-                        <option>E1</option>
-                        <option>E2</option>
-                        <option>E3</option>
-                        <option>E4</option>
-                        <option>E5</option>
-                        <option>E4</option>
-                        <option>E5</option>
-                    </select>
-                    <i class="fa fa-angle-down"></i>
-                    <div class="row mtbox">
-                        <a href="explorar.html#">
-                            <i class="fa fa-plus-circle"
-                                style="scale: 400%; margin-left:50%; margin-bottom: 2%;cursor: pointer;"></i>
-                        </a>
-                        <h4 style="text-align: center;">Clique para adicionar séries</h4>
-                    </div>
-                    </br></br></br></br>
-                    <h4> Conteudo Explorar Default</h4>
-                    <div class="row mt">
-                        <!-- SERVER STATUS PANELS -->
-
-
-
-
-                        <div class="col-md-4 col-sm-4 mb">
-                            <div class="content-panel pn">
-                                <div id="spotify">
-                                    <div class="col-xs-4 col-xs-offset-8">
-                                        <button class="btn btn-sm btn-clear-g"
-                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
-                                    </div>
-                                    <div class="sp-title">
-                                        <h3>Captain Marvel</h3>
-                                    </div>
-                                    <div class="play">
-                                        <i class="fa fa-play-circle fa-3x"></i>
-                                    </div>
-                                </div>
-                                <a href="info.html">
-                                    <p class="followers" style="text-align: center;"></i>Informação</p>
-                                </a>
-                            </div>
-                        </div><!-- /col-md-4-->
-
-                        <div class="col-md-4 col-sm-4 mb">
-                            <div class="content-panel pn">
-                                <div id="spotify">
-                                    <div class="col-xs-4 col-xs-offset-8">
-                                        <button class="btn btn-sm btn-clear-g"
-                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
-                                    </div>
-                                    <div class="sp-title">
-                                        <h3>Captain Marvel</h3>
-                                    </div>
-                                    <div class="play">
-                                        <i class="fa fa-play-circle fa-3x"></i>
-                                    </div>
-                                </div>
-                                <a href="info.html">
-                                    <p class="followers" style="text-align: center;"></i>Informação</p>
-                                </a>
-                            </div>
-                        </div><!-- /col-md-4 -->
-
-                        <div class="col-md-4 col-sm-4 mb">
-                            <div class="content-panel pn">
-                                <div id="spotify">
-                                    <div class="col-xs-4 col-xs-offset-8">
-                                        <button class="btn btn-sm btn-clear-g"
-                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
-                                    </div>
-                                    <div class="sp-title">
-                                        <h3>Captain Marvel</h3>
-                                    </div>
-                                    <div class="play">
-                                        <i class="fa fa-play-circle fa-3x"></i>
-                                    </div>
-                                </div>
-                                <a href="info.html">
-                                    <p class="followers" style="text-align: center;"></i>Informação</p>
-                                </a>
-                            </div>
-                        </div><!-- /col-md-4 -->
-
-
-                    </div><!-- /row -->
-
-
-                    <div class="row">
-                        <!-- PANEL -->
-                        <div class="col-md-4 col-sm-4 mb">
-                            <div class="content-panel pn">
-                                <div id="spotify">
-                                    <div class="col-xs-4 col-xs-offset-8">
-                                        <button class="btn btn-sm btn-clear-g"
-                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
-                                    </div>
-                                    <div class="sp-title">
-                                        <h3>Captain Marvel</h3>
-                                    </div>
-                                    <div class="play">
-                                        <i class="fa fa-play-circle fa-3x"></i>
-                                    </div>
-                                </div>
-                                <a href="info.html">
-                                    <p class="followers" style="text-align: center;"></i>Informação</p>
-                                </a>
-                            </div>
-                        </div><!-- /col-md-4 -->
-
-
-                        <div class="col-md-4 col-sm-4 mb">
-                            <div class="content-panel pn">
-                                <div id="spotify">
-                                    <div class="col-xs-4 col-xs-offset-8">
-                                        <button class="btn btn-sm btn-clear-g"
-                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
-                                    </div>
-                                    <div class="sp-title">
-                                        <h3>Captain Marvel</h3>
-                                    </div>
-                                    <div class="play">
-                                        <i class="fa fa-play-circle fa-3x"></i>
-                                    </div>
-                                </div>
-                                <a href="info.html">
-                                    <p class="followers" style="text-align: center;"></i>Informação</p>
-                                </a>
-                            </div>
-                        </div><!-- /col-md-4 -->
-
-                        <div class="col-md-4 col-sm-4 mb">
-                            <div class="content-panel pn">
-                                <div id="spotify">
-                                    <div class="col-xs-4 col-xs-offset-8">
-                                        <button class="btn btn-sm btn-clear-g"
-                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
-                                    </div>
-                                    <div class="sp-title">
-                                        <h3>Captain Marvel</h3>
-                                    </div>
-                                    <div class="play">
-                                        <i class="fa fa-play-circle fa-3x"></i>
-                                    </div>
-                                </div>
-                                <a href="info.html">
-                                    <p class="followers" style="text-align: center;"></i>Informação</p>
-                                </a>
-                            </div>
-                        </div><!-- /col-md-4 -->
-                    </div><!-- /row -->
                 </div>
+
             </section>
-        </section>
+            <!--/wrapper -->
+        </section><!-- /MAIN CONTENT -->
 
         <!--main content end-->
         <!--footer start-->
         <footer class="site-footer">
-            <div>
+            <div class="text-center">
                 IHC - P4
-                <a href="index.html#" class="go-top">
+                <a href="blank.html#" class="go-top">
                     <i class="fa fa-angle-up"></i>
                 </a>
             </div>
@@ -523,80 +445,27 @@
 
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/jquery-1.8.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
     <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="assets/js/jquery.scrollTo.min.js"></script>
     <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
-    <script src="assets/js/jquery.sparkline.js"></script>
 
 
     <!--common script for all pages-->
     <script src="assets/js/common-scripts.js"></script>
 
-    <script type="text/javascript" src="assets/js/gritter/js/jquery.gritter.js"></script>
-    <script type="text/javascript" src="assets/js/gritter-conf.js"></script>
-
     <!--script for this page-->
-    <script src="assets/js/sparkline-chart.js"></script>
-    <script src="assets/js/zabuto_calendar.js"></script>
 
-    <!-- <script type="text/javascript">
-        $(document).ready(function () {
-        var unique_id = $.gritter.add({
-            // (string | mandatory) the heading of the notification
-            title: 'Welcome to MovieTracker!',
-            // (string | mandatory) the text inside the notification
-            text: 'Hover me to enable the Close Button. You can hide the left sidebar clicking on the button next to the logo. Free version for <a href="http://blacktie.co" target="_blank" style="color:#11114e">BlackTie.co</a>.',
-            // (string | optional) the image to display on the left
-            image: 'assets/img/ui-sam.jpg',
-            // (bool | optional) if you want it to fade out on its own or just sit there
-            sticky: true,
-            // (int | optional) the time you want it to be alive for before fading out
-            time: '',
-            // (string | optional) the class name you want to apply to that specific message
-            class_name: 'my-sticky-class'
+    <script>
+        //custom select box
+
+        $(function () {
+            $('select.styled').customSelect();
         });
 
-        return false;
-        });
-	</script> -->
-
-    <script type="application/javascript">
-        $(document).ready(function () {
-            $("#date-popover").popover({ html: true, trigger: "manual" });
-            $("#date-popover").hide();
-            $("#date-popover").click(function (e) {
-                $(this).hide();
-            });
-
-            $("#my-calendar").zabuto_calendar({
-                action: function () {
-                    return myDateFunction(this.id, false);
-                },
-                action_nav: function () {
-                    return myNavFunction(this.id);
-                },
-                ajax: {
-                    url: "show_data.php?action=1",
-                    modal: true
-                },
-                legend: [
-                    { type: "text", label: "Special event", badge: "00" },
-                    { type: "block", label: "Regular event", }
-                ]
-            });
-        });
-
-
-        function myNavFunction(id) {
-            $("#date-popover").hide();
-            var nav = $("#" + id).data("navigation");
-            var to = $("#" + id).data("to");
-            console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
-        }
     </script>
-
 
 </body>
 
