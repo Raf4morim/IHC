@@ -34,6 +34,16 @@
             var popup = document.getElementById("popup");
             popup.style.display = "none";
         }
+        function showConfirmationPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+            var confirmationPopup = document.getElementById("confirmation-popup");
+            confirmationPopup.style.display = "block";
+        }
+        function hideConfirmationPopup() {
+            var confirmationPopup = document.getElementById("confirmation-popup");
+            confirmationPopup.style.display = "none";
+        }
     </script>
 </head>
 
@@ -308,8 +318,15 @@
                 <div id="popup">
                     <div id="popup-inner">
                         <h4>De certeza que deseja remover a série da sua lista de guardados?</h4>
-                        <a href="index.html"><button style="background-color: green;">Sim</button></a>
+                        <button style="background-color: green;" onclick="showConfirmationPopup()">Sim</button>
                         <button id="close-button" onclick="hidePopup()">Não</button>
+                    </div>
+                </div>
+    
+                <div id="confirmation-popup">
+                    <div id="popup-inner">
+                        <a href="index.html"><i onclick="hideConfirmationPopup()" class="fa fa-times-circle"></i></a>
+                        <h4 style="margin-top: 20px; margin-right:20px">A série foi removida com sucesso.</h4>
                     </div>
                 </div>
 
@@ -332,7 +349,9 @@
                                     <img src="assets/img/netflix.png"
                                         style="width: 20%; height: 20%; top: 18%; right: 25px;"></img>
                                     <div class="play">
-                                        <i class="fa fa-play-circle fa-3x"></i>
+                                        <a href="https://www.netflix.com/watch/70196254?trackId=14277283&tctx=-97%2C-97%2C%2C%2C%2C%2C%2C%2C70143836%2CVideo%3A70196254%2CdetailsPageEpisodePlayButton%22%3E">
+                                            <i class="fa fa-play-circle fa-3x" style="color:white"></i>
+                                        </a>
                                     </div>
                                 </div>
                                 <a href="infoRemove.html">
@@ -341,7 +360,7 @@
                             </div>
                         </div>
                     </div>
-                    <span style="font-size: 16px; margin-left: 50px;">Temporada</span>
+                    <span style="font-size: 16px; margin-left: 7%">Temporada</span>
                     <select class="select-picker">
                         <option>T1</option>
                         <option>T2</option>
@@ -358,8 +377,8 @@
                         <option>E3</option>
                         <option>E4</option>
                         <option>E5</option>
-                        <option>E4</option>
-                        <option>E5</option>
+                        <option>E6</option>
+                        <option>E7</option>
                     </select>
                     <i class="fa fa-angle-down"></i>
                     <div class="row mtbox">
@@ -373,29 +392,29 @@
                     <h4> Conteudo Explorar Default</h4>
                     <div class="row mt">
                         <!-- SERVER STATUS PANELS -->
-
-
-
-
                         <div class="col-md-4 col-sm-4 mb">
                             <div class="content-panel pn">
-                                <div id="spotify">
+                                <div id="got">
                                     <div class="col-xs-4 col-xs-offset-8">
                                         <button class="btn btn-sm btn-clear-g"
                                             style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
                                     </div>
                                     <div class="sp-title">
-                                        <h3>Captain Marvel</h3>
+                                        <h3>Game Of Thrones</h3>
                                     </div>
+                                    <img src="assets/img/hboLogo.png" 
+                                        style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
                                     <div class="play">
-                                        <i class="fa fa-play-circle fa-3x"></i>
+                                        <a href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
+                                            <i class="fa fa-play-circle fa-3x" style="color:white"></i>
+                                        </a>
                                     </div>
                                 </div>
                                 <a href="info.html">
                                     <p class="followers" style="text-align: center;"></i>Informação</p>
                                 </a>
                             </div>
-                        </div><!-- /col-md-4-->
+                        </div>
 
                         <div class="col-md-4 col-sm-4 mb">
                             <div class="content-panel pn">
@@ -445,23 +464,27 @@
                         <!-- PANEL -->
                         <div class="col-md-4 col-sm-4 mb">
                             <div class="content-panel pn">
-                                <div id="spotify">
+                                <div id="got">
                                     <div class="col-xs-4 col-xs-offset-8">
                                         <button class="btn btn-sm btn-clear-g"
                                             style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
                                     </div>
                                     <div class="sp-title">
-                                        <h3>Captain Marvel</h3>
+                                        <h3>Game Of Thrones</h3>
                                     </div>
+                                    <img src="assets/img/hboLogo.png" 
+                                        style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
                                     <div class="play">
-                                        <i class="fa fa-play-circle fa-3x"></i>
+                                        <a href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
+                                            <i class="fa fa-play-circle fa-3x" style="color:white"></i>
+                                        </a>
                                     </div>
                                 </div>
                                 <a href="info.html">
                                     <p class="followers" style="text-align: center;"></i>Informação</p>
                                 </a>
                             </div>
-                        </div><!-- /col-md-4 -->
+                        </div>
 
 
                         <div class="col-md-4 col-sm-4 mb">
@@ -486,23 +509,27 @@
 
                         <div class="col-md-4 col-sm-4 mb">
                             <div class="content-panel pn">
-                                <div id="spotify">
+                                <div id="got">
                                     <div class="col-xs-4 col-xs-offset-8">
                                         <button class="btn btn-sm btn-clear-g"
                                             style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
                                     </div>
                                     <div class="sp-title">
-                                        <h3>Captain Marvel</h3>
+                                        <h3>Game Of Thrones</h3>
                                     </div>
+                                    <img src="assets/img/hboLogo.png" 
+                                        style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
                                     <div class="play">
-                                        <i class="fa fa-play-circle fa-3x"></i>
+                                        <a href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
+                                            <i class="fa fa-play-circle fa-3x" style="color:white"></i>
+                                        </a>
                                     </div>
                                 </div>
                                 <a href="info.html">
                                     <p class="followers" style="text-align: center;"></i>Informação</p>
                                 </a>
                             </div>
-                        </div><!-- /col-md-4 -->
+                        </div>
                     </div><!-- /row -->
                 </div>
             </section>
