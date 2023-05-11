@@ -22,7 +22,18 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <style type="text/css">
+        .today {
+            border: 10px solid #000;
+            border-radius: 50%;
+        }
 
+
+        .highlighted {
+            background-color: rgb(201, 201, 169);
+            border-radius: 50%;
+        }
+    </style>
     <script src="assets/js/chart-master/Chart.js"></script>
 
     <script>
@@ -135,7 +146,7 @@
 
 
                     <!-- settings end -->
-                    <!-- inbox dropdownNotif start-->
+                    <!-- inbox dropdown start-->
                     <li id="header_inbox_bar" class="dropdownNotif">
                         <a data-toggle="dropdownNotif" class="dropdownNotif-toggle" href="index.html#">
                             <i class="fa fa-envelope-o"></i>
@@ -199,7 +210,7 @@
                             </li>
                         </ul>
                     </li>
-                    <!-- inbox dropdownNotif end -->
+                    <!-- inbox dropdown end -->
                     <li id="header_inbox_bar" class="dropdownNotif">
                         <a data-toggle="dropdownNotif" class="dropdownNotif-toggle" href="index.html#">
                             <i class="fa fa-user"></i>
@@ -230,7 +241,7 @@
                     </li>
                 </ul>
 
-                <!-- Create icon of user and dropdownNotif menu -->
+                <!-- Create icon of user and dropdown menu -->
 
                 <!--  notification end -->
             </div>
@@ -460,21 +471,19 @@
         *********************************************************************************************************************************************************** -->
         <div class="col-lg-3 ds">
             <!-- CALENDAR-->
-            <div id="calendar" class="mb">
+            <div id="calendar" class="mb" style="position: fixed;top: 120px;right: 15px;">
                 <div class="panel green-panel no-margin">
                     <div class="panel-body">
-                        <div id="date-popover" class="popover top"
-                        style="cursor: pointer; disadding: block; margin-left: 33%; margin-top: -50px; width: 175px;">
-                        <div class="arrow"></div>
-                        <h3 class="popover-title" style="disadding: none;"></h3>
-                        <div id="date-popover-content" class="popover-content"></div>
-                    </div>
+                        <div id="date-popover" class="popover top" style="cursor: pointer; disadding: block; margin-left: 33%; margin-top: -50px; width: 175px;">
+                            <div class="arrow"></div>
+                            <h3 class="popover-title" style="disadding: none;"></h3>
+                            <div id="date-popover-content" class="popover-content"></div>
+                        </div>
                     <div id="my-calendar"></div>
                 </div>
-            </div>
-        </div><!-- / calendar -->
-    </div><!-- /col-lg-3 -->
-</div><! --/row -->
+            </div><!-- / calendar -->
+        </div><!-- /col-lg-3 -->
+    </div><!--/row -->
     
             </section>
         </section>
@@ -540,9 +549,31 @@
             $("#date-popover").click(function (e) {
                 $(this).hide();
             });
+            $('#my-calendar').on('mouseover', '.day', function() {
+                if ($(this).hasClass('today')) {
+                    // O dia atual já está destacado, então não faz nada.
+                    return;
+                }
+            
+            $(this).addClass('highlighted');
+            });
+
+            $('#my-calendar').on('mouseout', '.day', function() {
+                $(this).removeClass('highlighted');
+            });
 
             $("#my-calendar").zabuto_calendar({
                 action: function () {
+                    // obter o número do dia atual
+                    var day = $("#" + this.id + " div.day.active").text();
+
+                    // adicionar um evento de clique na div do dia
+                    $("#" + this.id + " div.day").click(function() {
+                    // redirecionar para a página desejada
+                    window.location.href = "calendarDay.html?dia=28";
+                    });
+
+                    // retornar a função myDateFunction
                     return myDateFunction(this.id, false);
                 },
                 action_nav: function () {

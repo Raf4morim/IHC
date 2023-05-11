@@ -3207,7 +3207,7 @@ tbody.collapse.in {
   right: auto;
   left: 0;
 }
-.dropdownNotif-header {
+.dropdown-header {
   display: block;
   padding: 3px 20px;
   font-size: 12px;
@@ -3215,7 +3215,7 @@ tbody.collapse.in {
   color: #777;
   white-space: nowrap;
 }
-.dropdownNotif-backdrop {
+.dropdown-backdrop {
   position: fixed;
   top: 0;
   right: 0;
@@ -3943,7 +3943,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
             box-shadow: none;
   }
   .navbar-nav .open .dropdownNotif-menu > li > a,
-  .navbar-nav .open .dropdownNotif-menu .dropdownNotif-header {
+  .navbar-nav .open .dropdownNotif-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
   .navbar-nav .open .dropdownNotif-menu > li > a {
@@ -4243,7 +4243,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: #080808;
 }
 @media (max-width: 767px) {
-  .navbar-inverse .navbar-nav .open .dropdownNotif-menu > .dropdownNotif-header {
+  .navbar-inverse .navbar-nav .open .dropdownNotif-menu > .dropdown-header {
     border-color: #080808;
   }
   .navbar-inverse .navbar-nav .open .dropdownNotif-menu .divider {

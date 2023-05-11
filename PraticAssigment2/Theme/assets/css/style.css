@@ -1327,10 +1327,27 @@ PANELS CONFIGURATIONS
 	text-align: center;
 	border-radius: 100%;
 }
-
+h3,
+.h3{font-size:20px;}
 /* Soptify Panel */
 #spotify {
 	background: url(../img/lorde.jpg) no-repeat center top;
+	margin-top: -15px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 220px;
+	width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#twd {
+	background: url(../img/TWD.png) no-repeat center top;
 	margin-top: -15px;
 	background-attachment: relative;
 	background-position: center center;
@@ -1383,6 +1400,12 @@ PANELS CONFIGURATIONS
 	position: absolute;
 	margin-top: 5px;
 }
+#twd .btn-clear-g {
+	top: 15%;
+	right: 10px;
+	position: absolute;
+	margin-top: 5px;
+}
 #spotify .sp-title {
 	bottom: 15%;
 	left: 25px;
@@ -1397,7 +1420,29 @@ PANELS CONFIGURATIONS
 	right: 25px;
 	position: absolute;
 	color: #efefef;
-	font-size: 20px
+	font-size: 20px;
+    text-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+    border: 5px 5px solid #333;
+}
+#twd .sp-title {
+	bottom: 15%;
+	left: 25px;
+	position: absolute;
+	color: #efefef;
+    text-shadow: 0 20px 20px rgba(255, 255, 255, 0.5);
+
+}
+#twd .sp-title h3 {
+	font-weight: 900;
+}
+#twd .play{
+	bottom: 18%;
+	right: 25px;
+	position: absolute;
+	color: #efefef;
+	font-size: 20px;
+    text-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+    border: 5px 5px solid #333;
 }
 .followers {
 	margin-left: 5px;
@@ -1448,7 +1493,9 @@ PANELS CONFIGURATIONS
 	right: 25px;
 	position: absolute;
 	color: #efefef;
-	font-size: 20px
+	font-size: 20px;
+    text-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+    border: 5px 5px solid #333;
 }
 
 #got .btn-clear-g {
@@ -2478,7 +2525,7 @@ label {
 /* ADDING OWN STYLES */
 /* ----------------- */
 
-.custom-dropdownNotif {
+.custom-dropdown {
     position: relative;
     display: inline-block;
   }
@@ -2506,7 +2553,7 @@ label {
     padding: 8px 16px;
   }
   
-  .custom-dropdownNotif:hover .custom-dropdownNotif-menu {
+  .custom-dropdown:hover .custom-dropdownNotif-menu {
     display: block;
   }
 
@@ -2701,37 +2748,42 @@ label {
   }
 /*Diogo Collapsible */
   .collapsible {
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    width: 7%;
-    margin-left: 91%;
-    margin-right: 20px;
+    background-color: #8a8989;
     border: none;
-    text-align: left;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    min-width: 11%;
+    border-radius: 5px;
     outline: none;
     font-size: 15px;
     position: relative;
     overflow: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
   .active, .collapsible:hover {
     background-color: #555;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   }
   
-  .collapsible:after {
-    content: 'Ver mais\002B';
+  .collapsible:after { 
+    content: 'Ver Mais \002B';
     color: white;
     font-weight: bold;
-    float: right;
-    margin-left: 5px;
+    /* float: right; */
+    /* margin-left: 5px; */
   }
   
-  .active:after {
-    content: "Ver menos \2212";
+  .collapsible .active:after {
+    content: "Ver Menos \2212";
   }
   
-  .content {
+  .contentVerMais {
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
