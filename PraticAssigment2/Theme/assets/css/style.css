@@ -2704,9 +2704,9 @@ label {
     background-color: #777;
     color: white;
     cursor: pointer;
-    width: 98%;
-    margin-left: 15px;
-    margin-right: 200px;
+    width: 7%;
+    margin-left: 91%;
+    margin-right: 20px;
     border: none;
     text-align: left;
     outline: none;
@@ -2720,7 +2720,7 @@ label {
   }
   
   .collapsible:after {
-    content: '\002B';
+    content: 'Ver mais\002B';
     color: white;
     font-weight: bold;
     float: right;
@@ -2728,7 +2728,7 @@ label {
   }
   
   .active:after {
-    content: "\2212";
+    content: "Ver menos \2212";
   }
   
   .content {
