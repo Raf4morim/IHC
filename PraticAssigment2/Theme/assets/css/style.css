@@ -2525,7 +2525,7 @@ label {
 /* ADDING OWN STYLES */
 /* ----------------- */
 
-.custom-dropdown {
+.custom-dropdownNotif {
     position: relative;
     display: inline-block;
   }
@@ -2553,7 +2553,7 @@ label {
     padding: 8px 16px;
   }
   
-  .custom-dropdown:hover .custom-dropdownNotif-menu {
+  .custom-dropdownNotif:hover .custom-dropdownNotif-menu {
     display: block;
   }
 
