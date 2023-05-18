@@ -2564,6 +2564,9 @@ label {
     position: absolute; 
     top: 0px; 
   }
+  .ratingStars.selected {
+    color: #fab027;
+  }
   .ratingStars:hover {
     color: #fab027;
   }

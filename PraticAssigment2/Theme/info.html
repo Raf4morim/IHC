@@ -466,9 +466,10 @@
                                 <span class="fa fa-star ratingStars" style="right: 70px;"></span>
                                 <span class="fa fa-star ratingStars" style="right: 90px;"></span>
                                 <span id="sendIcon" class="fa fa-paper-plane sendIcon" style="color: blue; position: absolute; bottom: 20px; right: 20px; font-size: 16px; font-weight: bold; cursor:pointer;"></span>
-                              </div>
-                              
-                              <div id="popupComment" class="popupComment">O seu comentário foi enviado!</div>
+                                
+                                <div id="warning" style="position:absolute; left:10px;bottom: 10px; color: red; display: none; ">Por favor, escreva algo antes de enviar. Atenção ao spoiler!</div>
+                            </div>
+                            <div id="popupComment" class="popupComment">O seu comentário foi enviado!</div>
                               
                         </div>
                         <button type="submit" class="btn btn-theme" style="position:relative; left:1490px;">Enviar</button>
@@ -542,10 +543,45 @@
     <script src="assets/js/common-scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+            const stars = document.querySelectorAll('.ratingStars');
+
+stars.forEach((star, index) => {
+    star.addEventListener('click', () => {
+        // Adicionar classe 'selected' às estrelas da esquerda para a estrela clicada
+        for (let i = stars.length - 1; i >= index; i--) {
+            stars[i].classList.add('selected');
+        }
+
+        // Remover classe 'selected' das estrelas à esquerda da estrela clicada
+        for (let i = index - 1; i >= 0; i--) {
+            stars[i].classList.remove('selected');
+        }
+    });
+
+    star.addEventListener('mouseover', () => {
+        // Adicionar classe 'hover' às estrelas da esquerda para a estrela atual
+        for (let i = stars.length - 1; i >= index; i--) {
+            stars[i].classList.add('hover');
+        }
+
+        // Remover classe 'hover' das estrelas à esquerda da estrela atual
+        for (let i = index - 1; i >= 0; i--) {
+            stars[i].classList.remove('hover');
+        }
+    });
+
+    star.addEventListener('mouseout', () => {
+        // Remover classe 'hover' de todas as estrelas
+        stars.forEach(star => {
+            star.classList.remove('hover');
+        });
+    });
+});
+// -------------------------------------------
     $(function () {
             $('select.styled').customSelect();
         });
-
+// ----------------------------------------------
     $(document).ready(function() {
       $('#commentTextarea').on('input', function() {
         var padding = 10; // Ajuste o valor do padding conforme necessário
@@ -553,17 +589,33 @@
         $(this).scrollTop(0).scrollTop(padding); // Para garantir que o texto comece no topo do textarea
       });
     });
-
+// ---------------------------------------
     document.getElementById('sendIcon').addEventListener('click', function() {
         var textarea = document.getElementById('commentTextarea');
+        var comment = textarea.value.trim(); // Obter o valor do textarea e remover espaços em branco no início e no final
+
+        if (comment !== '') {
         textarea.value = ''; // Limpa o valor do textarea
+        // Limpar as estrelas selecionadas
+        stars.forEach(star => {
+            star.classList.remove('selected');
+        });
+
 
         var popup = document.getElementById('popupComment');
         popup.style.display = 'block';
 
         setTimeout(function() {
-        popup.style.display = 'none';
+            popup.style.display = 'none';
         }, 2000);
+        } else {
+        var warning = document.getElementById('warning');
+        warning.style.display = 'block';
+
+        setTimeout(function() {
+            warning.style.display = 'none';
+        }, 3000);
+        }
     });
     </script>
 
