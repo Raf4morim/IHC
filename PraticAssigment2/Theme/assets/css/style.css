@@ -2756,7 +2756,7 @@ label {
     
   }
 /*Diogo Collapsible */
-  .collapsible {
+.collapsible {
     background-color: #8a8989;
     border: none;
     cursor: pointer;
@@ -2775,20 +2775,18 @@ label {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
-  .active, .collapsible:hover {
+  .collapsible:hover {
     background-color: #555;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   }
   
-  .collapsible:after { 
+  .collapsible:after {
     content: 'Ver Mais \002B';
     color: white;
     font-weight: bold;
-    /* float: right; */
-    /* margin-left: 5px; */
   }
   
-  .collapsible .active:after {
+  .collapsible.active:after {
     content: "Ver Menos \2212";
   }
   
@@ -2799,7 +2797,7 @@ label {
     transition: max-height 0.2s ease-out;
     background-color: #e7e7e7;
   }
-
+  
   .table-wrapper-scroll-y {
     display: block;
-    }
+  }
