@@ -443,3 +443,7 @@ header h1 {
     display: block;
   }
 }
+
+.helpTextDecNone{
+  text-decoration: none;
+}
