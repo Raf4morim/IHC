@@ -28,16 +28,19 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-	<script>
-		function showPopup() {
-			var popup = document.getElementById("popup");
-			popup.style.display = "block";
-		}
-		function hidePopup() {
-			var popup = document.getElementById("popup");
-			popup.style.display = "none";
-		}
-	</script>
+    <script>
+        function showPopup() {
+          var popup = document.getElementById("popup");
+          popup.style.display = "block";
+          setTimeout(hidePopup, 3000); // Hide the popup after 3 seconds (3000 milliseconds)
+        }
+      
+        function hidePopup() {
+          var popup = document.getElementById("popup");
+          popup.style.display = "none";
+          window.location.href = "saved.html"; // Redirect to saved.html
+        }
+      </script>
 </head>
 
 <body>
@@ -208,6 +211,10 @@
 							<i class="fa fa-user"></i>
 						</a>
 						<ul class="dropdownNotif-menu extended inbox">
+							<div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">Sobre a sua conta</p>
+                            </li>
 							<li>
 								<a href="profile.html">
 									<span>
@@ -262,12 +269,19 @@
 						</a>
 					</li>
 
-					<li class="sub-menu">
-						<a class="active" href="explorar.html">
-							<i class="fa fa-search"></i>
-							<span>Explorar</span>
-						</a>
-					</li>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class=" fa fa-search"></i>
+                            <span>Explorar</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="explorar.html#mais-vistos">Mais Vistos</a></li>
+                            <li><a href="explorar.html#favoritos">Favoritos</a></li>
+                            <li><a href="explorar.html#mais-recentes">Mais Recentes</a></li>
+                            <li><a href="explorar.html#mais-polemicos">Mais Polémicos</a></li>
+                            <li><a href="explorar.html#mais-elogiados">Mais Elogiados</a></li>
+                        </ul>
+                    </li>
 
 					<li class="sub-menu">
 						<a href="calendar.html">
@@ -327,10 +341,10 @@
 			<section class="wrapper site-min-height">
 				<h3>Descobre Novos Filmes e Series</h3>
 
-				<div class="row mt">
+				<div class="row mt" id="mais-vistos">
 					<div class="col-lg-12">
 						<div class="form-panel">
-							<h2 class="mb">Mais vistos</h4>
+							<h2 class="mb" >Mais vistos</h2>
 								<! -- 5TH ROW OF PANELS -->
 									<div class="row">
 										<div class="col-md-4 col-sm-4 mb">
@@ -577,7 +591,7 @@
 						</div><!-- /row -->
 
 
-						<div class="row mt">
+						<div class="row mt" id="favoritos">
 							<div class="col-lg-12">
 								<div class="form-panel">
 									<h2 class="mb">Favoritos</h4>
@@ -835,7 +849,7 @@
 														</div><!-- /END 5TH ROW OF PANELS -->
 											</div><!-- col-lg-12-->
 								</div><!-- /row -->
-								<div class="row mt">
+								<div class="row mt" id="mais-recentes">
 									<div class="col-lg-12">
 										<div class="form-panel">
 											<h2 class="mb">Mais recentes</h4>
@@ -1106,10 +1120,10 @@
 																</div><!-- /END 5TH ROW OF PANELS -->
 													</div><!-- col-lg-12-->
 										</div><!-- /row -->
-										<div class="row mt">
+										<div class="row mt" id="mais-polemicos">
 											<div class="col-lg-12">
 												<div class="form-panel">
-													<h2 class="mb">Mais polémicos</h4>
+													<h2 class="mb"  id="mais-elogiados">Mais polémicos</h4>
 														<! -- 5TH ROW OF PANELS -->
 															<div class="row">
 																<div class="col-md-4 col-sm-4 mb">

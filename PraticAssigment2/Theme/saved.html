@@ -215,6 +215,10 @@
                             <i class="fa fa-user"></i>
                         </a>
                         <ul class="dropdownNotif-menu extended inbox">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">Sobre a sua conta</p>
+                            </li>
                             <li>
                                 <a href="profile.html">
                                     <span>
@@ -270,10 +274,17 @@
                     </li>
 
                     <li class="sub-menu">
-                        <a href="explorar.html">
-                            <i class="fa fa-search"></i>
+                        <a href="javascript:;">
+                            <i class=" fa fa-search"></i>
                             <span>Explorar</span>
                         </a>
+                        <ul class="sub">
+                            <li><a href="explorar.html#mais-vistos">Mais Vistos</a></li>
+                            <li><a href="explorar.html#favoritos">Favoritos</a></li>
+                            <li><a href="explorar.html#mais-recentes">Mais Recentes</a></li>
+                            <li><a href="explorar.html#mais-polemicos">Mais Polémicos</a></li>
+                            <li><a href="explorar.html#mais-elogiados">Mais Elogiados</a></li>
+                        </ul>
                     </li>
 
                     <li class="sub-menu">
@@ -318,17 +329,19 @@
                 <div id="popup">
                     <div id="popup-inner">
                         <h4>De certeza que deseja remover a série da sua lista de guardados?</h4>
-                        <button style="background-color: green;" onclick="showConfirmationPopup()">Sim</button>
-                        <button id="close-button" onclick="hidePopup()">Não</button>
+                        <div style="display: flex; justify-content: center;">
+                            <a href="index.html"><button >Sim</button></a> <!--style="background-color: green;"-->
+                            <button id="close-button" onclick="hidePopup()">Não</button>
+                        </div>
                     </div>
                 </div>
     
-                <div id="confirmation-popup">
+                <!-- <div id="confirmation-popup">
                     <div id="popup-inner">
                         <a href="index.html"><i onclick="hideConfirmationPopup()" class="fa fa-times-circle"></i></a>
                         <h4 style="margin-top: 20px; margin-right:20px">A série foi removida com sucesso.</h4>
                     </div>
-                </div>
+                </div> -->
 
                 <h3>Guardados</h3>
 
@@ -360,27 +373,30 @@
                             </div>
                         </div>
                     </div>
-                    <span style="font-size: 16px; margin-left: 7%">Temporada</span>
-                    <select class="select-picker">
-                        <option>T1</option>
-                        <option>T2</option>
-                        <option>T3</option>
-                        <option>T4</option>
-                        <option>T5</option>
-                    </select>
-                    <i class="fa fa-angle-down"></i>
-
-                    <span style="font-size: 16px; margin-left: 35px">Episódio</span>
-                    <select class="select-picker">
-                        <option>E1</option>
-                        <option>E2</option>
-                        <option>E3</option>
-                        <option>E4</option>
-                        <option>E5</option>
-                        <option>E6</option>
-                        <option>E7</option>
-                    </select>
-                    <i class="fa fa-angle-down"></i>
+                    <div style="display: flex; align-items: center;">
+                        <span style="font-size: 16px;">Definir temporada e<br> episódio em que se situa: </span>
+                        <select class="select-picker" style="margin-left: 25px;">
+                          <option selected disabled hidden>Temporadas +</option>
+                          <option>Temporada 1</option>
+                          <option>Temporada 2</option>
+                          <option>Temporada 3</option>
+                          <option>Temporada 4</option>
+                          <option>Temporada 5</option>
+                        </select>
+                        <!-- <i class="fa fa-angle-down"></i> -->
+                        
+                        <select class="select-picker" style="margin-left: 25px;">
+                          <option selected disabled hidden>Episódios +</option>
+                          <option>Episódio 1</option>
+                          <option>Episódio 2</option>
+                          <option>Episódio 3</option>
+                          <option>Episódio 4</option>
+                          <option>Episódio 5</option>
+                          <option>Episódio 6</option>
+                          <option>Episódio 7</option>
+                        </select>
+                    </div>
+                    <!-- <i class="fa fa-angle-down"></i> -->
                     <div class="row mtbox">
                         <a href="explorar.html#">
                             <i class="fa fa-plus-circle"
