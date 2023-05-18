@@ -265,7 +265,7 @@
                     <!-- inbox dropdown end -->
                     <li id="header_inbox_bar" class="dropdownNotif">
                         <a data-toggle="dropdownNotif" class="dropdownNotif-toggle" href="index.html#">
-                            <i class="fa fa-user"></i>
+                            <i class="fa fa-user" style="color:#68dff0"></i>
                         </a>
                         <ul class="dropdownNotif-menu extended inbox">
                             <div class="notify-arrow notify-arrow-green"></div>
@@ -355,7 +355,7 @@
                     </li>
 
                     <li class="sub-menu">
-                        <a class="active" href="news.html">
+                        <a href="news.html">
                             <i class="fa fa-book"></i>
                             <span>Últimas notícias</span>
                         </a>
@@ -389,17 +389,16 @@
                             <div class="card">
                                 <div class="card-body ">
                                     <div id="textBox" class="d-flex flex-column align-items-center text-center">
-
-                                        <input type="file" accept="image/*" name="image" id="file"
-                                            style="display: none;" onchange="loadFile(event)">
-                                        <label for="file" style="cursor: pointer;"><img
-                                                src="../Theme/assets/img/ui-sam.jpg" alt="Admin" class="rounded-circle"
-                                                width="150"></label>
+                                        <input type="file" accept="image/*" name="image" id="file" style="display: none;" onchange="loadFile(event)">
+                                        <label for="file" style="cursor: pointer;">
+                                            <img src="../Theme/assets/img/ui-sam.jpg" alt="Admin" class="rounded-circle" width="150" id="uploadedImage">
+                                        </label>
                                         <div class="mt-3">
                                             <h4>Diogo Silva</h4>
                                             <p class="text-secondary mb-1">Amante de Séries</p>
                                             <p class="text-muted font-size-sm">Cidade de Aveiro</p>
                                         </div>
+                                        <button style="display:none" onclick="saveImage()">Guardar</button>
                                     </div>
                                     <hr class="my-5">
                                     <ul class="list-group list-group-flush">
@@ -596,6 +595,22 @@
 	</script> -->
 
     <script type="application/javascript">
+        function loadFile(event) {
+        var image = document.getElementById('uploadedImage');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    }
+
+    function saveImage() {
+        var image = document.getElementById('uploadedImage');
+        var canvas = document.createElement('canvas');
+        var context = canvas.getContext('2d');
+        context.drawImage(image, 0, 0);
+        var imageData = canvas.toDataURL(); // A imagem está agora codificada em base64 na variável imageData
+
+        // Aqui você pode enviar a variável imageData para o servidor ou fazer outra manipulação
+        // para guardar a imagem.
+    }
+
         $(document).ready(function () {
             $("#date-popover").popover({ html: true, trigger: "manual" });
             $("#date-popover").hide();
