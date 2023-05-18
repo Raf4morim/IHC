@@ -293,6 +293,7 @@
                         <a href="javascript:;">
                             <i class=" fa fa-search"></i>
                             <span>Explorar</span>
+                            <i class="fa fa-angle-up angle-icon" style="position: absolute; right: 10px"></i>
                         </a>
                         <ul class="sub">
                             <li><a href="explorar.html#mais-vistos">Mais Vistos</a></li>
@@ -654,6 +655,10 @@
             var to = $("#" + id).data("to");
             console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
         }
+
+        $('.sub-menu').click(function() {
+            $(this).find('.angle-icon').toggleClass('fa-angle-up fa-angle-down');
+        });
     </script>
 
 

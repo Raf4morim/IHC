@@ -533,6 +533,10 @@
             var to = $("#" + id).data("to");
             console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
         }
+
+        $('.sub-menu').click(function() {
+            $(this).find('.angle-icon').toggleClass('fa-angle-up fa-angle-down');
+        });
     </script>
 
 
