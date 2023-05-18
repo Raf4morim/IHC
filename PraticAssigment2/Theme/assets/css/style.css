@@ -1346,6 +1346,38 @@ h3,
     -o-background-size: cover;
     background-size: cover;
 }
+#camino {
+	background: url(../img/camino.jpg) no-repeat center top;
+	margin-top: -15px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 220px;
+	width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#betterCallSaul {
+	background: url(../img/betterCallSaul.jpg) no-repeat center top;
+	margin-top: -15px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 220px;
+	width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 #twd {
 	background: url(../img/TWD.png) no-repeat center top;
 	margin-top: -15px;
@@ -1400,6 +1432,18 @@ h3,
 	position: absolute;
 	margin-top: 5px;
 }
+#camino .btn-clear-g {
+	top: 15%;
+	right: 10px;
+	position: absolute;
+	margin-top: 5px;
+}
+#betterCallSaul .btn-clear-g {
+	top: 15%;
+	right: 10px;
+	position: absolute;
+	margin-top: 5px;
+}
 #twd .btn-clear-g {
 	top: 15%;
 	right: 10px;
@@ -1416,6 +1460,42 @@ h3,
 	font-weight: 900;
 }
 #spotify .play{
+	bottom: 18%;
+	right: 25px;
+	position: absolute;
+	color: #efefef;
+	font-size: 20px;
+    text-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+    border: 5px 5px solid #333;
+}
+#camino .sp-title {
+	bottom: 15%;
+	left: 25px;
+	position: absolute;
+	color: #efefef;
+}
+#camino .sp-title h3 {
+	font-weight: 900;
+}
+#camino .play{
+	bottom: 18%;
+	right: 25px;
+	position: absolute;
+	color: #efefef;
+	font-size: 20px;
+    text-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+    border: 5px 5px solid #333;
+}
+#betterCallSaul .sp-title {
+	bottom: 15%;
+	left: 25px;
+	position: absolute;
+	color: #efefef;
+}
+#betterCallSaul .sp-title h3 {
+	font-weight: 900;
+}
+#betterCallSaul .play{
 	bottom: 18%;
 	right: 25px;
 	position: absolute;

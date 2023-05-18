@@ -109,16 +109,16 @@
             color: #333;
         }
 		/* Deslocamento de 10 pixels acima do ID */
-:target {
-    margin-top: -70px;
-    padding-top: 70px;
-}
-
-.sub-menu {
-    list-style-type: none;
-}
-
-
+		
+		.sub-menu {
+			list-style-type: none;
+		}
+		
+		
+		:target {
+			margin-top: -70px;
+			padding-top: 70px;
+		}
       </style>
 </head>
 
@@ -414,14 +414,14 @@
 				<div id="popup">
 					<div id="popup-inner">
 						<a href="saved.html"><i onclick="hidePopup()" class="fa fa-times-circle"></i></a>
-						<h4 style="margin-top: 20px; margin-right:20px">A série foi guardada com sucesso.</h4>
+						<h4 id="pesq" style="margin-top: 20px; margin-right:20px">A série foi guardada com sucesso.</h4>
 					</div>
 				</div>
 
-				<h3 id="pesq">Descobre Novos Filmes e Series</h3>
+				<h3>Descobre Novos Filmes e Series</h3>
 
 				<li class="sub-menu" style="position: relative; left:10px; text-decoration: none; width: 50%;">
-					<form id="search-form" class="sidebar-search" action="info.html" method="get">
+					<form id="search-form" class="sidebar-search" action="resultsSearch.html" method="get">
 						<div class="form-group">
 							<input type="text" class="form-control" placeholder="Pesquisar por Séries, Notícias, Géneros, etc" name="search">
 							<button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
