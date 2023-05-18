@@ -2559,8 +2559,10 @@ label {
 
   .ratingStars {
     position: absolute;
-    margin-top: 5%;
-    font-size:20px
+    margin-top: 20px;
+    font-size:20px;
+    position: absolute; 
+    top: 0px; 
   }
   .ratingStars:hover {
     color: #fab027;

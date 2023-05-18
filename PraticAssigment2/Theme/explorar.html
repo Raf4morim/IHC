@@ -40,9 +40,8 @@
           popup.style.display = "none";
           window.location.href = "saved.html"; // Redirect to saved.html
         }
-      </script>
-	  <script>
-        function showPopup() {
+
+		function showPopup() {
           var popup = document.getElementById("popup");
           popup.style.display = "block";
           setTimeout(hidePopup, 3000); // Hide the popup after 3 seconds (3000 milliseconds)
@@ -53,6 +52,7 @@
           popup.style.display = "none";
           window.location.href = "saved.html"; // Redirect to saved.html
         }
+        
       </script>
       
       <style type="text/css">
@@ -121,7 +121,7 @@
 			</div>
 			<!--logo start-->
 			<a href="index.html" class="logo">
-				<b style="color: rgb(230, 185, 2);">MOVIE TRACKER&nbsp;&nbsp;&nbsp;</b>
+				<b style="color: rgb(230, 185, 2);left:50%; transform: translateX(-50%);">MOVIE TRACKER&nbsp;&nbsp;&nbsp;</b>
 				<i class="fa fa-film"
 					style="color:rgb(230, 185, 2); rotate: 30deg; font-size: 30px; transform: scaleX(0.8);"></i>
 			</a>
@@ -402,11 +402,11 @@
 		<!--main content start-->
 		<section id="main-content">
 
-			<!-- Pop up ao adicionar série -->
+			<!-- Pop up ao GUARDAR série -->
 			<div id="popup">
 				<div id="popup-inner">
 					<a href="saved.html"><i onclick="hidePopup()" class="fa fa-times-circle"></i></a>
-					<h4 style="margin-top: 20px; margin-right:20px">A série foi adicionada com sucesso.</h4>
+					<h4 style="margin-top: 20px; margin-right:20px">A série foi guardada com sucesso.</h4>
 				</div>
 			</div>
 
@@ -417,14 +417,14 @@
 					<div class="col-lg-12">
 						<div class="form-panel">
 							<h2 class="mb" >Mais vistos</h2>
-								<! -- 5TH ROW OF PANELS -->
+								<!-- 5TH ROW OF PANELS -->
 									<div class="row">
 										<div class="col-md-4 col-sm-4 mb">
 											<div class="content-panel pn">
 												<div id="bbad">
 													<div class="col-xs-4 col-xs-offset-8">
 														<button class="btn btn-sm btn-clear-g" onclick="showPopup()"
-															style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+															style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 													</div>
 													<div class="sp-title">
 														<h3>Breaking Bad</h3>
@@ -442,14 +442,14 @@
 												</a>
 											</div>
 										</div>
-										<! --/col-md-4-->
+										<!--/col-md-4-->
 
 											<div class="col-lg-4 col-md-4 col-sm-4 mb">
 												<div class="content-panel pn">
 													<div id="spotify">
 														<div class="col-xs-4 col-xs-offset-8">
 															<button class="btn btn-sm btn-clear-g"
-																style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 														</div>
 														<div class="sp-title">
 															<h3>Captain Marvel</h3>
@@ -464,14 +464,14 @@
 													</a>
 												</div>
 											</div>
-											<! --/col-md-4-->
+											<!--/col-md-4-->
 
 												<div class="col-md-4 col-sm-4 mb">
 													<div class="content-panel pn">
 														<div id="got">
 															<div class="col-xs-4 col-xs-offset-8">
 																<button class="btn btn-sm btn-clear-g"
-																	style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																	style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 															</div>
 															<div class="sp-title">
 																<h3>Game Of Thrones</h3>
@@ -492,13 +492,13 @@
 														</a>
 													</div>
 												</div>
-												<! --/col-md-4-->
+												<!--/col-md-4-->
 									</div><!-- /END 5TH ROW OF PANELS -->
 									<button class="collapsible">
 									</button>
 									<!-- Inserir aqui -->
 									<div class="contentVerMais" style="margin-left: 15px; margin-right: 17px;">
-										<! -- 5TH ROW OF PANELS -->
+										<!-- 5TH ROW OF PANELS -->
 											<div class="row">
 												<div class="col-md-4 col-sm-4 mb">
 													<div class="content-panel pn">
@@ -506,7 +506,7 @@
 															<div class="col-xs-4 col-xs-offset-8">
 																<button class="btn btn-sm btn-clear-g"
 																	onclick="showPopup()"
-																	style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																	style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 															</div>
 															<div class="sp-title">
 																<h3>Breaking Bad</h3>
@@ -526,14 +526,14 @@
 														</a>
 													</div>
 												</div>
-												<! --/col-md-4-->
+												<!--/col-md-4-->
 
 													<div class="col-lg-4 col-md-4 col-sm-4 mb">
 														<div class="content-panel pn">
 															<div id="spotify">
 																<div class="col-xs-4 col-xs-offset-8">
 																	<button class="btn btn-sm btn-clear-g"
-																		style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																		style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																</div>
 																<div class="sp-title">
 																	<h3>Captain Marvel</h3>
@@ -548,14 +548,14 @@
 															</a>
 														</div>
 													</div>
-													<! --/col-md-4-->
+													<!--/col-md-4-->
 
 														<div class="col-md-4 col-sm-4 mb">
 															<div class="content-panel pn">
 																<div id="got">
 																	<div class="col-xs-4 col-xs-offset-8">
 																		<button class="btn btn-sm btn-clear-g"
-																			style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																			style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																	</div>
 																	<div class="sp-title">
 																		<h3>Game Of Thrones</h3>
@@ -576,9 +576,9 @@
 																</a>
 															</div>
 														</div>
-														<! --/col-md-4-->
+														<!--/col-md-4-->
 											</div><!-- /END 5TH ROW OF PANELS -->
-											<! -- 5TH ROW OF PANELS -->
+											<!-- 5TH ROW OF PANELS -->
 												<div class="row">
 													<div class="col-md-4 col-sm-4 mb">
 														<div class="content-panel pn">
@@ -586,7 +586,7 @@
 																<div class="col-xs-4 col-xs-offset-8">
 																	<button class="btn btn-sm btn-clear-g"
 																		onclick="showPopup()"
-																		style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																		style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																</div>
 																<div class="sp-title">
 																	<h3>Breaking Bad</h3>
@@ -606,14 +606,14 @@
 															</a>
 														</div>
 													</div>
-													<! --/col-md-4-->
+													<!--/col-md-4-->
 
 														<div class="col-lg-4 col-md-4 col-sm-4 mb">
 															<div class="content-panel pn">
 																<div id="spotify">
 																	<div class="col-xs-4 col-xs-offset-8">
 																		<button class="btn btn-sm btn-clear-g"
-																			style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																			style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																	</div>
 																	<div class="sp-title">
 																		<h3>Captain Marvel</h3>
@@ -628,14 +628,14 @@
 																</a>
 															</div>
 														</div>
-														<! --/col-md-4-->
+														<!--/col-md-4-->
 
 															<div class="col-md-4 col-sm-4 mb">
 																<div class="content-panel pn">
 																	<div id="got">
 																		<div class="col-xs-4 col-xs-offset-8">
 																			<button class="btn btn-sm btn-clear-g"
-																				style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																				style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																		</div>
 																		<div class="sp-title">
 																			<h3>Game Of Thrones</h3>
@@ -657,7 +657,7 @@
 																	</a>
 																</div>
 															</div>
-															<! --/col-md-4-->
+															<!--/col-md-4-->
 												</div><!-- /END 5TH ROW OF PANELS -->
 									</div><!-- col-lg-12-->
 						</div><!-- /row -->
@@ -667,7 +667,7 @@
 							<div class="col-lg-12">
 								<div class="form-panel">
 									<h2 class="mb">Favoritos</h4>
-										<! -- 5TH ROW OF PANELS -->
+										<!-- 5TH ROW OF PANELS -->
 											<div class="row">
 												<div class="col-md-4 col-sm-4 mb">
 													<div class="content-panel pn">
@@ -675,7 +675,7 @@
 															<div class="col-xs-4 col-xs-offset-8">
 																<button class="btn btn-sm btn-clear-g"
 																	onclick="showPopup()"
-																	style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																	style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 															</div>
 															<div class="sp-title">
 																<h3>Breaking Bad</h3>
@@ -695,14 +695,14 @@
 														</a>
 													</div>
 												</div>
-												<! --/col-md-4-->
+												<!--/col-md-4-->
 
 													<div class="col-lg-4 col-md-4 col-sm-4 mb">
 														<div class="content-panel pn">
 															<div id="spotify">
 																<div class="col-xs-4 col-xs-offset-8">
 																	<button class="btn btn-sm btn-clear-g"
-																		style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																		style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																</div>
 																<div class="sp-title">
 																	<h3>Captain Marvel</h3>
@@ -717,14 +717,14 @@
 															</a>
 														</div>
 													</div>
-													<! --/col-md-4-->
+													<!--/col-md-4-->
 
 														<div class="col-md-4 col-sm-4 mb">
 															<div class="content-panel pn">
 																<div id="got">
 																	<div class="col-xs-4 col-xs-offset-8">
 																		<button class="btn btn-sm btn-clear-g"
-																			style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																			style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																	</div>
 																	<div class="sp-title">
 																		<h3>Game Of Thrones</h3>
@@ -745,13 +745,13 @@
 																</a>
 															</div>
 														</div>
-														<! --/col-md-4-->
+														<!--/col-md-4-->
 											</div><!-- /END 5TH ROW OF PANELS -->
 											<!-- Inserir aqui -->
 											<button class="collapsible">
 											</button>
 											<div class="contentVerMais" style="margin-left: 15px; margin-right: 17px;">
-												<! -- 5TH ROW OF PANELS -->
+												<!-- 5TH ROW OF PANELS -->
 													<div class="row">
 														<div class="col-md-4 col-sm-4 mb">
 															<div class="content-panel pn">
@@ -759,7 +759,7 @@
 																	<div class="col-xs-4 col-xs-offset-8">
 																		<button class="btn btn-sm btn-clear-g"
 																			onclick="showPopup()"
-																			style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																			style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																	</div>
 																	<div class="sp-title">
 																		<h3>Breaking Bad</h3>
@@ -780,14 +780,14 @@
 																</a>
 															</div>
 														</div>
-														<! --/col-md-4-->
+														<!--/col-md-4-->
 
 															<div class="col-lg-4 col-md-4 col-sm-4 mb">
 																<div class="content-panel pn">
 																	<div id="spotify">
 																		<div class="col-xs-4 col-xs-offset-8">
 																			<button class="btn btn-sm btn-clear-g"
-																				style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																				style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																		</div>
 																		<div class="sp-title">
 																			<h3>Captain Marvel</h3>
@@ -803,14 +803,14 @@
 																	</a>
 																</div>
 															</div>
-															<! --/col-md-4-->
+															<!--/col-md-4-->
 
 																<div class="col-md-4 col-sm-4 mb">
 																	<div class="content-panel pn">
 																		<div id="got">
 																			<div class="col-xs-4 col-xs-offset-8">
 																				<button class="btn btn-sm btn-clear-g"
-																					style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																					style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																			</div>
 																			<div class="sp-title">
 																				<h3>Game Of Thrones</h3>
@@ -832,9 +832,9 @@
 																		</a>
 																	</div>
 																</div>
-																<! --/col-md-4-->
+																<!--/col-md-4-->
 													</div><!-- /END 5TH ROW OF PANELS -->
-													<! -- 5TH ROW OF PANELS -->
+													<!-- 5TH ROW OF PANELS -->
 														<div class="row">
 															<div class="col-md-4 col-sm-4 mb">
 																<div class="content-panel pn">
@@ -842,7 +842,7 @@
 																		<div class="col-xs-4 col-xs-offset-8">
 																			<button class="btn btn-sm btn-clear-g"
 																				onclick="showPopup()"
-																				style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																				style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																		</div>
 																		<div class="sp-title">
 																			<h3>Breaking Bad</h3>
@@ -864,14 +864,14 @@
 																	</a>
 																</div>
 															</div>
-															<! --/col-md-4-->
+															<!--/col-md-4-->
 
 																<div class="col-lg-4 col-md-4 col-sm-4 mb">
 																	<div class="content-panel pn">
 																		<div id="spotify">
 																			<div class="col-xs-4 col-xs-offset-8">
 																				<button class="btn btn-sm btn-clear-g"
-																					style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																					style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																			</div>
 																			<div class="sp-title">
 																				<h3>Captain Marvel</h3>
@@ -887,7 +887,7 @@
 																		</a>
 																	</div>
 																</div>
-																<! --/col-md-4-->
+																<!--/col-md-4-->
 
 																	<div class="col-md-4 col-sm-4 mb">
 																		<div class="content-panel pn">
@@ -895,7 +895,7 @@
 																				<div class="col-xs-4 col-xs-offset-8">
 																					<button
 																						class="btn btn-sm btn-clear-g"
-																						style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																						style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																				</div>
 																				<div class="sp-title">
 																					<h3>Game Of Thrones</h3>
@@ -917,7 +917,7 @@
 																			</a>
 																		</div>
 																	</div>
-																	<! --/col-md-4-->
+																	<!--/col-md-4-->
 														</div><!-- /END 5TH ROW OF PANELS -->
 											</div><!-- col-lg-12-->
 								</div><!-- /row -->
@@ -925,7 +925,7 @@
 									<div class="col-lg-12">
 										<div class="form-panel">
 											<h2 class="mb">Mais recentes</h4>
-												<! -- 5TH ROW OF PANELS -->
+												<!-- 5TH ROW OF PANELS -->
 													<div class="row">
 														<div class="col-md-4 col-sm-4 mb">
 															<div class="content-panel pn">
@@ -933,7 +933,7 @@
 																	<div class="col-xs-4 col-xs-offset-8">
 																		<button class="btn btn-sm btn-clear-g"
 																			onclick="showPopup()"
-																			style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																			style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																	</div>
 																	<div class="sp-title">
 																		<h3>Breaking Bad</h3>
@@ -954,14 +954,14 @@
 																</a>
 															</div>
 														</div>
-														<! --/col-md-4-->
+														<!--/col-md-4-->
 
 															<div class="col-lg-4 col-md-4 col-sm-4 mb">
 																<div class="content-panel pn">
 																	<div id="spotify">
 																		<div class="col-xs-4 col-xs-offset-8">
 																			<button class="btn btn-sm btn-clear-g"
-																				style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																				style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																		</div>
 																		<div class="sp-title">
 																			<h3>Captain Marvel</h3>
@@ -977,14 +977,14 @@
 																	</a>
 																</div>
 															</div>
-															<! --/col-md-4-->
+															<!--/col-md-4-->
 
 																<div class="col-md-4 col-sm-4 mb">
 																	<div class="content-panel pn">
 																		<div id="got">
 																			<div class="col-xs-4 col-xs-offset-8">
 																				<button class="btn btn-sm btn-clear-g"
-																					style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																					style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																			</div>
 																			<div class="sp-title">
 																				<h3>Game Of Thrones</h3>
@@ -1006,13 +1006,13 @@
 																		</a>
 																	</div>
 																</div>
-																<! --/col-md-4-->
+																<!--/col-md-4-->
 													</div><!-- /END 5TH ROW OF PANELS -->
 													<!-- Inserir aqui -->
 													<button class="collapsible">
 													</button>
 													<div class="contentVerMais" style="margin-left: 15px; margin-right: 17px;">
-														<! -- 5TH ROW OF PANELS -->
+														<!-- 5TH ROW OF PANELS -->
 															<div class="row">
 																<div class="col-md-4 col-sm-4 mb">
 																	<div class="content-panel pn">
@@ -1020,7 +1020,7 @@
 																			<div class="col-xs-4 col-xs-offset-8">
 																				<button class="btn btn-sm btn-clear-g"
 																					onclick="showPopup()"
-																					style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																					style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																			</div>
 																			<div class="sp-title">
 																				<h3>Breaking Bad</h3>
@@ -1042,7 +1042,7 @@
 																		</a>
 																	</div>
 																</div>
-																<! --/col-md-4-->
+																<!--/col-md-4-->
 
 																	<div class="col-lg-4 col-md-4 col-sm-4 mb">
 																		<div class="content-panel pn">
@@ -1050,7 +1050,7 @@
 																				<div class="col-xs-4 col-xs-offset-8">
 																					<button
 																						class="btn btn-sm btn-clear-g"
-																						style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																						style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																				</div>
 																				<div class="sp-title">
 																					<h3>Captain Marvel</h3>
@@ -1067,7 +1067,7 @@
 																			</a>
 																		</div>
 																	</div>
-																	<! --/col-md-4-->
+																	<!--/col-md-4-->
 
 																		<div class="col-md-4 col-sm-4 mb">
 																			<div class="content-panel pn">
@@ -1076,7 +1076,7 @@
 																						class="col-xs-4 col-xs-offset-8">
 																						<button
 																							class="btn btn-sm btn-clear-g"
-																							style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																							style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																					</div>
 																					<div class="sp-title">
 																						<h3>Game Of Thrones</h3>
@@ -1098,9 +1098,9 @@
 																				</a>
 																			</div>
 																		</div>
-																		<! --/col-md-4-->
+																		<!--/col-md-4-->
 															</div><!-- /END 5TH ROW OF PANELS -->
-															<! -- 5TH ROW OF PANELS -->
+															<!-- 5TH ROW OF PANELS -->
 																<div class="row">
 																	<div class="col-md-4 col-sm-4 mb">
 																		<div class="content-panel pn">
@@ -1109,7 +1109,7 @@
 																					<button
 																						class="btn btn-sm btn-clear-g"
 																						onclick="showPopup()"
-																						style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																						style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																				</div>
 																				<div class="sp-title">
 																					<h3>Breaking Bad</h3>
@@ -1131,7 +1131,7 @@
 																			</a>
 																		</div>
 																	</div>
-																	<! --/col-md-4-->
+																	<!--/col-md-4-->
 
 																		<div class="col-lg-4 col-md-4 col-sm-4 mb">
 																			<div class="content-panel pn">
@@ -1140,7 +1140,7 @@
 																						class="col-xs-4 col-xs-offset-8">
 																						<button
 																							class="btn btn-sm btn-clear-g"
-																							style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																							style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																					</div>
 																					<div class="sp-title">
 																						<h3>Captain Marvel</h3>
@@ -1157,7 +1157,7 @@
 																				</a>
 																			</div>
 																		</div>
-																		<! --/col-md-4-->
+																		<!--/col-md-4-->
 
 																			<div class="col-md-4 col-sm-4 mb">
 																				<div class="content-panel pn">
@@ -1166,7 +1166,7 @@
 																							class="col-xs-4 col-xs-offset-8">
 																							<button
 																								class="btn btn-sm btn-clear-g"
-																								style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																								style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																						</div>
 																						<div class="sp-title">
 																							<h3>Game Of Thrones</h3>
@@ -1188,7 +1188,7 @@
 																					</a>
 																				</div>
 																			</div>
-																			<! --/col-md-4-->
+																			<!--/col-md-4-->
 																</div><!-- /END 5TH ROW OF PANELS -->
 													</div><!-- col-lg-12-->
 										</div><!-- /row -->
@@ -1196,7 +1196,7 @@
 											<div class="col-lg-12">
 												<div class="form-panel">
 													<h2 class="mb"  id="mais-elogiados">Mais polémicos</h4>
-														<! -- 5TH ROW OF PANELS -->
+														<!-- 5TH ROW OF PANELS -->
 															<div class="row">
 																<div class="col-md-4 col-sm-4 mb">
 																	<div class="content-panel pn">
@@ -1204,7 +1204,7 @@
 																			<div class="col-xs-4 col-xs-offset-8">
 																				<button class="btn btn-sm btn-clear-g"
 																					onclick="showPopup()"
-																					style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																					style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																			</div>
 																			<div class="sp-title">
 																				<h3>Breaking Bad</h3>
@@ -1226,7 +1226,7 @@
 																		</a>
 																	</div>
 																</div>
-																<! --/col-md-4-->
+																<!--/col-md-4-->
 
 																	<div class="col-lg-4 col-md-4 col-sm-4 mb">
 																		<div class="content-panel pn">
@@ -1234,7 +1234,7 @@
 																				<div class="col-xs-4 col-xs-offset-8">
 																					<button
 																						class="btn btn-sm btn-clear-g"
-																						style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																						style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																				</div>
 																				<div class="sp-title">
 																					<h3>Captain Marvel</h3>
@@ -1251,7 +1251,7 @@
 																			</a>
 																		</div>
 																	</div>
-																	<! --/col-md-4-->
+																	<!--/col-md-4-->
 
 																		<div class="col-md-4 col-sm-4 mb">
 																			<div class="content-panel pn">
@@ -1260,7 +1260,7 @@
 																						class="col-xs-4 col-xs-offset-8">
 																						<button
 																							class="btn btn-sm btn-clear-g"
-																							style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																							style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																					</div>
 																					<div class="sp-title">
 																						<h3>Game Of Thrones</h3>
@@ -1282,7 +1282,7 @@
 																				</a>
 																			</div>
 																		</div>
-																		<! --/col-md-4-->
+																		<!--/col-md-4-->
 															</div><!-- /END 5TH ROW OF PANELS -->
 															<!-- Inserir aqui -->
 															<button class="collapsible">
@@ -1298,7 +1298,7 @@
 																						<button
 																							class="btn btn-sm btn-clear-g"
 																							onclick="showPopup()"
-																							style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																							style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																					</div>
 																					<div class="sp-title">
 																						<h3>Breaking Bad</h3>
@@ -1320,7 +1320,7 @@
 																				</a>
 																			</div>
 																		</div>
-																		<! --/col-md-4-->
+																		<!--/col-md-4-->
 
 																			<div class="col-lg-4 col-md-4 col-sm-4 mb">
 																				<div class="content-panel pn">
@@ -1329,7 +1329,7 @@
 																							class="col-xs-4 col-xs-offset-8">
 																							<button
 																								class="btn btn-sm btn-clear-g"
-																								style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																								style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																						</div>
 																						<div class="sp-title">
 																							<h3>Captain Marvel</h3>
@@ -1346,7 +1346,7 @@
 																					</a>
 																				</div>
 																			</div>
-																			<! --/col-md-4-->
+																			<!--/col-md-4-->
 
 																				<div class="col-md-4 col-sm-4 mb">
 																					<div class="content-panel pn">
@@ -1355,7 +1355,7 @@
 																								class="col-xs-4 col-xs-offset-8">
 																								<button
 																									class="btn btn-sm btn-clear-g"
-																									style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																									style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																							</div>
 																							<div class="sp-title">
 																								<h3>Game Of Thrones</h3>
@@ -1377,9 +1377,9 @@
 																						</a>
 																					</div>
 																				</div>
-																				<! --/col-md-4-->
+																				<!--/col-md-4-->
 																	</div><!-- /END 5TH ROW OF PANELS -->
-																	<! -- 5TH ROW OF PANELS -->
+																	<!-- 5TH ROW OF PANELS -->
 																		<div class="row">
 																			<div class="col-md-4 col-sm-4 mb">
 																				<div class="content-panel pn">
@@ -1389,7 +1389,7 @@
 																							<button
 																								class="btn btn-sm btn-clear-g"
 																								onclick="showPopup()"
-																								style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																								style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																						</div>
 																						<div class="sp-title">
 																							<h3>Breaking Bad</h3>
@@ -1411,7 +1411,7 @@
 																					</a>
 																				</div>
 																			</div>
-																			<! --/col-md-4-->
+																			<!--/col-md-4-->
 
 																				<div
 																					class="col-lg-4 col-md-4 col-sm-4 mb">
@@ -1421,7 +1421,7 @@
 																								class="col-xs-4 col-xs-offset-8">
 																								<button
 																									class="btn btn-sm btn-clear-g"
-																									style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																									style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																							</div>
 																							<div class="sp-title">
 																								<h3>Captain Marvel</h3>
@@ -1438,7 +1438,7 @@
 																						</a>
 																					</div>
 																				</div>
-																				<! --/col-md-4-->
+																				<!--/col-md-4-->
 
 																					<div class="col-md-4 col-sm-4 mb">
 																						<div class="content-panel pn">
@@ -1447,7 +1447,7 @@
 																									class="col-xs-4 col-xs-offset-8">
 																									<button
 																										class="btn btn-sm btn-clear-g"
-																										style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																										style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																								</div>
 																								<div class="sp-title">
 																									<h3>Game Of Thrones
@@ -1470,7 +1470,7 @@
 																							</a>
 																						</div>
 																					</div>
-																					<! --/col-md-4-->
+																					<!--/col-md-4-->
 																		</div><!-- /END 5TH ROW OF PANELS -->
 															</div><!-- col-lg-12-->
 												</div><!-- /row -->
@@ -1478,7 +1478,7 @@
 													<div class="col-lg-12">
 														<div class="form-panel">
 															<h2 class="mb">Mais elogiados</h4>
-																<! -- 5TH ROW OF PANELS -->
+																<!-- 5TH ROW OF PANELS -->
 																	<div class="row">
 																		<div class="col-md-4 col-sm-4 mb">
 																			<div class="content-panel pn">
@@ -1488,7 +1488,7 @@
 																						<button
 																							class="btn btn-sm btn-clear-g"
 																							onclick="showPopup()"
-																							style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																							style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																					</div>
 																					<div class="sp-title">
 																						<h3>Breaking Bad</h3>
@@ -1510,7 +1510,7 @@
 																				</a>
 																			</div>
 																		</div>
-																		<! --/col-md-4-->
+																		<!--/col-md-4-->
 
 																			<div class="col-lg-4 col-md-4 col-sm-4 mb">
 																				<div class="content-panel pn">
@@ -1519,7 +1519,7 @@
 																							class="col-xs-4 col-xs-offset-8">
 																							<button
 																								class="btn btn-sm btn-clear-g"
-																								style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																								style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																						</div>
 																						<div class="sp-title">
 																							<h3>Captain Marvel</h3>
@@ -1536,7 +1536,7 @@
 																					</a>
 																				</div>
 																			</div>
-																			<! --/col-md-4-->
+																			<!--/col-md-4-->
 
 																				<div class="col-md-4 col-sm-4 mb">
 																					<div class="content-panel pn">
@@ -1545,7 +1545,7 @@
 																								class="col-xs-4 col-xs-offset-8">
 																								<button
 																									class="btn btn-sm btn-clear-g"
-																									style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																									style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																							</div>
 																							<div class="sp-title">
 																								<h3>Game Of Thrones</h3>
@@ -1567,13 +1567,13 @@
 																						</a>
 																					</div>
 																				</div>
-																				<! --/col-md-4-->
+																				<!--/col-md-4-->
 																	</div><!-- /END 5TH ROW OF PANELS -->
 																	<!-- Inserir aqui -->
 																	<button class="collapsible">
 																	</button>
 																	<div class="contentVerMais" style="margin-left: 15px; margin-right: 17px;">
-																		<! -- 5TH ROW OF PANELS -->
+																		<!-- 5TH ROW OF PANELS -->
 																			<div class="row">
 																				<div class="col-md-4 col-sm-4 mb">
 																					<div class="content-panel pn">
@@ -1583,7 +1583,7 @@
 																								<button
 																									class="btn btn-sm btn-clear-g"
 																									onclick="showPopup()"
-																									style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																									style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																							</div>
 																							<div class="sp-title">
 																								<h3>Breaking Bad</h3>
@@ -1605,7 +1605,7 @@
 																						</a>
 																					</div>
 																				</div>
-																				<! --/col-md-4-->
+																				<!--/col-md-4-->
 
 																					<div
 																						class="col-lg-4 col-md-4 col-sm-4 mb">
@@ -1615,7 +1615,7 @@
 																									class="col-xs-4 col-xs-offset-8">
 																									<button
 																										class="btn btn-sm btn-clear-g"
-																										style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																										style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																								</div>
 																								<div class="sp-title">
 																									<h3>Captain Marvel
@@ -1633,7 +1633,7 @@
 																							</a>
 																						</div>
 																					</div>
-																					<! --/col-md-4-->
+																					<!--/col-md-4-->
 
 																						<div
 																							class="col-md-4 col-sm-4 mb">
@@ -1644,7 +1644,7 @@
 																										class="col-xs-4 col-xs-offset-8">
 																										<button
 																											class="btn btn-sm btn-clear-g"
-																											style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																											style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																									</div>
 																									<div
 																										class="sp-title">
@@ -1669,9 +1669,9 @@
 																								</a>
 																							</div>
 																						</div>
-																						<! --/col-md-4-->
+																						<!--/col-md-4-->
 																			</div><!-- /END 5TH ROW OF PANELS -->
-																			<! -- 5TH ROW OF PANELS -->
+																			<!-- 5TH ROW OF PANELS -->
 																				<div class="row">
 																					<div class="col-md-4 col-sm-4 mb">
 																						<div class="content-panel pn">
@@ -1681,7 +1681,7 @@
 																									<button
 																										class="btn btn-sm btn-clear-g"
 																										onclick="showPopup()"
-																										style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																										style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																								</div>
 																								<div class="sp-title">
 																									<h3>Breaking Bad
@@ -1704,7 +1704,7 @@
 																							</a>
 																						</div>
 																					</div>
-																					<! --/col-md-4-->
+																					<!--/col-md-4-->
 
 																						<div
 																							class="col-lg-4 col-md-4 col-sm-4 mb">
@@ -1715,7 +1715,7 @@
 																										class="col-xs-4 col-xs-offset-8">
 																										<button
 																											class="btn btn-sm btn-clear-g"
-																											style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																											style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																									</div>
 																									<div
 																										class="sp-title">
@@ -1735,7 +1735,7 @@
 																								</a>
 																							</div>
 																						</div>
-																						<! --/col-md-4-->
+																						<!--/col-md-4-->
 
 																							<div
 																								class="col-md-4 col-sm-4 mb">
@@ -1746,7 +1746,7 @@
 																											class="col-xs-4 col-xs-offset-8">
 																											<button
 																												class="btn btn-sm btn-clear-g"
-																												style="color:Black; background-color: rgba(255, 255, 255, 10);">ADICIONAR</button>
+																												style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																										</div>
 																										<div
 																											class="sp-title">
@@ -1773,12 +1773,12 @@
 																									</a>
 																								</div>
 																							</div>
-																							<! --/col-md-4-->
+																							<!--/col-md-4-->
 																				</div><!-- /END 5TH ROW OF PANELS -->
 																	</div><!-- col-lg-12-->
 														</div><!-- /row -->
 			</section>
-			<! --/wrapper -->
+			<!--/wrapper -->
 		</section><!-- /MAIN CONTENT -->
 
 		<!--main content end-->
