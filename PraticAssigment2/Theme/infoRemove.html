@@ -110,6 +110,19 @@
         .sidebar-search .search-btn:hover i {
             color: #333;
         }
+        .popupComment {
+            display: none;
+            position: fixed;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #3f3f3f;
+            color: #FFFFFF;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            z-index: 9999;
+        }
       </style>
 </head>
 
@@ -449,7 +462,7 @@
                             <u class="estilosSeriesFilmes" style="color: darkgreen; margin-left: 10%">Psicológico</u>
                         </div>
                         <div style="margin-left: 7%; margin-right: 7%">    
-                            <h2>Descrição:</h2><span style="font-size: 16.5px;">Breaking Bad é uma série de televisão
+                            <h3>Descrição:</h3><span style="font-size: 14px;">Breaking Bad é uma série de televisão
                                 americana criada e produzida por Vince Gilligan. Ela retrata a vida do químico Walter
                                 White, um homem brilhante frustrado em dar aulas para adolescentes do ensino médio
                                 enquanto lida com um filho sofrendo de paralisia cerebral, uma esposa grávida e dívidas
@@ -457,13 +470,20 @@
                                 sofrer um colapso emocional e abraçar uma vida de crimes para pagar suas dívidas
                                 hospitalares e dar uma boa vida aos seus filhos. Walter resolve produzir metanfetamina
                                 de alta pureza com seu ex-aluno, Jesse Pinkman.</span>
-                            <h2 style="margin-top: 50px;">Avaliações e Comentários:</h2>
-                            <textarea style="width: 100%; height: 100px; margin-top: 10px;" placeholder="Escreva o seu comentário..."></textarea>
-                            <span class="fa fa-star ratingStars" style="right: 9%"></span>
-                            <span class="fa fa-star ratingStars" style="right: 11%"></span>
-                            <span class="fa fa-star ratingStars" style="right: 13%"></span>
-                            <span class="fa fa-star ratingStars" style="right: 15%"></span>
-                            <span class="fa fa-star ratingStars" style="right: 17%"></span>
+                            <h3 style="margin-top: 50px;">Avaliações e Comentários:</h3>
+                            <div style="position: relative;">
+                                <textarea id="commentTextarea" style="width: 100%; height: 100px; margin-top: 10px; padding: 10px;" placeholder="Escreva o seu comentário..."></textarea>
+                                <span class="fa fa-star ratingStars" style="right: 10px;"></span>
+                                <span class="fa fa-star ratingStars" style="right: 30px;"></span>
+                                <span class="fa fa-star ratingStars" style="right: 50px;"></span>
+                                <span class="fa fa-star ratingStars" style="right: 70px;"></span>
+                                <span class="fa fa-star ratingStars" style="right: 90px;"></span>
+                                <span id="sendIcon" class="fa fa-paper-plane sendIcon" style="color: blue; position: absolute; bottom: 20px; right: 20px; font-size: 16px; font-weight: bold; cursor:pointer;"></span>
+                                
+                                <div id="warning" style="position:absolute; left:10px;bottom: 10px; color: red; display: none; ">Por favor, escreva algo antes de enviar. Atenção ao spoiler!</div>
+                            </div>
+                            <div id="popupComment" class="popupComment">O seu comentário foi enviado!</div>
+                              
                         </div>
                         <button type="submit" class="btn btn-theme" style="position:relative; left:1490px;">Enviar</button>
                         <p></p>
@@ -538,13 +558,81 @@
     <!--script for this page-->
 
     <script>
-        //custom select box
+        const stars = document.querySelectorAll('.ratingStars');
 
-        $(function () {
-            $('select.styled').customSelect();
-        });
+stars.forEach((star, index) => {
+star.addEventListener('click', () => {
+    // Adicionar classe 'selected' às estrelas da esquerda para a estrela clicada
+    for (let i = stars.length - 1; i >= index; i--) {
+        stars[i].classList.add('selected');
+    }
 
-    </script>
+    // Remover classe 'selected' das estrelas à esquerda da estrela clicada
+    for (let i = index - 1; i >= 0; i--) {
+        stars[i].classList.remove('selected');
+    }
+});
+
+star.addEventListener('mouseover', () => {
+    // Adicionar classe 'hover' às estrelas da esquerda para a estrela atual
+    for (let i = stars.length - 1; i >= index; i--) {
+        stars[i].classList.add('hover');
+    }
+
+    // Remover classe 'hover' das estrelas à esquerda da estrela atual
+    for (let i = index - 1; i >= 0; i--) {
+        stars[i].classList.remove('hover');
+    }
+});
+
+star.addEventListener('mouseout', () => {
+    // Remover classe 'hover' de todas as estrelas
+    stars.forEach(star => {
+        star.classList.remove('hover');
+    });
+});
+});
+// -------------------------------------------
+$(function () {
+        $('select.styled').customSelect();
+    });
+// ----------------------------------------------
+$(document).ready(function() {
+  $('#commentTextarea').on('input', function() {
+    var padding = 10; // Ajuste o valor do padding conforme necessário
+    $(this).css('padding', padding + 'px');
+    $(this).scrollTop(0).scrollTop(padding); // Para garantir que o texto comece no topo do textarea
+  });
+});
+// ---------------------------------------
+document.getElementById('sendIcon').addEventListener('click', function() {
+    var textarea = document.getElementById('commentTextarea');
+    var comment = textarea.value.trim(); // Obter o valor do textarea e remover espaços em branco no início e no final
+
+    if (comment !== '') {
+    textarea.value = ''; // Limpa o valor do textarea
+    // Limpar as estrelas selecionadas
+    stars.forEach(star => {
+        star.classList.remove('selected');
+    });
+
+
+    var popup = document.getElementById('popupComment');
+    popup.style.display = 'block';
+
+    setTimeout(function() {
+        popup.style.display = 'none';
+    }, 2000);
+    } else {
+    var warning = document.getElementById('warning');
+    warning.style.display = 'block';
+
+    setTimeout(function() {
+        warning.style.display = 'none';
+    }, 3000);
+    }
+});
+</script>
 
 </body>
 
