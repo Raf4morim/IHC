@@ -368,7 +368,7 @@
         <!--main content start-->
         <section id="main-content">
 
-            <!-- Pop up ao adicionar série -->
+            <!-- Pop up ao GUARDAR série -->
 			<div id="popup">
                 <div id="popup-inner">
                     <h4>De certeza que deseja remover a série da sua lista de guardados?</h4>
@@ -512,7 +512,7 @@
 
 stars.forEach((star, index) => {
 star.addEventListener('click', () => {
-    // Adicionar classe 'selected' às estrelas da esquerda para a estrela clicada
+    // GUARDAR classe 'selected' às estrelas da esquerda para a estrela clicada
     for (let i = stars.length - 1; i >= index; i--) {
         stars[i].classList.add('selected');
     }
@@ -524,7 +524,7 @@ star.addEventListener('click', () => {
 });
 
 star.addEventListener('mouseover', () => {
-    // Adicionar classe 'hover' às estrelas da esquerda para a estrela atual
+    // GUARDAR classe 'hover' às estrelas da esquerda para a estrela atual
     for (let i = stars.length - 1; i >= index; i--) {
         stars[i].classList.add('hover');
     }
