@@ -21,19 +21,19 @@
     <link href="assets/css/style-responsive.css" rel="stylesheet">
     <script>
         function showPopup() {
-          var popup = document.getElementById("popup");
-          popup.style.display = "block";
-          setTimeout(hidePopup, 3000); // Hide the popup after 3 seconds (3000 milliseconds)
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+            setTimeout(hidePopup, 3000); // Hide the popup after 3 seconds (3000 milliseconds)
         }
-      
+
         function hidePopup() {
-          var popup = document.getElementById("popup");
-          popup.style.display = "none";
-          window.location.href = "saved.html"; // Redirect to saved.html
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+            window.location.href = "saved.html"; // Redirect to saved.html
         }
-      </script>
-      
-      <style type="text/css">
+    </script>
+
+    <style type="text/css">
         .sidebar-search {
             margin-top: 20px;
             margin-bottom: 20px;
@@ -83,16 +83,16 @@
         .sidebar-search .search-btn:hover i {
             color: #333;
         }
-        
-        .sub-menu {
-			list-style-type: none;
-		}
 
-         :target {
-			margin-top: -70px;
-			padding-top: 70px;
-		}
-      </style>
+        .sub-menu {
+            list-style-type: none;
+        }
+
+        :target {
+            margin-top: -70px;
+            padding-top: 70px;
+        }
+    </style>
 </head>
 
 <body>
@@ -108,7 +108,8 @@
             </div>
             <!--logo start-->
             <a href="index.html" class="logo">
-                <b style="color: rgb(230, 185, 2);left:50%; transform: translateX(-50%);">MOVIE TRACKER&nbsp;&nbsp;&nbsp;</b>
+                <b style="color: rgb(230, 185, 2);left:50%; transform: translateX(-50%);">MOVIE
+                    TRACKER&nbsp;&nbsp;&nbsp;</b>
                 <i class="fa fa-film"
                     style="color:rgb(230, 185, 2); rotate: 30deg; font-size: 30px; transform: scaleX(0.8);"></i>
             </a>
@@ -178,7 +179,8 @@
                                     </div>
                                     <div class="progress progress-striped">
                                         <div class="progress-bar progress-bar-danger" role="progressbar"
-                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 100%">
                                             <span class="sr-only">70% Complete (Important)</span>
                                         </div>
                                     </div>
@@ -324,7 +326,7 @@
                             <span>Explorar</span>
                             <i class="fa fa-angle-up angle-icon" style="position: absolute; right: 10px"></i>
                         </a>
-                         <ul class="sub">
+                        <ul class="sub">
                             <li><a href="explorar.html#pesq">Pesquisa</a></li>
                             <li><a href="explorar.html#mais-vistos">Mais Vistos</a></li>
                             <li><a href="explorar.html#favoritos">Favoritos</a></li>
@@ -379,7 +381,8 @@
                         <li class="sub-menu" style="position: relative; left:10px; text-decoration: none; width: 50%;">
                             <form id="search-form" class="sidebar-search" action="resultsSearchNews.html" method="get">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Pesquisar por Séries, Notícias, Géneros, etc" name="search">
+                                    <input type="text" class="form-control"
+                                        placeholder="Pesquisar por Séries, Notícias, Géneros, etc" name="search">
                                     <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
                                 </div>
                             </form>
@@ -431,253 +434,237 @@
                                     </button>
                                     <div class="contentVerMais" style="margin-left: 15px; margin-right: 17px;">
                                         <!-- 1st ROW OF PANELS -->
-                                            <div class="row">
-                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                    <div class="content-panel pn">
-                                                        <div id="gosler">
-                                                            <div class="col-xs-4 col-xs-offset-8">
-                                                                <button class="btn btn-sm btn-clear-g"
-                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                            </div>
-                                                            <div class="sp-title">
-                                                                <h3>A nova parceira de Ryan Gosling não é quem você
-                                                                    acha. </h3>
-                                                            </div>
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="gosler">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                    <div class="content-panel pn">
-                                                        <div id="majimi">
-                                                            <div class="col-xs-4 col-xs-offset-8">
-                                                                <button class="btn btn-sm btn-clear-g"
-                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                            </div>
-                                                            <div class="sp-title">
-                                                                <h3>Majimi confirmado para Bullet Train 2</h3>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                    <div class="content-panel pn">
-                                                        <div id="majimi">
-                                                            <div class="col-xs-4 col-xs-offset-8">
-                                                                <button class="btn btn-sm btn-clear-g"
-                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                            </div>
-                                                            <div class="sp-title">
-                                                                <h3>Majimi confirmado para Bullet Train 2</h3>
-                                                            </div>
+                                                        <div class="sp-title">
+                                                            <h3>A nova parceira de Ryan Gosling não é quem você
+                                                                acha. </h3>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!--/row -->
-                                                <!-- 1st ROW OF PANELS -->
-                                                    <div class="row">
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                            <div class="content-panel pn">
-                                                                <div id="gosler">
-                                                                    <div class="col-xs-4 col-xs-offset-8">
-                                                                        <button class="btn btn-sm btn-clear-g"
-                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                    </div>
-                                                                    <div class="sp-title">
-                                                                        <h3>A nova parceira de Ryan Gosling não é quem
-                                                                            você acha. </h3>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                            <div class="content-panel pn">
-                                                                <div id="majimi">
-                                                                    <div class="col-xs-4 col-xs-offset-8">
-                                                                        <button class="btn btn-sm btn-clear-g"
-                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                    </div>
-                                                                    <div class="sp-title">
-                                                                        <h3>Majimi confirmado para Bullet Train 2</h3>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                            <div class="content-panel pn">
-                                                                <div id="majimi">
-                                                                    <div class="col-xs-4 col-xs-offset-8">
-                                                                        <button class="btn btn-sm btn-clear-g"
-                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                    </div>
-                                                                    <div class="sp-title">
-                                                                        <h3>Majimi confirmado para Bullet Train 2</h3>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para Bullet Train 2</h3>
                                                         </div>
                                                     </div>
-                                                    <!--/row -->
-                                                        <!-- 2nd ROW OF PANELS -->
-                                                            <div class="row">
-                                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                    <div class="content-panel pn">
-                                                                        <div id="gosler">
-                                                                            <div class="col-xs-4 col-xs-offset-8">
-                                                                                <button class="btn btn-sm btn-clear-g"
-                                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                            </div>
-                                                                            <div class="sp-title">
-                                                                                <h3>A nova parceira de Ryan Gosling não
-                                                                                    é quem você acha. </h3>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                    <div class="content-panel pn">
-                                                                        <div id="wicker">
-                                                                            <a href="newsinfo.html">
-                                                                                <div class="col-xs-4 col-xs-offset-8">
-                                                                                    <button
-                                                                                        class="btn btn-sm btn-clear-g"
-                                                                                        style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                </div>
-                                                                            </a>
-                                                                            <div class="sp-title">
-                                                                                <h3>Esta nova fragância vai te deixar irresitível</h3>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                    <div class="content-panel pn">
-                                                                        <div id="majimi">
-                                                                            <div class="col-xs-4 col-xs-offset-8">
-                                                                                <button class="btn btn-sm btn-clear-g"
-                                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                            </div>
-                                                                            <div class="sp-title">
-                                                                                <h3>Majimi confirmado para Bullet Train
-                                                                                    2</h3>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para Bullet Train 2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/row -->
+                                        <!-- 1st ROW OF PANELS -->
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="gosler">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>A nova parceira de Ryan Gosling não é quem
+                                                                você acha. </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para Bullet Train 2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para Bullet Train 2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/row -->
+                                        <!-- 2nd ROW OF PANELS -->
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="gosler">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>A nova parceira de Ryan Gosling não
+                                                                é quem você acha. </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="wicker">
+                                                        <a href="newsinfo.html">
+                                                            <div class="col-xs-4 col-xs-offset-8">
+                                                                <button class="btn btn-sm btn-clear-g"
+                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
                                                             </div>
-                                                            <!--/row -->
-                                                                <!-- 3rd ROW OF PANELS -->
-                                                                    <div class="row">
-                                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                            <div class="content-panel pn">
-                                                                                <div id="gosler">
-                                                                                    <div
-                                                                                        class="col-xs-4 col-xs-offset-8">
-                                                                                        <button
-                                                                                            class="btn btn-sm btn-clear-g"
-                                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                    </div>
-                                                                                    <div class="sp-title">
-                                                                                        <h3>A nova parceira de Ryan
-                                                                                            Gosling não é quem você
-                                                                                            acha. </h3>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                            <div class="content-panel pn">
-                                                                                <div id="majimi">
-                                                                                    <div
-                                                                                        class="col-xs-4 col-xs-offset-8">
-                                                                                        <button
-                                                                                            class="btn btn-sm btn-clear-g"
-                                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                    </div>
-                                                                                    <div class="sp-title">
-                                                                                        <h3>Majimi confirmado para
-                                                                                            Bullet Train 2</h3>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                            <div class="content-panel pn">
-                                                                                <div id="majimi">
-                                                                                    <div
-                                                                                        class="col-xs-4 col-xs-offset-8">
-                                                                                        <button
-                                                                                            class="btn btn-sm btn-clear-g"
-                                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                    </div>
-                                                                                    <div class="sp-title">
-                                                                                        <h3>Majimi confirmado para
-                                                                                            Bullet Train 2</h3>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--/row -->
-                                                                        <!-- 4th ROW OF PANELS -->
-                                                                            <div class="row">
-                                                                                <div
-                                                                                    class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                                    <div class="content-panel pn">
-                                                                                        <div id="gosler">
-                                                                                            <div
-                                                                                                class="col-xs-4 col-xs-offset-8">
-                                                                                                <button
-                                                                                                    class="btn btn-sm btn-clear-g"
-                                                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                            </div>
-                                                                                            <div class="sp-title">
-                                                                                                <h3>A nova parceira de
-                                                                                                    Ryan Gosling não é
-                                                                                                    quem você acha.
-                                                                                                </h3>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                                    <div class="content-panel pn">
-                                                                                        <div id="majimi">
-                                                                                            <div
-                                                                                                class="col-xs-4 col-xs-offset-8">
-                                                                                                <button
-                                                                                                    class="btn btn-sm btn-clear-g"
-                                                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                            </div>
-                                                                                            <div class="sp-title">
-                                                                                                <h3>Majimi confirmado
-                                                                                                    para Bullet Train 2
-                                                                                                </h3>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                                    <div class="content-panel pn">
-                                                                                        <div id="majimi">
-                                                                                            <div
-                                                                                                class="col-xs-4 col-xs-offset-8">
-                                                                                                <button
-                                                                                                    class="btn btn-sm btn-clear-g"
-                                                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                            </div>
-                                                                                            <div class="sp-title">
-                                                                                                <h3>Majimi confirmado
-                                                                                                    para Bullet Train 2
-                                                                                                </h3>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <!--/row -->
+                                                        </a>
+                                                        <div class="sp-title">
+                                                            <h3>Esta nova fragância vai te deixar irresitível</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para Bullet Train
+                                                                2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/row -->
+                                        <!-- 3rd ROW OF PANELS -->
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="gosler">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>A nova parceira de Ryan
+                                                                Gosling não é quem você
+                                                                acha. </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para
+                                                                Bullet Train 2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para
+                                                                Bullet Train 2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/row -->
+                                        <!-- 4th ROW OF PANELS -->
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="gosler">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>A nova parceira de
+                                                                Ryan Gosling não é
+                                                                quem você acha.
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado
+                                                                para Bullet Train 2
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado
+                                                                para Bullet Train 2
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/row -->
                                     </div>
 
                                 </div>
@@ -733,254 +720,238 @@
                                     </button>
                                     <div class="contentVerMais" style="margin-left: 15px; margin-right: 17px;">
                                         <!-- 1st ROW OF PANELS -->
-                                            <div class="row">
-                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                    <div class="content-panel pn">
-                                                        <div id="gosler">
-                                                            <div class="col-xs-4 col-xs-offset-8">
-                                                                <button class="btn btn-sm btn-clear-g"
-                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                            </div>
-                                                            <div class="sp-title">
-                                                                <h3>A nova parceira de Ryan Gosling não é quem você
-                                                                    acha. </h3>
-                                                            </div>
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="gosler">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                    <div class="content-panel pn">
-                                                        <div id="majimi">
-                                                            <div class="col-xs-4 col-xs-offset-8">
-                                                                <button class="btn btn-sm btn-clear-g"
-                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                            </div>
-                                                            <div class="sp-title">
-                                                                <h3>Majimi confirmado para Bullet Train 2</h3>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                    <div class="content-panel pn">
-                                                        <div id="majimi">
-                                                            <div class="col-xs-4 col-xs-offset-8">
-                                                                <button class="btn btn-sm btn-clear-g"
-                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                            </div>
-                                                            <div class="sp-title">
-                                                                <h3>Majimi confirmado para Bullet Train 2</h3>
-                                                            </div>
+                                                        <div class="sp-title">
+                                                            <h3>A nova parceira de Ryan Gosling não é quem você
+                                                                acha. </h3>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!--/row -->
-                                                <!-- 1st ROW OF PANELS -->
-                                                    <div class="row">
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                            <div class="content-panel pn">
-                                                                <div id="gosler">
-                                                                    <div class="col-xs-4 col-xs-offset-8">
-                                                                        <button class="btn btn-sm btn-clear-g"
-                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                    </div>
-                                                                    <div class="sp-title">
-                                                                        <h3>A nova parceira de Ryan Gosling não é quem
-                                                                            você acha. </h3>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                            <div class="content-panel pn">
-                                                                <div id="majimi">
-                                                                    <div class="col-xs-4 col-xs-offset-8">
-                                                                        <button class="btn btn-sm btn-clear-g"
-                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                    </div>
-                                                                    <div class="sp-title">
-                                                                        <h3>Majimi confirmado para Bullet Train 2</h3>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                            <div class="content-panel pn">
-                                                                <div id="majimi">
-                                                                    <div class="col-xs-4 col-xs-offset-8">
-                                                                        <button class="btn btn-sm btn-clear-g"
-                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                    </div>
-                                                                    <div class="sp-title">
-                                                                        <h3>Majimi confirmado para Bullet Train 2</h3>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para Bullet Train 2</h3>
                                                         </div>
                                                     </div>
-                                                    <!--/row -->
-                                                        <!-- 2nd ROW OF PANELS -->
-                                                            <div class="row">
-                                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                    <div class="content-panel pn">
-                                                                        <div id="gosler">
-                                                                            <div class="col-xs-4 col-xs-offset-8">
-                                                                                <button class="btn btn-sm btn-clear-g"
-                                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                            </div>
-                                                                            <div class="sp-title">
-                                                                                <h3>A nova parceira de Ryan Gosling não
-                                                                                    é quem você acha. </h3>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                    <div class="content-panel pn">
-                                                                        <div id="wicker">
-                                                                            <a href="newsinfo.html">
-                                                                                <div class="col-xs-4 col-xs-offset-8">
-                                                                                    <button
-                                                                                        class="btn btn-sm btn-clear-g"
-                                                                                        style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                </div>
-                                                                            </a>
-                                                                            <div class="sp-title">
-                                                                                <h3>Esta nova fragância vai te deixar
-                                                                                    irresitível</h3>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                    <div class="content-panel pn">
-                                                                        <div id="majimi">
-                                                                            <div class="col-xs-4 col-xs-offset-8">
-                                                                                <button class="btn btn-sm btn-clear-g"
-                                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                            </div>
-                                                                            <div class="sp-title">
-                                                                                <h3>Majimi confirmado para Bullet Train
-                                                                                    2</h3>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para Bullet Train 2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/row -->
+                                        <!-- 1st ROW OF PANELS -->
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="gosler">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>A nova parceira de Ryan Gosling não é quem
+                                                                você acha. </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para Bullet Train 2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para Bullet Train 2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/row -->
+                                        <!-- 2nd ROW OF PANELS -->
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="gosler">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>A nova parceira de Ryan Gosling não
+                                                                é quem você acha. </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="wicker">
+                                                        <a href="newsinfo.html">
+                                                            <div class="col-xs-4 col-xs-offset-8">
+                                                                <button class="btn btn-sm btn-clear-g"
+                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
                                                             </div>
-                                                            <!--/row -->
-                                                                <!-- 3rd ROW OF PANELS -->
-                                                                    <div class="row">
-                                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                            <div class="content-panel pn">
-                                                                                <div id="gosler">
-                                                                                    <div
-                                                                                        class="col-xs-4 col-xs-offset-8">
-                                                                                        <button
-                                                                                            class="btn btn-sm btn-clear-g"
-                                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                    </div>
-                                                                                    <div class="sp-title">
-                                                                                        <h3>A nova parceira de Ryan
-                                                                                            Gosling não é quem você
-                                                                                            acha. </h3>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                            <div class="content-panel pn">
-                                                                                <div id="majimi">
-                                                                                    <div
-                                                                                        class="col-xs-4 col-xs-offset-8">
-                                                                                        <button
-                                                                                            class="btn btn-sm btn-clear-g"
-                                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                    </div>
-                                                                                    <div class="sp-title">
-                                                                                        <h3>Majimi confirmado para
-                                                                                            Bullet Train 2</h3>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                            <div class="content-panel pn">
-                                                                                <div id="majimi">
-                                                                                    <div
-                                                                                        class="col-xs-4 col-xs-offset-8">
-                                                                                        <button
-                                                                                            class="btn btn-sm btn-clear-g"
-                                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                    </div>
-                                                                                    <div class="sp-title">
-                                                                                        <h3>Majimi confirmado para
-                                                                                            Bullet Train 2</h3>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--/row -->
-                                                                        <!-- 4th ROW OF PANELS -->
-                                                                            <div class="row">
-                                                                                <div
-                                                                                    class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                                    <div class="content-panel pn">
-                                                                                        <div id="gosler">
-                                                                                            <div
-                                                                                                class="col-xs-4 col-xs-offset-8">
-                                                                                                <button
-                                                                                                    class="btn btn-sm btn-clear-g"
-                                                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                            </div>
-                                                                                            <div class="sp-title">
-                                                                                                <h3>A nova parceira de
-                                                                                                    Ryan Gosling não é
-                                                                                                    quem você acha.
-                                                                                                </h3>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                                    <div class="content-panel pn">
-                                                                                        <div id="majimi">
-                                                                                            <div
-                                                                                                class="col-xs-4 col-xs-offset-8">
-                                                                                                <button
-                                                                                                    class="btn btn-sm btn-clear-g"
-                                                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                            </div>
-                                                                                            <div class="sp-title">
-                                                                                                <h3>Majimi confirmado
-                                                                                                    para Bullet Train 2
-                                                                                                </h3>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                                    <div class="content-panel pn">
-                                                                                        <div id="majimi">
-                                                                                            <div
-                                                                                                class="col-xs-4 col-xs-offset-8">
-                                                                                                <button
-                                                                                                    class="btn btn-sm btn-clear-g"
-                                                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                            </div>
-                                                                                            <div class="sp-title">
-                                                                                                <h3>Majimi confirmado
-                                                                                                    para Bullet Train 2
-                                                                                                </h3>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <!--/row -->
+                                                        </a>
+                                                        <div class="sp-title">
+                                                            <h3>Esta nova fragância vai te deixar
+                                                                irresitível</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para Bullet Train
+                                                                2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/row -->
+                                        <!-- 3rd ROW OF PANELS -->
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="gosler">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>A nova parceira de Ryan
+                                                                Gosling não é quem você
+                                                                acha. </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para
+                                                                Bullet Train 2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para
+                                                                Bullet Train 2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/row -->
+                                        <!-- 4th ROW OF PANELS -->
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="gosler">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>A nova parceira de
+                                                                Ryan Gosling não é
+                                                                quem você acha.
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado
+                                                                para Bullet Train 2
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado
+                                                                para Bullet Train 2
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/row -->
                                     </div>
 
                                 </div>
@@ -1036,254 +1007,238 @@
                                     </button>
                                     <div class="contentVerMais" style="margin-left: 15px; margin-right: 17px;">
                                         <!-- 1st ROW OF PANELS -->
-                                            <div class="row">
-                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                    <div class="content-panel pn">
-                                                        <div id="gosler">
-                                                            <div class="col-xs-4 col-xs-offset-8">
-                                                                <button class="btn btn-sm btn-clear-g"
-                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                            </div>
-                                                            <div class="sp-title">
-                                                                <h3>A nova parceira de Ryan Gosling não é quem você
-                                                                    acha. </h3>
-                                                            </div>
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="gosler">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                    <div class="content-panel pn">
-                                                        <div id="majimi">
-                                                            <div class="col-xs-4 col-xs-offset-8">
-                                                                <button class="btn btn-sm btn-clear-g"
-                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                            </div>
-                                                            <div class="sp-title">
-                                                                <h3>Majimi confirmado para Bullet Train 2</h3>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                    <div class="content-panel pn">
-                                                        <div id="majimi">
-                                                            <div class="col-xs-4 col-xs-offset-8">
-                                                                <button class="btn btn-sm btn-clear-g"
-                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                            </div>
-                                                            <div class="sp-title">
-                                                                <h3>Majimi confirmado para Bullet Train 2</h3>
-                                                            </div>
+                                                        <div class="sp-title">
+                                                            <h3>A nova parceira de Ryan Gosling não é quem você
+                                                                acha. </h3>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!--/row -->
-                                                <!-- 1st ROW OF PANELS -->
-                                                    <div class="row">
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                            <div class="content-panel pn">
-                                                                <div id="gosler">
-                                                                    <div class="col-xs-4 col-xs-offset-8">
-                                                                        <button class="btn btn-sm btn-clear-g"
-                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                    </div>
-                                                                    <div class="sp-title">
-                                                                        <h3>A nova parceira de Ryan Gosling não é quem
-                                                                            você acha. </h3>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                            <div class="content-panel pn">
-                                                                <div id="majimi">
-                                                                    <div class="col-xs-4 col-xs-offset-8">
-                                                                        <button class="btn btn-sm btn-clear-g"
-                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                    </div>
-                                                                    <div class="sp-title">
-                                                                        <h3>Majimi confirmado para Bullet Train 2</h3>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                            <div class="content-panel pn">
-                                                                <div id="majimi">
-                                                                    <div class="col-xs-4 col-xs-offset-8">
-                                                                        <button class="btn btn-sm btn-clear-g"
-                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                    </div>
-                                                                    <div class="sp-title">
-                                                                        <h3>Majimi confirmado para Bullet Train 2</h3>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para Bullet Train 2</h3>
                                                         </div>
                                                     </div>
-                                                    <!--/row -->
-                                                        <!-- 2nd ROW OF PANELS -->
-                                                            <div class="row">
-                                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                    <div class="content-panel pn">
-                                                                        <div id="gosler">
-                                                                            <div class="col-xs-4 col-xs-offset-8">
-                                                                                <button class="btn btn-sm btn-clear-g"
-                                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                            </div>
-                                                                            <div class="sp-title">
-                                                                                <h3>A nova parceira de Ryan Gosling não
-                                                                                    é quem você acha. </h3>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                    <div class="content-panel pn">
-                                                                        <div id="wicker">
-                                                                            <a href="newsinfo.html">
-                                                                                <div class="col-xs-4 col-xs-offset-8">
-                                                                                    <button
-                                                                                        class="btn btn-sm btn-clear-g"
-                                                                                        style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                </div>
-                                                                            </a>
-                                                                            <div class="sp-title">
-                                                                                <h3>Esta nova fragância vai te deixar
-                                                                                    irresitível</h3>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                    <div class="content-panel pn">
-                                                                        <div id="majimi">
-                                                                            <div class="col-xs-4 col-xs-offset-8">
-                                                                                <button class="btn btn-sm btn-clear-g"
-                                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                            </div>
-                                                                            <div class="sp-title">
-                                                                                <h3>Majimi confirmado para Bullet Train
-                                                                                    2</h3>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para Bullet Train 2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/row -->
+                                        <!-- 1st ROW OF PANELS -->
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="gosler">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>A nova parceira de Ryan Gosling não é quem
+                                                                você acha. </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para Bullet Train 2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para Bullet Train 2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/row -->
+                                        <!-- 2nd ROW OF PANELS -->
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="gosler">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>A nova parceira de Ryan Gosling não
+                                                                é quem você acha. </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="wicker">
+                                                        <a href="newsinfo.html">
+                                                            <div class="col-xs-4 col-xs-offset-8">
+                                                                <button class="btn btn-sm btn-clear-g"
+                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
                                                             </div>
-                                                            <!--/row -->
-                                                                <!-- 3rd ROW OF PANELS -->
-                                                                    <div class="row">
-                                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                            <div class="content-panel pn">
-                                                                                <div id="gosler">
-                                                                                    <div
-                                                                                        class="col-xs-4 col-xs-offset-8">
-                                                                                        <button
-                                                                                            class="btn btn-sm btn-clear-g"
-                                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                    </div>
-                                                                                    <div class="sp-title">
-                                                                                        <h3>A nova parceira de Ryan
-                                                                                            Gosling não é quem você
-                                                                                            acha. </h3>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                            <div class="content-panel pn">
-                                                                                <div id="majimi">
-                                                                                    <div
-                                                                                        class="col-xs-4 col-xs-offset-8">
-                                                                                        <button
-                                                                                            class="btn btn-sm btn-clear-g"
-                                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                    </div>
-                                                                                    <div class="sp-title">
-                                                                                        <h3>Majimi confirmado para
-                                                                                            Bullet Train 2</h3>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                            <div class="content-panel pn">
-                                                                                <div id="majimi">
-                                                                                    <div
-                                                                                        class="col-xs-4 col-xs-offset-8">
-                                                                                        <button
-                                                                                            class="btn btn-sm btn-clear-g"
-                                                                                            style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                    </div>
-                                                                                    <div class="sp-title">
-                                                                                        <h3>Majimi confirmado para
-                                                                                            Bullet Train 2</h3>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--/row -->
-                                                                        <!-- 4th ROW OF PANELS -->
-                                                                            <div class="row">
-                                                                                <div
-                                                                                    class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                                    <div class="content-panel pn">
-                                                                                        <div id="gosler">
-                                                                                            <div
-                                                                                                class="col-xs-4 col-xs-offset-8">
-                                                                                                <button
-                                                                                                    class="btn btn-sm btn-clear-g"
-                                                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                            </div>
-                                                                                            <div class="sp-title">
-                                                                                                <h3>A nova parceira de
-                                                                                                    Ryan Gosling não é
-                                                                                                    quem você acha.
-                                                                                                </h3>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                                    <div class="content-panel pn">
-                                                                                        <div id="majimi">
-                                                                                            <div
-                                                                                                class="col-xs-4 col-xs-offset-8">
-                                                                                                <button
-                                                                                                    class="btn btn-sm btn-clear-g"
-                                                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                            </div>
-                                                                                            <div class="sp-title">
-                                                                                                <h3>Majimi confirmado
-                                                                                                    para Bullet Train 2
-                                                                                                </h3>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="col-lg-4 col-md-4 col-sm-4 mb">
-                                                                                    <div class="content-panel pn">
-                                                                                        <div id="majimi">
-                                                                                            <div
-                                                                                                class="col-xs-4 col-xs-offset-8">
-                                                                                                <button
-                                                                                                    class="btn btn-sm btn-clear-g"
-                                                                                                    style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
-                                                                                            </div>
-                                                                                            <div class="sp-title">
-                                                                                                <h3>Majimi confirmado
-                                                                                                    para Bullet Train 2
-                                                                                                </h3>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <!--/row -->
+                                                        </a>
+                                                        <div class="sp-title">
+                                                            <h3>Esta nova fragância vai te deixar
+                                                                irresitível</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para Bullet Train
+                                                                2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/row -->
+                                        <!-- 3rd ROW OF PANELS -->
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="gosler">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>A nova parceira de Ryan
+                                                                Gosling não é quem você
+                                                                acha. </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para
+                                                                Bullet Train 2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado para
+                                                                Bullet Train 2</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/row -->
+                                        <!-- 4th ROW OF PANELS -->
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="gosler">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>A nova parceira de
+                                                                Ryan Gosling não é
+                                                                quem você acha.
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado
+                                                                para Bullet Train 2
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                                                <div class="content-panel pn">
+                                                    <div id="majimi">
+                                                        <div class="col-xs-4 col-xs-offset-8">
+                                                            <button class="btn btn-sm btn-clear-g"
+                                                                style="color:Black; background-color: rgba(255, 255, 255, 10);">LER</button>
+                                                        </div>
+                                                        <div class="sp-title">
+                                                            <h3>Majimi confirmado
+                                                                para Bullet Train 2
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/row -->
                                     </div>
 
                                 </div>
@@ -1330,7 +1285,7 @@
             $('select.styled').customSelect();
         });
 
-        $('.sub-menu').click(function() {
+        $('.sub-menu').click(function () {
             $(this).find('.angle-icon').toggleClass('fa-angle-up fa-angle-down');
         });
     </script>

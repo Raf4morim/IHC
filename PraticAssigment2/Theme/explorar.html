@@ -28,98 +28,100 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script>
-        function showPopup() {
-          var popup = document.getElementById("popup");
-          popup.style.display = "block";
-          setTimeout(hidePopup, 3000); // Hide the popup after 3 seconds (3000 milliseconds)
-        }
-      
-        function hidePopup() {
-          var popup = document.getElementById("popup");
-          popup.style.display = "none";
-          window.location.href = "saved.html"; // Redirect to saved.html
-        }
+	<script>
+		function showPopup() {
+			var popup = document.getElementById("popup");
+			popup.style.display = "block";
+			setTimeout(hidePopup, 3000); // Hide the popup after 3 seconds (3000 milliseconds)
+		}
+
+		function hidePopup() {
+			var popup = document.getElementById("popup");
+			popup.style.display = "none";
+			window.location.href = "saved.html"; // Redirect to saved.html
+		}
 
 		function showPopup() {
-          var popup = document.getElementById("popup");
-          popup.style.display = "block";
-          setTimeout(hidePopup, 3000); // Hide the popup after 3 seconds (3000 milliseconds)
-        }
-      
-        function hidePopup() {
-          var popup = document.getElementById("popup");
-          popup.style.display = "none";
-          window.location.href = "saved.html"; // Redirect to saved.html
-        }
-        
-      </script>
-      
-      <style type="text/css">
+			var popup = document.getElementById("popup");
+			popup.style.display = "block";
+			setTimeout(hidePopup, 3000); // Hide the popup after 3 seconds (3000 milliseconds)
+		}
+
+		function hidePopup() {
+			var popup = document.getElementById("popup");
+			popup.style.display = "none";
+			window.location.href = "saved.html"; // Redirect to saved.html
+		}
+
+	</script>
+
+	<style type="text/css">
 		body {
 			overflow-x: hidden;
-			}
-         .sidebar-search {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            position: relative;
-        }
+		}
 
-        .sidebar-search .form-group {
-            display: flex;
-            align-items: center;
-            margin-bottom: 0;
-        }
+		.sidebar-search {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			position: relative;
+		}
 
-        .sidebar-search input {
-            width: 100%;
-            padding: 10px 40px 10px 15px;
-            border: none;
-            border-radius: 3px;
-            background-color: #fff;
-            font-size: 14px;
-        }
+		.sidebar-search .form-group {
+			display: flex;
+			align-items: center;
+			margin-bottom: 0;
+		}
 
-        .sidebar-search input:focus {
-            outline: none;
-            background-color: #fff;
-            box-shadow: none;
-        }
+		.sidebar-search input {
+			width: 100%;
+			padding: 10px 40px 10px 15px;
+			border: none;
+			border-radius: 3px;
+			background-color: #fff;
+			font-size: 14px;
+		}
 
-        .sidebar-search .search-btn {
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-            width: 40px;
-            height: 100%;
-            background-color: transparent;
-            border: none;
-            outline: none;
-            cursor: pointer;
-        }
+		.sidebar-search input:focus {
+			outline: none;
+			background-color: #fff;
+			box-shadow: none;
+		}
 
-        .sidebar-search .search-btn i {
-            color: #777;
-            font-size: 16px;
-            line-height: 20px;
-        }
+		.sidebar-search .search-btn {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+			width: 40px;
+			height: 100%;
+			background-color: transparent;
+			border: none;
+			outline: none;
+			cursor: pointer;
+		}
 
-        .sidebar-search .search-btn:hover i {
-            color: #333;
-        }
+		.sidebar-search .search-btn i {
+			color: #777;
+			font-size: 16px;
+			line-height: 20px;
+		}
+
+		.sidebar-search .search-btn:hover i {
+			color: #333;
+		}
+
 		/* Deslocamento de 10 pixels acima do ID */
-		
+
 		.sub-menu {
 			list-style-type: none;
 		}
-		
-		
+
+
 		:target {
 			margin-top: -70px;
 			padding-top: 70px;
 		}
-      </style>
+	</style>
 </head>
 
 <body>
@@ -135,7 +137,8 @@
 			</div>
 			<!--logo start-->
 			<a href="index.html" class="logo">
-				<b style="color: rgb(230, 185, 2);left:50%; transform: translateX(-50%);">MOVIE TRACKER&nbsp;&nbsp;&nbsp;</b>
+				<b style="color: rgb(230, 185, 2);left:50%; transform: translateX(-50%);">MOVIE
+					TRACKER&nbsp;&nbsp;&nbsp;</b>
 				<i class="fa fa-film"
 					style="color:rgb(230, 185, 2); rotate: 30deg; font-size: 30px; transform: scaleX(0.8);"></i>
 			</a>
@@ -146,144 +149,145 @@
 				<ul class="nav top-menu">
 					<!-- settings start -->
 					<li class="dropdownNotif">
-                        <a data-toggle="dropdownNotif" class="dropdownNotif-toggle" href="index.html#">
-                            <i class="fa fa-tasks"></i>
-                            <span class="badge bg-theme">4</span>
-                        </a>
-                        <ul class="dropdownNotif-menu extended tasks-bar">
-                            <div class="notify-arrow notify-arrow-green"></div>
-                            <li>
-                                <p class="green" style="color: black">Novos lançamentos por ver dos guardados</p>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <div class="task-info">
-                                        <div class="desc">Breaking Bad</div>
-                                        <div class="percent">3</div>
-                                    </div>
-                                    <div class="progress progress-striped">
-                                        <div class="progress-bar progress-bar-success" role="progressbar"
-                                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
-                                            <span class="sr-only">10% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <div class="task-info">
-                                        <div class="desc">The Walking Dad</div>
-                                        <div class="percent">5</div>
-                                    </div>
-                                    <div class="progress progress-striped">
-                                        <div class="progress-bar progress-bar-info" role="progressbar"
-                                            aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                            <span class="sr-only">60% Complete (warning)</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <div class="task-info">
-                                        <div class="desc">One Piece</div>
-                                        <div class="percent">20</div>
-                                    </div>
-                                    <div class="progress progress-striped">
-                                        <div class="progress-bar progress-bar-warning" role="progressbar"
-                                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                            <span class="sr-only">80% Complete</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <div class="task-info">
-                                        <div class="desc">Game of Thrones</div>
-                                        <div class="percent">+</div>
-                                    </div>
-                                    <div class="progress progress-striped">
-                                        <div class="progress-bar progress-bar-danger" role="progressbar"
-                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                                            <span class="sr-only">70% Complete (Important)</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="external">
-                                <a href="index.html">Ver todos os episódios guardados</a>
-                            </li>
-                        </ul>
-                    </li>
+						<a data-toggle="dropdownNotif" class="dropdownNotif-toggle" href="index.html#">
+							<i class="fa fa-tasks"></i>
+							<span class="badge bg-theme">4</span>
+						</a>
+						<ul class="dropdownNotif-menu extended tasks-bar">
+							<div class="notify-arrow notify-arrow-green"></div>
+							<li>
+								<p class="green" style="color: black">Novos lançamentos por ver dos guardados</p>
+							</li>
+							<li>
+								<a href="index.html#">
+									<div class="task-info">
+										<div class="desc">Breaking Bad</div>
+										<div class="percent">3</div>
+									</div>
+									<div class="progress progress-striped">
+										<div class="progress-bar progress-bar-success" role="progressbar"
+											aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+											<span class="sr-only">10% Complete (success)</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="index.html#">
+									<div class="task-info">
+										<div class="desc">The Walking Dad</div>
+										<div class="percent">5</div>
+									</div>
+									<div class="progress progress-striped">
+										<div class="progress-bar progress-bar-info" role="progressbar"
+											aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+											<span class="sr-only">60% Complete (warning)</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="index.html#">
+									<div class="task-info">
+										<div class="desc">One Piece</div>
+										<div class="percent">20</div>
+									</div>
+									<div class="progress progress-striped">
+										<div class="progress-bar progress-bar-warning" role="progressbar"
+											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="index.html#">
+									<div class="task-info">
+										<div class="desc">Game of Thrones</div>
+										<div class="percent">+</div>
+									</div>
+									<div class="progress progress-striped">
+										<div class="progress-bar progress-bar-danger" role="progressbar"
+											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+											style="width: 100%">
+											<span class="sr-only">70% Complete (Important)</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="external">
+								<a href="index.html">Ver todos os episódios guardados</a>
+							</li>
+						</ul>
+					</li>
 
 
 
 					<!-- settings end -->
 					<!-- inbox dropdown start-->
 					<li id="header_inbox_bar" class="dropdownNotif">
-                        <a data-toggle="dropdownNotif" class="dropdownNotif-toggle" href="index.html#">
-                            <i class="fa fa-envelope-o"></i>
-                            <span class="badge bg-theme">5</span>
-                        </a>
-                        <ul class="dropdownNotif-menu extended inbox">
-                            <div class="notify-arrow notify-arrow-green"></div>
-                            <li>
-                                <p class="green" style="color: black">Tens 5 comentários das tuas séries</p>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <span class="photo"><img alt="avatar" src="assets/img/ui-zac.jpg"></span>
-                                    <span class="subject">
-                                        <span class="from">Manel Matos</span>
-                                        <span class="time">Just now</span>
-                                    </span>
-                                    <span class="message">
-                                        Incrivel!
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <span class="photo"><img alt="avatar" src="assets/img/ui-divya.jpg"></span>
-                                    <span class="subject">
-                                        <span class="from">Tiago Silvestre</span>
-                                        <span class="time">40 mins.</span>
-                                    </span>
-                                    <span class="message">
-                                        Não gostei muito.
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <span class="photo"><img alt="avatar" src="assets/img/ui-danro.jpg"></span>
-                                    <span class="subject">
-                                        <span class="from">Nuno Vidal</span>
-                                        <span class="time">2 hrs.</span>
-                                    </span>
-                                    <span class="message">
-                                        Eu fazia melhor.
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <span class="photo"><img alt="avatar" src="assets/img/ui-sherman.jpg"></span>
-                                    <span class="subject">
-                                        <span class="from">Gonçalo Silva</span>
-                                        <span class="time">4 hrs.</span>
-                                    </span>
-                                    <span class="message">
-                                        Uaaaaaaaaaaaaaaaaaau.
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">Ver todas os comentários</a>
-                            </li>
-                        </ul>
-                    </li>
+						<a data-toggle="dropdownNotif" class="dropdownNotif-toggle" href="index.html#">
+							<i class="fa fa-envelope-o"></i>
+							<span class="badge bg-theme">5</span>
+						</a>
+						<ul class="dropdownNotif-menu extended inbox">
+							<div class="notify-arrow notify-arrow-green"></div>
+							<li>
+								<p class="green" style="color: black">Tens 5 comentários das tuas séries</p>
+							</li>
+							<li>
+								<a href="index.html#">
+									<span class="photo"><img alt="avatar" src="assets/img/ui-zac.jpg"></span>
+									<span class="subject">
+										<span class="from">Manel Matos</span>
+										<span class="time">Just now</span>
+									</span>
+									<span class="message">
+										Incrivel!
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="index.html#">
+									<span class="photo"><img alt="avatar" src="assets/img/ui-divya.jpg"></span>
+									<span class="subject">
+										<span class="from">Tiago Silvestre</span>
+										<span class="time">40 mins.</span>
+									</span>
+									<span class="message">
+										Não gostei muito.
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="index.html#">
+									<span class="photo"><img alt="avatar" src="assets/img/ui-danro.jpg"></span>
+									<span class="subject">
+										<span class="from">Nuno Vidal</span>
+										<span class="time">2 hrs.</span>
+									</span>
+									<span class="message">
+										Eu fazia melhor.
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="index.html#">
+									<span class="photo"><img alt="avatar" src="assets/img/ui-sherman.jpg"></span>
+									<span class="subject">
+										<span class="from">Gonçalo Silva</span>
+										<span class="time">4 hrs.</span>
+									</span>
+									<span class="message">
+										Uaaaaaaaaaaaaaaaaaau.
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="index.html#">Ver todas os comentários</a>
+							</li>
+						</ul>
+					</li>
 					<!-- inbox dropdown end -->
 					<li id="header_inbox_bar" class="dropdownNotif">
 						<a data-toggle="dropdownNotif" class="dropdownNotif-toggle" href="index.html#">
@@ -291,9 +295,9 @@
 						</a>
 						<ul class="dropdownNotif-menu extended inbox">
 							<div class="notify-arrow notify-arrow-green"></div>
-                            <li>
-                                <p class="green" style="color:black">Sobre a sua conta</p>
-                            </li>
+							<li>
+								<p class="green" style="color:black">Sobre a sua conta</p>
+							</li>
 							<li>
 								<a href="profile.html">
 									<span>
@@ -340,7 +344,7 @@
 					<p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle"
 								width="60"></a></p>
 					<h5 class="centered">Vanessa Santos</h5>
-                    
+
 					<li class="mt">
 						<a href="index.html">
 							<i class="fa fa-floppy-o"></i>
@@ -348,20 +352,20 @@
 						</a>
 					</li>
 
-                    <li class="sub-menu">
-                        <a class="active" href="javascript:;">
-                            <i class=" fa fa-search"></i>
-                            <span>Explorar</span>
-                        </a>
-                        <ul class="sub">
-                            <li><a href="explorar.html#pesq">Pesquisa</a></li>
-                            <li><a href="explorar.html#mais-vistos">Mais Vistos</a></li>
-                            <li><a href="explorar.html#favoritos">Favoritos</a></li>
-                            <li><a href="explorar.html#mais-recentes">Mais Recentes</a></li>
-                            <li><a href="explorar.html#mais-polemicos">Mais Polémicos</a></li>
-                            <li><a href="explorar.html#mais-elogiados">Mais Elogiados</a></li>
-                        </ul>
-                    </li>
+					<li class="sub-menu">
+						<a class="active" href="javascript:;">
+							<i class=" fa fa-search"></i>
+							<span>Explorar</span>
+						</a>
+						<ul class="sub">
+							<li><a href="explorar.html#pesq">Pesquisa</a></li>
+							<li><a href="explorar.html#mais-vistos">Mais Vistos</a></li>
+							<li><a href="explorar.html#favoritos">Favoritos</a></li>
+							<li><a href="explorar.html#mais-recentes">Mais Recentes</a></li>
+							<li><a href="explorar.html#mais-polemicos">Mais Polémicos</a></li>
+							<li><a href="explorar.html#mais-elogiados">Mais Elogiados</a></li>
+						</ul>
+					</li>
 
 					<li class="sub-menu">
 						<a href="calendar.html">
@@ -423,18 +427,262 @@
 				<li class="sub-menu" style="position: relative; left:10px; text-decoration: none; width: 50%;">
 					<form id="search-form" class="sidebar-search" action="resultsSearch.html" method="get">
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Pesquisar por Séries, Notícias, Géneros, etc" name="search">
+							<input type="text" class="form-control"
+								placeholder="Pesquisar por Séries, Notícias, Géneros, etc" name="search">
 							<button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
 						</div>
 					</form>
 				</li>
-				
+
 
 				<div class="row mt">
 					<div class="col-lg-12">
 						<div class="form-panel">
-							<h2 id="mais-vistos" class="mb" >Mais vistos</h2>
-								<!-- 5TH ROW OF PANELS -->
+							<h2 id="mais-vistos" class="mb">Mais vistos</h2>
+							<!-- 5TH ROW OF PANELS -->
+							<div class="row">
+								<div class="col-md-4 col-sm-4 mb">
+									<div class="content-panel pn">
+										<div id="bbad">
+											<div class="col-xs-4 col-xs-offset-8">
+												<button class="btn btn-sm btn-clear-g" onclick="showPopup()"
+													style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+											</div>
+											<div class="sp-title">
+												<h3>Breaking Bad</h3>
+											</div>
+											<img src="assets/img/netflix.png"
+												style="width: 20%; height: 20%; margin-top: 5px;"></img>
+											<div class="play">
+												<a href="https://www.netflix.com/title/70143836">
+													<i class="fa fa-play-circle fa-3x" style="color:white"></i>
+												</a>
+											</div>
+										</div>
+										<a href="info.html">
+											<p class="followers" style="text-align: center;"></i>Informação</p>
+										</a>
+									</div>
+								</div>
+								<!--/col-md-4-->
+
+								<div class="col-lg-4 col-md-4 col-sm-4 mb">
+									<div class="content-panel pn">
+										<div id="spotify">
+											<div class="col-xs-4 col-xs-offset-8">
+												<button class="btn btn-sm btn-clear-g"
+													style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+											</div>
+											<div class="sp-title">
+												<h3>Captain Marvel</h3>
+											</div>
+											<div class="play">
+												<i class="fa fa-play-circle fa-3x"></i>
+											</div>
+										</div>
+										<a href="info.html">
+											<p class="followers" style="text-align: center;">
+												</i>Informação</p>
+										</a>
+									</div>
+								</div>
+								<!--/col-md-4-->
+
+								<div class="col-md-4 col-sm-4 mb">
+									<div class="content-panel pn">
+										<div id="got">
+											<div class="col-xs-4 col-xs-offset-8">
+												<button class="btn btn-sm btn-clear-g"
+													style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+											</div>
+											<div class="sp-title">
+												<h3>Game Of Thrones</h3>
+											</div>
+											<img src="assets/img/hboLogo.png"
+												style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
+											<div class="play">
+												<a
+													href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
+													<i class="fa fa-play-circle fa-3x" style="color:white"></i>
+												</a>
+											</div>
+										</div>
+										<a href="info.html">
+											<p class="followers" style="text-align: center;">
+												</i>Informação</p>
+										</a>
+									</div>
+								</div>
+							</div><!--/col-md-4-->
+						</div><!-- /END 5TH ROW OF PANELS -->
+
+						<button class="collapsible">
+						</button>
+						<!-- Inserir aqui -->
+						<div class="contentVerMais" style="margin-left: 15px; margin-right: 17px;">
+							<!-- 5TH ROW OF PANELS -->
+							<div class="row">
+								<div class="col-md-4 col-sm-4 mb">
+									<div class="content-panel pn">
+										<div id="bbad">
+											<div class="col-xs-4 col-xs-offset-8">
+												<button class="btn btn-sm btn-clear-g" onclick="showPopup()"
+													style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+											</div>
+											<div class="sp-title">
+												<h3>Breaking Bad</h3>
+											</div>
+											<img src="assets/img/netflix.png"
+												style="width: 20%; height: 20%; margin-top: 5px;"></img>
+											<div class="play">
+												<a href="https://www.netflix.com/title/70143836">
+													<i class="fa fa-play-circle fa-3x" style="color:white"></i>
+												</a>
+											</div>
+										</div>
+										<a href="info.html">
+											<p class="followers" style="text-align: center;">
+												</i>Informação</p>
+										</a>
+									</div>
+								</div>
+								<!--/col-md-4-->
+
+								<div class="col-lg-4 col-md-4 col-sm-4 mb">
+									<div class="content-panel pn">
+										<div id="spotify">
+											<div class="col-xs-4 col-xs-offset-8">
+												<button class="btn btn-sm btn-clear-g"
+													style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+											</div>
+											<div class="sp-title">
+												<h3>Captain Marvel</h3>
+											</div>
+											<div class="play">
+												<i class="fa fa-play-circle fa-3x"></i>
+											</div>
+										</div>
+										<a href="info.html">
+											<p class="followers" style="text-align: center;">
+												</i>Informação</p>
+										</a>
+									</div>
+								</div>
+								<!--/col-md-4-->
+
+								<div class="col-md-4 col-sm-4 mb">
+									<div class="content-panel pn">
+										<div id="got">
+											<div class="col-xs-4 col-xs-offset-8">
+												<button class="btn btn-sm btn-clear-g"
+													style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+											</div>
+											<div class="sp-title">
+												<h3>Game Of Thrones</h3>
+											</div>
+											<img src="assets/img/hboLogo.png"
+												style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
+											<div class="play">
+												<a
+													href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
+													<i class="fa fa-play-circle fa-3x" style="color:white"></i>
+												</a>
+											</div>
+										</div>
+										<a href="info.html">
+											<p class="followers" style="text-align: center;">
+												</i>Informação</p>
+										</a>
+									</div>
+								</div>
+								<!--/col-md-4-->
+							</div><!-- /END 5TH ROW OF PANELS -->
+							<!-- 5TH ROW OF PANELS -->
+							<div class="row">
+								<div class="col-md-4 col-sm-4 mb">
+									<div class="content-panel pn">
+										<div id="bbad">
+											<div class="col-xs-4 col-xs-offset-8">
+												<button class="btn btn-sm btn-clear-g" onclick="showPopup()"
+													style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+											</div>
+											<div class="sp-title">
+												<h3>Breaking Bad</h3>
+											</div>
+											<img src="assets/img/netflix.png"
+												style="width: 20%; height: 20%; margin-top: 5px;"></img>
+											<div class="play">
+												<a href="https://www.netflix.com/title/70143836">
+													<i class="fa fa-play-circle fa-3x" style="color:white"></i>
+												</a>
+											</div>
+										</div>
+										<a href="info.html">
+											<p class="followers" style="text-align: center;">
+												</i>Informação</p>
+										</a>
+									</div>
+								</div>
+								<!--/col-md-4-->
+
+								<div class="col-lg-4 col-md-4 col-sm-4 mb">
+									<div class="content-panel pn">
+										<div id="spotify">
+											<div class="col-xs-4 col-xs-offset-8">
+												<button class="btn btn-sm btn-clear-g"
+													style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+											</div>
+											<div class="sp-title">
+												<h3>Captain Marvel</h3>
+											</div>
+											<div class="play">
+												<i class="fa fa-play-circle fa-3x"></i>
+											</div>
+										</div>
+										<a href="info.html">
+											<p class="followers" style="text-align: center;">
+												</i>Informação</p>
+										</a>
+									</div>
+								</div>
+								<!--/col-md-4-->
+
+								<div class="col-md-4 col-sm-4 mb">
+									<div class="content-panel pn">
+										<div id="got">
+											<div class="col-xs-4 col-xs-offset-8">
+												<button class="btn btn-sm btn-clear-g"
+													style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+											</div>
+											<div class="sp-title">
+												<h3>Game Of Thrones</h3>
+											</div>
+											<img src="assets/img/hboLogo.png"
+												style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
+											<div class="play">
+												<a
+													href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
+													<i class="fa fa-play-circle fa-3x" style="color:white"></i>
+												</a>
+											</div>
+										</div>
+										<a href="info.html">
+											<p class="followers" style="text-align: center;"></i>Informação
+											</p>
+										</a>
+									</div>
+								</div>
+								<!--/col-md-4-->
+							</div><!-- /END 5TH ROW OF PANELS -->
+						</div><!-- col-lg-12-->
+					</div><!-- /row -->
+
+
+					<div class="row mt">
+						<div class="col-lg-12">
+							<div class="form-panel">
+								<h2 id="favoritos" class="mb">Favoritos</h4>
+									<!-- 5TH ROW OF PANELS -->
 									<div class="row">
 										<div class="col-md-4 col-sm-4 mb">
 											<div class="content-panel pn">
@@ -455,11 +703,94 @@
 													</div>
 												</div>
 												<a href="info.html">
-													<p class="followers" style="text-align: center;"></i>Informação</p>
+													<p class="followers" style="text-align: center;">
+														</i>Informação</p>
 												</a>
 											</div>
 										</div>
 										<!--/col-md-4-->
+
+										<div class="col-lg-4 col-md-4 col-sm-4 mb">
+											<div class="content-panel pn">
+												<div id="spotify">
+													<div class="col-xs-4 col-xs-offset-8">
+														<button class="btn btn-sm btn-clear-g"
+															style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+													</div>
+													<div class="sp-title">
+														<h3>Captain Marvel</h3>
+													</div>
+													<div class="play">
+														<i class="fa fa-play-circle fa-3x"></i>
+													</div>
+												</div>
+												<a href="info.html">
+													<p class="followers" style="text-align: center;">
+														</i>Informação</p>
+												</a>
+											</div>
+										</div>
+										<!--/col-md-4-->
+
+										<div class="col-md-4 col-sm-4 mb">
+											<div class="content-panel pn">
+												<div id="got">
+													<div class="col-xs-4 col-xs-offset-8">
+														<button class="btn btn-sm btn-clear-g"
+															style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+													</div>
+													<div class="sp-title">
+														<h3>Game Of Thrones</h3>
+													</div>
+													<img src="assets/img/hboLogo.png"
+														style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
+													<div class="play">
+														<a
+															href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
+															<i class="fa fa-play-circle fa-3x" style="color:white"></i>
+														</a>
+													</div>
+												</div>
+												<a href="info.html">
+													<p class="followers" style="text-align: center;">
+														</i>Informação</p>
+												</a>
+											</div>
+										</div>
+										<!--/col-md-4-->
+									</div><!-- /END 5TH ROW OF PANELS -->
+									<!-- Inserir aqui -->
+									<button class="collapsible">
+									</button>
+									<div class="contentVerMais" style="margin-left: 15px; margin-right: 17px;">
+										<!-- 5TH ROW OF PANELS -->
+										<div class="row">
+											<div class="col-md-4 col-sm-4 mb">
+												<div class="content-panel pn">
+													<div id="bbad">
+														<div class="col-xs-4 col-xs-offset-8">
+															<button class="btn btn-sm btn-clear-g" onclick="showPopup()"
+																style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+														</div>
+														<div class="sp-title">
+															<h3>Breaking Bad</h3>
+														</div>
+														<img src="assets/img/netflix.png"
+															style="width: 20%; height: 20%; margin-top: 5px;"></img>
+														<div class="play">
+															<a href="https://www.netflix.com/title/70143836">
+																<i class="fa fa-play-circle fa-3x"
+																	style="color:white"></i>
+															</a>
+														</div>
+													</div>
+													<a href="info.html">
+														<p class="followers" style="text-align: center;">
+															</i>Informação</p>
+													</a>
+												</div>
+											</div>
+											<!--/col-md-4-->
 
 											<div class="col-lg-4 col-md-4 col-sm-4 mb">
 												<div class="content-panel pn">
@@ -483,40 +814,120 @@
 											</div>
 											<!--/col-md-4-->
 
-												<div class="col-md-4 col-sm-4 mb">
-													<div class="content-panel pn">
-														<div id="got">
-															<div class="col-xs-4 col-xs-offset-8">
-																<button class="btn btn-sm btn-clear-g"
-																	style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-															</div>
-															<div class="sp-title">
-																<h3>Game Of Thrones</h3>
-															</div>
-															<img src="assets/img/hboLogo.png"
-																style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
-															<div class="play">
-																<a
-																	href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
-																	<i class="fa fa-play-circle fa-3x"
-																		style="color:white"></i>
-																</a>
-															</div>
+											<div class="col-md-4 col-sm-4 mb">
+												<div class="content-panel pn">
+													<div id="got">
+														<div class="col-xs-4 col-xs-offset-8">
+															<button class="btn btn-sm btn-clear-g"
+																style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 														</div>
-														<a href="info.html">
-															<p class="followers" style="text-align: center;">
-																</i>Informação</p>
-														</a>
+														<div class="sp-title">
+															<h3>Game Of Thrones</h3>
+														</div>
+														<img src="assets/img/hboLogo.png"
+															style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
+														<div class="play">
+															<a
+																href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
+																<i class="fa fa-play-circle fa-3x"
+																	style="color:white"></i>
+															</a>
+														</div>
 													</div>
+													<a href="info.html">
+														<p class="followers" style="text-align: center;">
+															</i>Informação</p>
+													</a>
 												</div>
-										</div><!--/col-md-4-->
-									</div><!-- /END 5TH ROW OF PANELS -->
-									
-									<button class="collapsible">
-									</button>
-									<!-- Inserir aqui -->
-									<div class="contentVerMais" style="margin-left: 15px; margin-right: 17px;">
+											</div>
+											<!--/col-md-4-->
+										</div><!-- /END 5TH ROW OF PANELS -->
 										<!-- 5TH ROW OF PANELS -->
+										<div class="row">
+											<div class="col-md-4 col-sm-4 mb">
+												<div class="content-panel pn">
+													<div id="bbad">
+														<div class="col-xs-4 col-xs-offset-8">
+															<button class="btn btn-sm btn-clear-g" onclick="showPopup()"
+																style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+														</div>
+														<div class="sp-title">
+															<h3>Breaking Bad</h3>
+														</div>
+														<img src="assets/img/netflix.png"
+															style="width: 20%; height: 20%; margin-top: 5px;"></img>
+														<div class="play">
+															<a href="https://www.netflix.com/title/70143836">
+																<i class="fa fa-play-circle fa-3x"
+																	style="color:white"></i>
+															</a>
+														</div>
+													</div>
+													<a href="info.html">
+														<p class="followers" style="text-align: center;"></i>Informação
+														</p>
+													</a>
+												</div>
+											</div>
+											<!--/col-md-4-->
+
+											<div class="col-lg-4 col-md-4 col-sm-4 mb">
+												<div class="content-panel pn">
+													<div id="spotify">
+														<div class="col-xs-4 col-xs-offset-8">
+															<button class="btn btn-sm btn-clear-g"
+																style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+														</div>
+														<div class="sp-title">
+															<h3>Captain Marvel</h3>
+														</div>
+														<div class="play">
+															<i class="fa fa-play-circle fa-3x"></i>
+														</div>
+													</div>
+													<a href="info.html">
+														<p class="followers" style="text-align: center;">
+															</i>Informação</p>
+													</a>
+												</div>
+											</div>
+											<!--/col-md-4-->
+
+											<div class="col-md-4 col-sm-4 mb">
+												<div class="content-panel pn">
+													<div id="got">
+														<div class="col-xs-4 col-xs-offset-8">
+															<button class="btn btn-sm btn-clear-g"
+																style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+														</div>
+														<div class="sp-title">
+															<h3>Game Of Thrones</h3>
+														</div>
+														<img src="assets/img/hboLogo.png"
+															style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
+														<div class="play">
+															<a
+																href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
+																<i class="fa fa-play-circle fa-3x"
+																	style="color:white"></i>
+															</a>
+														</div>
+													</div>
+													<a href="info.html">
+														<p class="followers" style="text-align: center;">
+															</i>Informação</p>
+													</a>
+												</div>
+											</div>
+											<!--/col-md-4-->
+										</div><!-- /END 5TH ROW OF PANELS -->
+									</div><!-- col-lg-12-->
+							</div><!-- /row -->
+							<div class="row mt">
+								<div class="col-lg-12">
+									<div class="form-panel">
+										<h2 class="mb" id="mais-recentes">Mais recentes</h4>
+											<!-- 5TH ROW OF PANELS -->
 											<div class="row">
 												<div class="col-md-4 col-sm-4 mb">
 													<div class="content-panel pn">
@@ -546,57 +957,61 @@
 												</div>
 												<!--/col-md-4-->
 
-													<div class="col-lg-4 col-md-4 col-sm-4 mb">
-														<div class="content-panel pn">
-															<div id="spotify">
-																<div class="col-xs-4 col-xs-offset-8">
-																	<button class="btn btn-sm btn-clear-g"
-																		style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																</div>
-																<div class="sp-title">
-																	<h3>Captain Marvel</h3>
-																</div>
-																<div class="play">
-																	<i class="fa fa-play-circle fa-3x"></i>
-																</div>
+												<div class="col-lg-4 col-md-4 col-sm-4 mb">
+													<div class="content-panel pn">
+														<div id="spotify">
+															<div class="col-xs-4 col-xs-offset-8">
+																<button class="btn btn-sm btn-clear-g"
+																	style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 															</div>
-															<a href="info.html">
-																<p class="followers" style="text-align: center;">
-																	</i>Informação</p>
-															</a>
+															<div class="sp-title">
+																<h3>Captain Marvel</h3>
+															</div>
+															<div class="play">
+																<i class="fa fa-play-circle fa-3x"></i>
+															</div>
 														</div>
+														<a href="info.html">
+															<p class="followers" style="text-align: center;">
+																</i>Informação</p>
+														</a>
 													</div>
-													<!--/col-md-4-->
+												</div>
+												<!--/col-md-4-->
 
-														<div class="col-md-4 col-sm-4 mb">
-															<div class="content-panel pn">
-																<div id="got">
-																	<div class="col-xs-4 col-xs-offset-8">
-																		<button class="btn btn-sm btn-clear-g"
-																			style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																	</div>
-																	<div class="sp-title">
-																		<h3>Game Of Thrones</h3>
-																	</div>
-																	<img src="assets/img/hboLogo.png"
-																		style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
-																	<div class="play">
-																		<a
-																			href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
-																			<i class="fa fa-play-circle fa-3x"
-																				style="color:white"></i>
-																		</a>
-																	</div>
-																</div>
-																<a href="info.html">
-																	<p class="followers" style="text-align: center;">
-																		</i>Informação</p>
+												<div class="col-md-4 col-sm-4 mb">
+													<div class="content-panel pn">
+														<div id="got">
+															<div class="col-xs-4 col-xs-offset-8">
+																<button class="btn btn-sm btn-clear-g"
+																	style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+															</div>
+															<div class="sp-title">
+																<h3>Game Of Thrones</h3>
+															</div>
+															<img src="assets/img/hboLogo.png"
+																style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
+															<div class="play">
+																<a
+																	href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
+																	<i class="fa fa-play-circle fa-3x"
+																		style="color:white"></i>
 																</a>
 															</div>
 														</div>
-														<!--/col-md-4-->
+														<a href="info.html">
+															<p class="followers" style="text-align: center;">
+																</i>Informação</p>
+														</a>
+													</div>
+												</div>
+												<!--/col-md-4-->
 											</div><!-- /END 5TH ROW OF PANELS -->
-											<!-- 5TH ROW OF PANELS -->
+											<!-- Inserir aqui -->
+											<button class="collapsible">
+											</button>
+											<div class="contentVerMais" style="margin-left: 15px; margin-right: 17px;">
+												<!-- 5TH ROW OF PANELS -->
 												<div class="row">
 													<div class="col-md-4 col-sm-4 mb">
 														<div class="content-panel pn">
@@ -626,94 +1041,85 @@
 													</div>
 													<!--/col-md-4-->
 
-														<div class="col-lg-4 col-md-4 col-sm-4 mb">
-															<div class="content-panel pn">
-																<div id="spotify">
-																	<div class="col-xs-4 col-xs-offset-8">
-																		<button class="btn btn-sm btn-clear-g"
-																			style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																	</div>
-																	<div class="sp-title">
-																		<h3>Captain Marvel</h3>
-																	</div>
-																	<div class="play">
-																		<i class="fa fa-play-circle fa-3x"></i>
-																	</div>
+													<div class="col-lg-4 col-md-4 col-sm-4 mb">
+														<div class="content-panel pn">
+															<div id="spotify">
+																<div class="col-xs-4 col-xs-offset-8">
+																	<button class="btn btn-sm btn-clear-g"
+																		style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																</div>
-																<a href="info.html">
-																	<p class="followers" style="text-align: center;">
-																		</i>Informação</p>
-																</a>
+																<div class="sp-title">
+																	<h3>Captain Marvel</h3>
+																</div>
+																<div class="play">
+																	<i class="fa fa-play-circle fa-3x"></i>
+																</div>
 															</div>
+															<a href="info.html">
+																<p class="followers" style="text-align: center;">
+																	</i>Informação</p>
+															</a>
 														</div>
-														<!--/col-md-4-->
+													</div>
+													<!--/col-md-4-->
 
-															<div class="col-md-4 col-sm-4 mb">
-																<div class="content-panel pn">
-																	<div id="got">
-																		<div class="col-xs-4 col-xs-offset-8">
-																			<button class="btn btn-sm btn-clear-g"
-																				style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																		</div>
-																		<div class="sp-title">
-																			<h3>Game Of Thrones</h3>
-																		</div>
-																		<img src="assets/img/hboLogo.png"
-																			style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
-																		<div class="play">
-																			<a
-																				href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
-																				<i class="fa fa-play-circle fa-3x"
-																					style="color:white"></i>
-																			</a>
-																		</div>
-																	</div>
-																	<a href="info.html">
-																		<p class="followers"
-																			style="text-align: center;"></i>Informação
-																		</p>
+													<div class="col-md-4 col-sm-4 mb">
+														<div class="content-panel pn">
+															<div id="got">
+																<div class="col-xs-4 col-xs-offset-8">
+																	<button class="btn btn-sm btn-clear-g"
+																		style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+																</div>
+																<div class="sp-title">
+																	<h3>Game Of Thrones</h3>
+																</div>
+																<img src="assets/img/hboLogo.png"
+																	style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
+																<div class="play">
+																	<a
+																		href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
+																		<i class="fa fa-play-circle fa-3x"
+																			style="color:white"></i>
 																	</a>
 																</div>
 															</div>
-															<!--/col-md-4-->
-												</div><!-- /END 5TH ROW OF PANELS -->
-									</div><!-- col-lg-12-->
-						</div><!-- /row -->
-
-
-						<div class="row mt" >
-							<div class="col-lg-12">
-								<div class="form-panel">
-									<h2 id="favoritos" class="mb">Favoritos</h4>
-										<!-- 5TH ROW OF PANELS -->
-											<div class="row">
-												<div class="col-md-4 col-sm-4 mb">
-													<div class="content-panel pn">
-														<div id="bbad">
-															<div class="col-xs-4 col-xs-offset-8">
-																<button class="btn btn-sm btn-clear-g"
-																	onclick="showPopup()"
-																	style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-															</div>
-															<div class="sp-title">
-																<h3>Breaking Bad</h3>
-															</div>
-															<img src="assets/img/netflix.png"
-																style="width: 20%; height: 20%; margin-top: 5px;"></img>
-															<div class="play">
-																<a href="https://www.netflix.com/title/70143836">
-																	<i class="fa fa-play-circle fa-3x"
-																		style="color:white"></i>
-																</a>
-															</div>
+															<a href="info.html">
+																<p class="followers" style="text-align: center;">
+																	</i>Informação</p>
+															</a>
 														</div>
-														<a href="info.html">
-															<p class="followers" style="text-align: center;">
-																</i>Informação</p>
-														</a>
 													</div>
-												</div>
-												<!--/col-md-4-->
+													<!--/col-md-4-->
+												</div><!-- /END 5TH ROW OF PANELS -->
+												<!-- 5TH ROW OF PANELS -->
+												<div class="row">
+													<div class="col-md-4 col-sm-4 mb">
+														<div class="content-panel pn">
+															<div id="bbad">
+																<div class="col-xs-4 col-xs-offset-8">
+																	<button class="btn btn-sm btn-clear-g"
+																		onclick="showPopup()"
+																		style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+																</div>
+																<div class="sp-title">
+																	<h3>Breaking Bad</h3>
+																</div>
+																<img src="assets/img/netflix.png"
+																	style="width: 20%; height: 20%; margin-top: 5px;"></img>
+																<div class="play">
+																	<a href="https://www.netflix.com/title/70143836">
+																		<i class="fa fa-play-circle fa-3x"
+																			style="color:white"></i>
+																	</a>
+																</div>
+															</div>
+															<a href="info.html">
+																<p class="followers" style="text-align: center;">
+																	</i>Informação</p>
+															</a>
+														</div>
+													</div>
+													<!--/col-md-4-->
 
 													<div class="col-lg-4 col-md-4 col-sm-4 mb">
 														<div class="content-panel pn">
@@ -736,6 +1142,93 @@
 														</div>
 													</div>
 													<!--/col-md-4-->
+
+													<div class="col-md-4 col-sm-4 mb">
+														<div class="content-panel pn">
+															<div id="got">
+																<div class="col-xs-4 col-xs-offset-8">
+																	<button class="btn btn-sm btn-clear-g"
+																		style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+																</div>
+																<div class="sp-title">
+																	<h3>Game Of Thrones</h3>
+																</div>
+																<img src="assets/img/hboLogo.png"
+																	style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
+																<div class="play">
+																	<a
+																		href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
+																		<i class="fa fa-play-circle fa-3x"
+																			style="color:white"></i>
+																	</a>
+																</div>
+															</div>
+															<a href="info.html">
+																<p class="followers" style="text-align: center;">
+																	</i>Informação</p>
+															</a>
+														</div>
+													</div>
+													<!--/col-md-4-->
+												</div><!-- /END 5TH ROW OF PANELS -->
+											</div><!-- col-lg-12-->
+									</div><!-- /row -->
+									<div class="row mt">
+										<div class="col-lg-12">
+											<div class="form-panel">
+												<h2 class="mb" id="mais-polemicos">Mais polémicos</h4>
+													<!-- 5TH ROW OF PANELS -->
+													<div class="row">
+														<div class="col-md-4 col-sm-4 mb">
+															<div class="content-panel pn">
+																<div id="bbad">
+																	<div class="col-xs-4 col-xs-offset-8">
+																		<button class="btn btn-sm btn-clear-g"
+																			onclick="showPopup()"
+																			style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+																	</div>
+																	<div class="sp-title">
+																		<h3>Breaking Bad</h3>
+																	</div>
+																	<img src="assets/img/netflix.png"
+																		style="width: 20%; height: 20%; margin-top: 5px;"></img>
+																	<div class="play">
+																		<a
+																			href="https://www.netflix.com/title/70143836">
+																			<i class="fa fa-play-circle fa-3x"
+																				style="color:white"></i>
+																		</a>
+																	</div>
+																</div>
+																<a href="info.html">
+																	<p class="followers" style="text-align: center;">
+																		</i>Informação</p>
+																</a>
+															</div>
+														</div>
+														<!--/col-md-4-->
+
+														<div class="col-lg-4 col-md-4 col-sm-4 mb">
+															<div class="content-panel pn">
+																<div id="spotify">
+																	<div class="col-xs-4 col-xs-offset-8">
+																		<button class="btn btn-sm btn-clear-g"
+																			style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+																	</div>
+																	<div class="sp-title">
+																		<h3>Captain Marvel</h3>
+																	</div>
+																	<div class="play">
+																		<i class="fa fa-play-circle fa-3x"></i>
+																	</div>
+																</div>
+																<a href="info.html">
+																	<p class="followers" style="text-align: center;">
+																		</i>Informação</p>
+																</a>
+															</div>
+														</div>
+														<!--/col-md-4-->
 
 														<div class="col-md-4 col-sm-4 mb">
 															<div class="content-panel pn">
@@ -764,95 +1257,13 @@
 															</div>
 														</div>
 														<!--/col-md-4-->
-											</div><!-- /END 5TH ROW OF PANELS -->
-											<!-- Inserir aqui -->
-											<button class="collapsible">
-											</button>
-											<div class="contentVerMais" style="margin-left: 15px; margin-right: 17px;">
-												<!-- 5TH ROW OF PANELS -->
-													<div class="row">
-														<div class="col-md-4 col-sm-4 mb">
-															<div class="content-panel pn">
-																<div id="bbad">
-																	<div class="col-xs-4 col-xs-offset-8">
-																		<button class="btn btn-sm btn-clear-g"
-																			onclick="showPopup()"
-																			style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																	</div>
-																	<div class="sp-title">
-																		<h3>Breaking Bad</h3>
-																	</div>
-																	<img src="assets/img/netflix.png"
-																		style="width: 20%; height: 20%; margin-top: 5px;"></img>
-																	<div class="play">
-																		<a
-																			href="https://www.netflix.com/title/70143836">
-																			<i class="fa fa-play-circle fa-3x"
-																				style="color:white"></i>
-																		</a>
-																	</div>
-																</div>
-																<a href="info.html">
-																	<p class="followers" style="text-align: center;">
-																		</i>Informação</p>
-																</a>
-															</div>
-														</div>
-														<!--/col-md-4-->
-
-															<div class="col-lg-4 col-md-4 col-sm-4 mb">
-																<div class="content-panel pn">
-																	<div id="spotify">
-																		<div class="col-xs-4 col-xs-offset-8">
-																			<button class="btn btn-sm btn-clear-g"
-																				style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																		</div>
-																		<div class="sp-title">
-																			<h3>Captain Marvel</h3>
-																		</div>
-																		<div class="play">
-																			<i class="fa fa-play-circle fa-3x"></i>
-																		</div>
-																	</div>
-																	<a href="info.html">
-																		<p class="followers"
-																			style="text-align: center;">
-																			</i>Informação</p>
-																	</a>
-																</div>
-															</div>
-															<!--/col-md-4-->
-
-																<div class="col-md-4 col-sm-4 mb">
-																	<div class="content-panel pn">
-																		<div id="got">
-																			<div class="col-xs-4 col-xs-offset-8">
-																				<button class="btn btn-sm btn-clear-g"
-																					style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																			</div>
-																			<div class="sp-title">
-																				<h3>Game Of Thrones</h3>
-																			</div>
-																			<img src="assets/img/hboLogo.png"
-																				style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
-																			<div class="play">
-																				<a
-																					href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
-																					<i class="fa fa-play-circle fa-3x"
-																						style="color:white"></i>
-																				</a>
-																			</div>
-																		</div>
-																		<a href="info.html">
-																			<p class="followers"
-																				style="text-align: center;">
-																				</i>Informação</p>
-																		</a>
-																	</div>
-																</div>
-																<!--/col-md-4-->
 													</div><!-- /END 5TH ROW OF PANELS -->
-													<!-- 5TH ROW OF PANELS -->
+													<!-- Inserir aqui -->
+													<button class="collapsible">
+													</button>
+													<div class="contentVerMais"
+														style="margin-left: 15px; margin-right: 17px;">
+														<!-- 5TH ROW OF PANELS -->
 														<div class="row">
 															<div class="col-md-4 col-sm-4 mb">
 																<div class="content-panel pn">
@@ -877,102 +1288,12 @@
 																	</div>
 																	<a href="info.html">
 																		<p class="followers"
-																			style="text-align: center;"></i>Informação
-																		</p>
+																			style="text-align: center;">
+																			</i>Informação</p>
 																	</a>
 																</div>
 															</div>
 															<!--/col-md-4-->
-
-																<div class="col-lg-4 col-md-4 col-sm-4 mb">
-																	<div class="content-panel pn">
-																		<div id="spotify">
-																			<div class="col-xs-4 col-xs-offset-8">
-																				<button class="btn btn-sm btn-clear-g"
-																					style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																			</div>
-																			<div class="sp-title">
-																				<h3>Captain Marvel</h3>
-																			</div>
-																			<div class="play">
-																				<i class="fa fa-play-circle fa-3x"></i>
-																			</div>
-																		</div>
-																		<a href="info.html">
-																			<p class="followers"
-																				style="text-align: center;">
-																				</i>Informação</p>
-																		</a>
-																	</div>
-																</div>
-																<!--/col-md-4-->
-
-																	<div class="col-md-4 col-sm-4 mb">
-																		<div class="content-panel pn">
-																			<div id="got">
-																				<div class="col-xs-4 col-xs-offset-8">
-																					<button
-																						class="btn btn-sm btn-clear-g"
-																						style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																				</div>
-																				<div class="sp-title">
-																					<h3>Game Of Thrones</h3>
-																				</div>
-																				<img src="assets/img/hboLogo.png"
-																					style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
-																				<div class="play">
-																					<a
-																						href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
-																						<i class="fa fa-play-circle fa-3x"
-																							style="color:white"></i>
-																					</a>
-																				</div>
-																			</div>
-																			<a href="info.html">
-																				<p class="followers"
-																					style="text-align: center;">
-																					</i>Informação</p>
-																			</a>
-																		</div>
-																	</div>
-																	<!--/col-md-4-->
-														</div><!-- /END 5TH ROW OF PANELS -->
-											</div><!-- col-lg-12-->
-								</div><!-- /row -->
-								<div class="row mt" >
-									<div class="col-lg-12">
-										<div class="form-panel">
-											<h2 class="mb" id="mais-recentes">Mais recentes</h4>
-												<!-- 5TH ROW OF PANELS -->
-													<div class="row">
-														<div class="col-md-4 col-sm-4 mb">
-															<div class="content-panel pn">
-																<div id="bbad">
-																	<div class="col-xs-4 col-xs-offset-8">
-																		<button class="btn btn-sm btn-clear-g"
-																			onclick="showPopup()"
-																			style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																	</div>
-																	<div class="sp-title">
-																		<h3>Breaking Bad</h3>
-																	</div>
-																	<img src="assets/img/netflix.png"
-																		style="width: 20%; height: 20%; margin-top: 5px;"></img>
-																	<div class="play">
-																		<a
-																			href="https://www.netflix.com/title/70143836">
-																			<i class="fa fa-play-circle fa-3x"
-																				style="color:white"></i>
-																		</a>
-																	</div>
-																</div>
-																<a href="info.html">
-																	<p class="followers" style="text-align: center;">
-																		</i>Informação</p>
-																</a>
-															</div>
-														</div>
-														<!--/col-md-4-->
 
 															<div class="col-lg-4 col-md-4 col-sm-4 mb">
 																<div class="content-panel pn">
@@ -997,40 +1318,127 @@
 															</div>
 															<!--/col-md-4-->
 
-																<div class="col-md-4 col-sm-4 mb">
-																	<div class="content-panel pn">
-																		<div id="got">
-																			<div class="col-xs-4 col-xs-offset-8">
-																				<button class="btn btn-sm btn-clear-g"
-																					style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																			</div>
-																			<div class="sp-title">
-																				<h3>Game Of Thrones</h3>
-																			</div>
-																			<img src="assets/img/hboLogo.png"
-																				style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
-																			<div class="play">
-																				<a
-																					href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
-																					<i class="fa fa-play-circle fa-3x"
-																						style="color:white"></i>
-																				</a>
-																			</div>
+															<div class="col-md-4 col-sm-4 mb">
+																<div class="content-panel pn">
+																	<div id="got">
+																		<div class="col-xs-4 col-xs-offset-8">
+																			<button class="btn btn-sm btn-clear-g"
+																				style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																		</div>
-																		<a href="info.html">
-																			<p class="followers"
-																				style="text-align: center;">
-																				</i>Informação</p>
-																		</a>
+																		<div class="sp-title">
+																			<h3>Game Of Thrones</h3>
+																		</div>
+																		<img src="assets/img/hboLogo.png"
+																			style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
+																		<div class="play">
+																			<a
+																				href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
+																				<i class="fa fa-play-circle fa-3x"
+																					style="color:white"></i>
+																			</a>
+																		</div>
 																	</div>
+																	<a href="info.html">
+																		<p class="followers"
+																			style="text-align: center;">
+																			</i>Informação</p>
+																	</a>
 																</div>
-																<!--/col-md-4-->
-													</div><!-- /END 5TH ROW OF PANELS -->
-													<!-- Inserir aqui -->
-													<button class="collapsible">
-													</button>
-													<div class="contentVerMais" style="margin-left: 15px; margin-right: 17px;">
+															</div>
+															<!--/col-md-4-->
+														</div><!-- /END 5TH ROW OF PANELS -->
 														<!-- 5TH ROW OF PANELS -->
+														<div class="row">
+															<div class="col-md-4 col-sm-4 mb">
+																<div class="content-panel pn">
+																	<div id="bbad">
+																		<div class="col-xs-4 col-xs-offset-8">
+																			<button class="btn btn-sm btn-clear-g"
+																				onclick="showPopup()"
+																				style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+																		</div>
+																		<div class="sp-title">
+																			<h3>Breaking Bad</h3>
+																		</div>
+																		<img src="assets/img/netflix.png"
+																			style="width: 20%; height: 20%; margin-top: 5px;"></img>
+																		<div class="play">
+																			<a
+																				href="https://www.netflix.com/title/70143836">
+																				<i class="fa fa-play-circle fa-3x"
+																					style="color:white"></i>
+																			</a>
+																		</div>
+																	</div>
+																	<a href="info.html">
+																		<p class="followers"
+																			style="text-align: center;">
+																			</i>Informação</p>
+																	</a>
+																</div>
+															</div>
+															<!--/col-md-4-->
+
+															<div class="col-lg-4 col-md-4 col-sm-4 mb">
+																<div class="content-panel pn">
+																	<div id="spotify">
+																		<div class="col-xs-4 col-xs-offset-8">
+																			<button class="btn btn-sm btn-clear-g"
+																				style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+																		</div>
+																		<div class="sp-title">
+																			<h3>Captain Marvel</h3>
+																		</div>
+																		<div class="play">
+																			<i class="fa fa-play-circle fa-3x"></i>
+																		</div>
+																	</div>
+																	<a href="info.html">
+																		<p class="followers"
+																			style="text-align: center;">
+																			</i>Informação</p>
+																	</a>
+																</div>
+															</div>
+															<!--/col-md-4-->
+
+															<div class="col-md-4 col-sm-4 mb">
+																<div class="content-panel pn">
+																	<div id="got">
+																		<div class="col-xs-4 col-xs-offset-8">
+																			<button class="btn btn-sm btn-clear-g"
+																				style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+																		</div>
+																		<div class="sp-title">
+																			<h3>Game Of Thrones
+																			</h3>
+																		</div>
+																		<img src="assets/img/hboLogo.png"
+																			style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
+																		<div class="play">
+																			<a
+																				href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
+																				<i class="fa fa-play-circle fa-3x"
+																					style="color:white"></i>
+																			</a>
+																		</div>
+																	</div>
+																	<a href="info.html">
+																		<p class="followers"
+																			style="text-align: center;">
+																			</i>Informação</p>
+																	</a>
+																</div>
+															</div>
+															<!--/col-md-4-->
+														</div><!-- /END 5TH ROW OF PANELS -->
+													</div><!-- col-lg-12-->
+											</div><!-- /row -->
+											<div class="row mt">
+												<div class="col-lg-12">
+													<div class="form-panel">
+														<h2 class="mb" id="mais-elogiados">Mais elogiados</h4>
+															<!-- 5TH ROW OF PANELS -->
 															<div class="row">
 																<div class="col-md-4 col-sm-4 mb">
 																	<div class="content-panel pn">
@@ -1062,63 +1470,64 @@
 																</div>
 																<!--/col-md-4-->
 
-																	<div class="col-lg-4 col-md-4 col-sm-4 mb">
-																		<div class="content-panel pn">
-																			<div id="spotify">
-																				<div class="col-xs-4 col-xs-offset-8">
-																					<button
-																						class="btn btn-sm btn-clear-g"
-																						style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																				</div>
-																				<div class="sp-title">
-																					<h3>Captain Marvel</h3>
-																				</div>
-																				<div class="play">
-																					<i
-																						class="fa fa-play-circle fa-3x"></i>
-																				</div>
+																<div class="col-lg-4 col-md-4 col-sm-4 mb">
+																	<div class="content-panel pn">
+																		<div id="spotify">
+																			<div class="col-xs-4 col-xs-offset-8">
+																				<button class="btn btn-sm btn-clear-g"
+																					style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																			</div>
-																			<a href="info.html">
-																				<p class="followers"
-																					style="text-align: center;">
-																					</i>Informação</p>
-																			</a>
+																			<div class="sp-title">
+																				<h3>Captain Marvel</h3>
+																			</div>
+																			<div class="play">
+																				<i class="fa fa-play-circle fa-3x"></i>
+																			</div>
 																		</div>
+																		<a href="info.html">
+																			<p class="followers"
+																				style="text-align: center;">
+																				</i>Informação</p>
+																		</a>
 																	</div>
-																	<!--/col-md-4-->
+																</div>
+																<!--/col-md-4-->
 
-																		<div class="col-md-4 col-sm-4 mb">
-																			<div class="content-panel pn">
-																				<div id="got">
-																					<div
-																						class="col-xs-4 col-xs-offset-8">
-																						<button
-																							class="btn btn-sm btn-clear-g"
-																							style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																					</div>
-																					<div class="sp-title">
-																						<h3>Game Of Thrones</h3>
-																					</div>
-																					<img src="assets/img/hboLogo.png"
-																						style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
-																					<div class="play">
-																						<a
-																							href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
-																							<i class="fa fa-play-circle fa-3x"
-																								style="color:white"></i>
-																						</a>
-																					</div>
-																				</div>
-																				<a href="info.html">
-																					<p class="followers"
-																						style="text-align: center;">
-																						</i>Informação</p>
+																<div class="col-md-4 col-sm-4 mb">
+																	<div class="content-panel pn">
+																		<div id="got">
+																			<div class="col-xs-4 col-xs-offset-8">
+																				<button class="btn btn-sm btn-clear-g"
+																					style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+																			</div>
+																			<div class="sp-title">
+																				<h3>Game Of Thrones</h3>
+																			</div>
+																			<img src="assets/img/hboLogo.png"
+																				style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
+																			<div class="play">
+																				<a
+																					href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
+																					<i class="fa fa-play-circle fa-3x"
+																						style="color:white"></i>
 																				</a>
 																			</div>
 																		</div>
-																		<!--/col-md-4-->
+																		<a href="info.html">
+																			<p class="followers"
+																				style="text-align: center;">
+																				</i>Informação</p>
+																		</a>
+																	</div>
+																</div>
+																<!--/col-md-4-->
 															</div><!-- /END 5TH ROW OF PANELS -->
-															<!-- 5TH ROW OF PANELS -->
+															<!-- Inserir aqui -->
+															<button class="collapsible">
+															</button>
+															<div class="contentVerMais"
+																style="margin-left: 15px; margin-right: 17px;">
+																<!-- 5TH ROW OF PANELS -->
 																<div class="row">
 																	<div class="col-md-4 col-sm-4 mb">
 																		<div class="content-panel pn">
@@ -1151,101 +1560,6 @@
 																	</div>
 																	<!--/col-md-4-->
 
-																		<div class="col-lg-4 col-md-4 col-sm-4 mb">
-																			<div class="content-panel pn">
-																				<div id="spotify">
-																					<div
-																						class="col-xs-4 col-xs-offset-8">
-																						<button
-																							class="btn btn-sm btn-clear-g"
-																							style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																					</div>
-																					<div class="sp-title">
-																						<h3>Captain Marvel</h3>
-																					</div>
-																					<div class="play">
-																						<i
-																							class="fa fa-play-circle fa-3x"></i>
-																					</div>
-																				</div>
-																				<a href="info.html">
-																					<p class="followers"
-																						style="text-align: center;">
-																						</i>Informação</p>
-																				</a>
-																			</div>
-																		</div>
-																		<!--/col-md-4-->
-
-																			<div class="col-md-4 col-sm-4 mb">
-																				<div class="content-panel pn">
-																					<div id="got">
-																						<div
-																							class="col-xs-4 col-xs-offset-8">
-																							<button
-																								class="btn btn-sm btn-clear-g"
-																								style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																						</div>
-																						<div class="sp-title">
-																							<h3>Game Of Thrones</h3>
-																						</div>
-																						<img src="assets/img/hboLogo.png"
-																							style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
-																						<div class="play">
-																							<a
-																								href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
-																								<i class="fa fa-play-circle fa-3x"
-																									style="color:white"></i>
-																							</a>
-																						</div>
-																					</div>
-																					<a href="info.html">
-																						<p class="followers"
-																							style="text-align: center;">
-																							</i>Informação</p>
-																					</a>
-																				</div>
-																			</div>
-																			<!--/col-md-4-->
-																</div><!-- /END 5TH ROW OF PANELS -->
-													</div><!-- col-lg-12-->
-										</div><!-- /row -->
-										<div class="row mt" >
-											<div class="col-lg-12">
-												<div class="form-panel">
-													<h2 class="mb" id="mais-polemicos" >Mais polémicos</h4>
-														<!-- 5TH ROW OF PANELS -->
-															<div class="row">
-																<div class="col-md-4 col-sm-4 mb">
-																	<div class="content-panel pn">
-																		<div id="bbad">
-																			<div class="col-xs-4 col-xs-offset-8">
-																				<button class="btn btn-sm btn-clear-g"
-																					onclick="showPopup()"
-																					style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																			</div>
-																			<div class="sp-title">
-																				<h3>Breaking Bad</h3>
-																			</div>
-																			<img src="assets/img/netflix.png"
-																				style="width: 20%; height: 20%; margin-top: 5px;"></img>
-																			<div class="play">
-																				<a
-																					href="https://www.netflix.com/title/70143836">
-																					<i class="fa fa-play-circle fa-3x"
-																						style="color:white"></i>
-																				</a>
-																			</div>
-																		</div>
-																		<a href="info.html">
-																			<p class="followers"
-																				style="text-align: center;">
-																				</i>Informação</p>
-																		</a>
-																	</div>
-																</div>
-																<!--/col-md-4-->
-
 																	<div class="col-lg-4 col-md-4 col-sm-4 mb">
 																		<div class="content-panel pn">
 																			<div id="spotify">
@@ -1255,7 +1569,8 @@
 																						style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																				</div>
 																				<div class="sp-title">
-																					<h3>Captain Marvel</h3>
+																					<h3>Captain Marvel
+																					</h3>
 																				</div>
 																				<div class="play">
 																					<i
@@ -1271,530 +1586,134 @@
 																	</div>
 																	<!--/col-md-4-->
 
-																		<div class="col-md-4 col-sm-4 mb">
-																			<div class="content-panel pn">
-																				<div id="got">
-																					<div
-																						class="col-xs-4 col-xs-offset-8">
-																						<button
-																							class="btn btn-sm btn-clear-g"
-																							style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																					</div>
-																					<div class="sp-title">
-																						<h3>Game Of Thrones</h3>
-																					</div>
-																					<img src="assets/img/hboLogo.png"
-																						style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
-																					<div class="play">
-																						<a
-																							href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
-																							<i class="fa fa-play-circle fa-3x"
-																								style="color:white"></i>
-																						</a>
-																					</div>
+																	<div class="col-md-4 col-sm-4 mb">
+																		<div class="content-panel pn">
+																			<div id="got">
+																				<div class="col-xs-4 col-xs-offset-8">
+																					<button
+																						class="btn btn-sm btn-clear-g"
+																						style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																				</div>
-																				<a href="info.html">
-																					<p class="followers"
-																						style="text-align: center;">
-																						</i>Informação</p>
-																				</a>
+																				<div class="sp-title">
+																					<h3>Game Of
+																						Thrones</h3>
+																				</div>
+																				<img src="assets/img/hboLogo.png"
+																					style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
+																				<div class="play">
+																					<a
+																						href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
+																						<i class="fa fa-play-circle fa-3x"
+																							style="color:white"></i>
+																					</a>
+																				</div>
 																			</div>
+																			<a href="info.html">
+																				<p class="followers"
+																					style="text-align: center;">
+																					</i>Informação
+																				</p>
+																			</a>
 																		</div>
-																		<!--/col-md-4-->
-															</div><!-- /END 5TH ROW OF PANELS -->
-															<!-- Inserir aqui -->
-															<button class="collapsible">
-															</button>
-															<div class="contentVerMais" style="margin-left: 15px; margin-right: 17px;">
+																	</div>
+																	<!--/col-md-4-->
+																</div><!-- /END 5TH ROW OF PANELS -->
 																<!-- 5TH ROW OF PANELS -->
-																	<div class="row">
-																		<div class="col-md-4 col-sm-4 mb">
-																			<div class="content-panel pn">
-																				<div id="bbad">
-																					<div
-																						class="col-xs-4 col-xs-offset-8">
-																						<button
-																							class="btn btn-sm btn-clear-g"
-																							onclick="showPopup()"
-																							style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																					</div>
-																					<div class="sp-title">
-																						<h3>Breaking Bad</h3>
-																					</div>
-																					<img src="assets/img/netflix.png"
-																						style="width: 20%; height: 20%; margin-top: 5px;"></img>
-																					<div class="play">
-																						<a
-																							href="https://www.netflix.com/title/70143836">
-																							<i class="fa fa-play-circle fa-3x"
-																								style="color:white"></i>
-																						</a>
-																					</div>
+																<div class="row">
+																	<div class="col-md-4 col-sm-4 mb">
+																		<div class="content-panel pn">
+																			<div id="bbad">
+																				<div class="col-xs-4 col-xs-offset-8">
+																					<button
+																						class="btn btn-sm btn-clear-g"
+																						onclick="showPopup()"
+																						style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
 																				</div>
-																				<a href="info.html">
-																					<p class="followers"
-																						style="text-align: center;">
-																						</i>Informação</p>
-																				</a>
+																				<div class="sp-title">
+																					<h3>Breaking Bad
+																					</h3>
+																				</div>
+																				<img src="assets/img/netflix.png"
+																					style="width: 20%; height: 20%; margin-top: 5px;"></img>
+																				<div class="play">
+																					<a
+																						href="https://www.netflix.com/title/70143836">
+																						<i class="fa fa-play-circle fa-3x"
+																							style="color:white"></i>
+																					</a>
+																				</div>
 																			</div>
+																			<a href="info.html">
+																				<p class="followers"
+																					style="text-align: center;">
+																					</i>Informação</p>
+																			</a>
 																		</div>
-																		<!--/col-md-4-->
+																	</div>
+																	<!--/col-md-4-->
 
-																			<div class="col-lg-4 col-md-4 col-sm-4 mb">
-																				<div class="content-panel pn">
-																					<div id="spotify">
-																						<div
-																							class="col-xs-4 col-xs-offset-8">
-																							<button
-																								class="btn btn-sm btn-clear-g"
-																								style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																						</div>
-																						<div class="sp-title">
-																							<h3>Captain Marvel</h3>
-																						</div>
-																						<div class="play">
-																							<i
-																								class="fa fa-play-circle fa-3x"></i>
-																						</div>
-																					</div>
-																					<a href="info.html">
-																						<p class="followers"
-																							style="text-align: center;">
-																							</i>Informação</p>
+																	<div class="col-lg-4 col-md-4 col-sm-4 mb">
+																		<div class="content-panel pn">
+																			<div id="spotify">
+																				<div class="col-xs-4 col-xs-offset-8">
+																					<button
+																						class="btn btn-sm btn-clear-g"
+																						style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+																				</div>
+																				<div class="sp-title">
+																					<h3>Captain
+																						Marvel</h3>
+																				</div>
+																				<div class="play">
+																					<i
+																						class="fa fa-play-circle fa-3x"></i>
+																				</div>
+																			</div>
+																			<a href="info.html">
+																				<p class="followers"
+																					style="text-align: center;">
+																					</i>Informação
+																				</p>
+																			</a>
+																		</div>
+																	</div>
+																	<!--/col-md-4-->
+
+																	<div class="col-md-4 col-sm-4 mb">
+																		<div class="content-panel pn">
+																			<div id="got">
+																				<div class="col-xs-4 col-xs-offset-8">
+																					<button
+																						class="btn btn-sm btn-clear-g"
+																						style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
+																				</div>
+																				<div class="sp-title">
+																					<h3>Game Of
+																						Thrones
+																					</h3>
+																				</div>
+																				<img src="assets/img/hboLogo.png"
+																					style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
+																				<div class="play">
+																					<a
+																						href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
+																						<i class="fa fa-play-circle fa-3x"
+																							style="color:white"></i>
 																					</a>
 																				</div>
 																			</div>
-																			<!--/col-md-4-->
-
-																				<div class="col-md-4 col-sm-4 mb">
-																					<div class="content-panel pn">
-																						<div id="got">
-																							<div
-																								class="col-xs-4 col-xs-offset-8">
-																								<button
-																									class="btn btn-sm btn-clear-g"
-																									style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																							</div>
-																							<div class="sp-title">
-																								<h3>Game Of Thrones</h3>
-																							</div>
-																							<img src="assets/img/hboLogo.png"
-																								style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
-																							<div class="play">
-																								<a
-																									href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
-																									<i class="fa fa-play-circle fa-3x"
-																										style="color:white"></i>
-																								</a>
-																							</div>
-																						</div>
-																						<a href="info.html">
-																							<p class="followers"
-																								style="text-align: center;">
-																								</i>Informação</p>
-																						</a>
-																					</div>
-																				</div>
-																				<!--/col-md-4-->
-																	</div><!-- /END 5TH ROW OF PANELS -->
-																	<!-- 5TH ROW OF PANELS -->
-																		<div class="row">
-																			<div class="col-md-4 col-sm-4 mb">
-																				<div class="content-panel pn">
-																					<div id="bbad">
-																						<div
-																							class="col-xs-4 col-xs-offset-8">
-																							<button
-																								class="btn btn-sm btn-clear-g"
-																								onclick="showPopup()"
-																								style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																						</div>
-																						<div class="sp-title">
-																							<h3>Breaking Bad</h3>
-																						</div>
-																						<img src="assets/img/netflix.png"
-																							style="width: 20%; height: 20%; margin-top: 5px;"></img>
-																						<div class="play">
-																							<a
-																								href="https://www.netflix.com/title/70143836">
-																								<i class="fa fa-play-circle fa-3x"
-																									style="color:white"></i>
-																							</a>
-																						</div>
-																					</div>
-																					<a href="info.html">
-																						<p class="followers"
-																							style="text-align: center;">
-																							</i>Informação</p>
-																					</a>
-																				</div>
-																			</div>
-																			<!--/col-md-4-->
-
-																				<div
-																					class="col-lg-4 col-md-4 col-sm-4 mb">
-																					<div class="content-panel pn">
-																						<div id="spotify">
-																							<div
-																								class="col-xs-4 col-xs-offset-8">
-																								<button
-																									class="btn btn-sm btn-clear-g"
-																									style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																							</div>
-																							<div class="sp-title">
-																								<h3>Captain Marvel</h3>
-																							</div>
-																							<div class="play">
-																								<i
-																									class="fa fa-play-circle fa-3x"></i>
-																							</div>
-																						</div>
-																						<a href="info.html">
-																							<p class="followers"
-																								style="text-align: center;">
-																								</i>Informação</p>
-																						</a>
-																					</div>
-																				</div>
-																				<!--/col-md-4-->
-
-																					<div class="col-md-4 col-sm-4 mb">
-																						<div class="content-panel pn">
-																							<div id="got">
-																								<div
-																									class="col-xs-4 col-xs-offset-8">
-																									<button
-																										class="btn btn-sm btn-clear-g"
-																										style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																								</div>
-																								<div class="sp-title">
-																									<h3>Game Of Thrones
-																									</h3>
-																								</div>
-																								<img src="assets/img/hboLogo.png"
-																									style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
-																								<div class="play">
-																									<a
-																										href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
-																										<i class="fa fa-play-circle fa-3x"
-																											style="color:white"></i>
-																									</a>
-																								</div>
-																							</div>
-																							<a href="info.html">
-																								<p class="followers"
-																									style="text-align: center;">
-																									</i>Informação</p>
-																							</a>
-																						</div>
-																					</div>
-																					<!--/col-md-4-->
-																		</div><!-- /END 5TH ROW OF PANELS -->
+																			<a href="info.html">
+																				<p class="followers"
+																					style="text-align: center;">
+																					</i>Informação
+																				</p>
+																			</a>
+																		</div>
+																	</div>
+																	<!--/col-md-4-->
+																</div><!-- /END 5TH ROW OF PANELS -->
 															</div><!-- col-lg-12-->
-												</div><!-- /row -->
-												<div class="row mt">
-													<div class="col-lg-12">
-														<div class="form-panel">
-															<h2 class="mb" id="mais-elogiados">Mais elogiados</h4>
-																<!-- 5TH ROW OF PANELS -->
-																	<div class="row">
-																		<div class="col-md-4 col-sm-4 mb">
-																			<div class="content-panel pn">
-																				<div id="bbad">
-																					<div
-																						class="col-xs-4 col-xs-offset-8">
-																						<button
-																							class="btn btn-sm btn-clear-g"
-																							onclick="showPopup()"
-																							style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																					</div>
-																					<div class="sp-title">
-																						<h3>Breaking Bad</h3>
-																					</div>
-																					<img src="assets/img/netflix.png"
-																						style="width: 20%; height: 20%; margin-top: 5px;"></img>
-																					<div class="play">
-																						<a
-																							href="https://www.netflix.com/title/70143836">
-																							<i class="fa fa-play-circle fa-3x"
-																								style="color:white"></i>
-																						</a>
-																					</div>
-																				</div>
-																				<a href="info.html">
-																					<p class="followers"
-																						style="text-align: center;">
-																						</i>Informação</p>
-																				</a>
-																			</div>
-																		</div>
-																		<!--/col-md-4-->
-
-																			<div class="col-lg-4 col-md-4 col-sm-4 mb">
-																				<div class="content-panel pn">
-																					<div id="spotify">
-																						<div
-																							class="col-xs-4 col-xs-offset-8">
-																							<button
-																								class="btn btn-sm btn-clear-g"
-																								style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																						</div>
-																						<div class="sp-title">
-																							<h3>Captain Marvel</h3>
-																						</div>
-																						<div class="play">
-																							<i
-																								class="fa fa-play-circle fa-3x"></i>
-																						</div>
-																					</div>
-																					<a href="info.html">
-																						<p class="followers"
-																							style="text-align: center;">
-																							</i>Informação</p>
-																					</a>
-																				</div>
-																			</div>
-																			<!--/col-md-4-->
-
-																				<div class="col-md-4 col-sm-4 mb">
-																					<div class="content-panel pn">
-																						<div id="got">
-																							<div
-																								class="col-xs-4 col-xs-offset-8">
-																								<button
-																									class="btn btn-sm btn-clear-g"
-																									style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																							</div>
-																							<div class="sp-title">
-																								<h3>Game Of Thrones</h3>
-																							</div>
-																							<img src="assets/img/hboLogo.png"
-																								style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
-																							<div class="play">
-																								<a
-																									href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
-																									<i class="fa fa-play-circle fa-3x"
-																										style="color:white"></i>
-																								</a>
-																							</div>
-																						</div>
-																						<a href="info.html">
-																							<p class="followers"
-																								style="text-align: center;">
-																								</i>Informação</p>
-																						</a>
-																					</div>
-																				</div>
-																				<!--/col-md-4-->
-																	</div><!-- /END 5TH ROW OF PANELS -->
-																	<!-- Inserir aqui -->
-																	<button class="collapsible">
-																	</button>
-																	<div class="contentVerMais" style="margin-left: 15px; margin-right: 17px;">
-																		<!-- 5TH ROW OF PANELS -->
-																			<div class="row">
-																				<div class="col-md-4 col-sm-4 mb">
-																					<div class="content-panel pn">
-																						<div id="bbad">
-																							<div
-																								class="col-xs-4 col-xs-offset-8">
-																								<button
-																									class="btn btn-sm btn-clear-g"
-																									onclick="showPopup()"
-																									style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																							</div>
-																							<div class="sp-title">
-																								<h3>Breaking Bad</h3>
-																							</div>
-																							<img src="assets/img/netflix.png"
-																								style="width: 20%; height: 20%; margin-top: 5px;"></img>
-																							<div class="play">
-																								<a
-																									href="https://www.netflix.com/title/70143836">
-																									<i class="fa fa-play-circle fa-3x"
-																										style="color:white"></i>
-																								</a>
-																							</div>
-																						</div>
-																						<a href="info.html">
-																							<p class="followers"
-																								style="text-align: center;">
-																								</i>Informação</p>
-																						</a>
-																					</div>
-																				</div>
-																				<!--/col-md-4-->
-
-																					<div
-																						class="col-lg-4 col-md-4 col-sm-4 mb">
-																						<div class="content-panel pn">
-																							<div id="spotify">
-																								<div
-																									class="col-xs-4 col-xs-offset-8">
-																									<button
-																										class="btn btn-sm btn-clear-g"
-																										style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																								</div>
-																								<div class="sp-title">
-																									<h3>Captain Marvel
-																									</h3>
-																								</div>
-																								<div class="play">
-																									<i
-																										class="fa fa-play-circle fa-3x"></i>
-																								</div>
-																							</div>
-																							<a href="info.html">
-																								<p class="followers"
-																									style="text-align: center;">
-																									</i>Informação</p>
-																							</a>
-																						</div>
-																					</div>
-																					<!--/col-md-4-->
-
-																						<div
-																							class="col-md-4 col-sm-4 mb">
-																							<div
-																								class="content-panel pn">
-																								<div id="got">
-																									<div
-																										class="col-xs-4 col-xs-offset-8">
-																										<button
-																											class="btn btn-sm btn-clear-g"
-																											style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																									</div>
-																									<div
-																										class="sp-title">
-																										<h3>Game Of
-																											Thrones</h3>
-																									</div>
-																									<img src="assets/img/hboLogo.png"
-																										style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
-																									<div class="play">
-																										<a
-																											href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
-																											<i class="fa fa-play-circle fa-3x"
-																												style="color:white"></i>
-																										</a>
-																									</div>
-																								</div>
-																								<a href="info.html">
-																									<p class="followers"
-																										style="text-align: center;">
-																										</i>Informação
-																									</p>
-																								</a>
-																							</div>
-																						</div>
-																						<!--/col-md-4-->
-																			</div><!-- /END 5TH ROW OF PANELS -->
-																			<!-- 5TH ROW OF PANELS -->
-																				<div class="row">
-																					<div class="col-md-4 col-sm-4 mb">
-																						<div class="content-panel pn">
-																							<div id="bbad">
-																								<div
-																									class="col-xs-4 col-xs-offset-8">
-																									<button
-																										class="btn btn-sm btn-clear-g"
-																										onclick="showPopup()"
-																										style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																								</div>
-																								<div class="sp-title">
-																									<h3>Breaking Bad
-																									</h3>
-																								</div>
-																								<img src="assets/img/netflix.png"
-																									style="width: 20%; height: 20%; margin-top: 5px;"></img>
-																								<div class="play">
-																									<a
-																										href="https://www.netflix.com/title/70143836">
-																										<i class="fa fa-play-circle fa-3x"
-																											style="color:white"></i>
-																									</a>
-																								</div>
-																							</div>
-																							<a href="info.html">
-																								<p class="followers"
-																									style="text-align: center;">
-																									</i>Informação</p>
-																							</a>
-																						</div>
-																					</div>
-																					<!--/col-md-4-->
-
-																						<div
-																							class="col-lg-4 col-md-4 col-sm-4 mb">
-																							<div
-																								class="content-panel pn">
-																								<div id="spotify">
-																									<div
-																										class="col-xs-4 col-xs-offset-8">
-																										<button
-																											class="btn btn-sm btn-clear-g"
-																											style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																									</div>
-																									<div
-																										class="sp-title">
-																										<h3>Captain
-																											Marvel</h3>
-																									</div>
-																									<div class="play">
-																										<i
-																											class="fa fa-play-circle fa-3x"></i>
-																									</div>
-																								</div>
-																								<a href="info.html">
-																									<p class="followers"
-																										style="text-align: center;">
-																										</i>Informação
-																									</p>
-																								</a>
-																							</div>
-																						</div>
-																						<!--/col-md-4-->
-
-																							<div
-																								class="col-md-4 col-sm-4 mb">
-																								<div
-																									class="content-panel pn">
-																									<div id="got">
-																										<div
-																											class="col-xs-4 col-xs-offset-8">
-																											<button
-																												class="btn btn-sm btn-clear-g"
-																												style="color:Black; background-color: rgba(255, 255, 255, 10);">GUARDAR</button>
-																										</div>
-																										<div
-																											class="sp-title">
-																											<h3>Game Of
-																												Thrones
-																											</h3>
-																										</div>
-																										<img src="assets/img/hboLogo.png"
-																											style="width: 13%; height: 13%; margin-top: 10px; margin-left: 15px;"></img>
-																										<div
-																											class="play">
-																											<a
-																												href="https://www.hbomax.com/pt/pt/series/urn:hbo:series:GVU2cggagzYNJjhsJATwo">
-																												<i class="fa fa-play-circle fa-3x"
-																													style="color:white"></i>
-																											</a>
-																										</div>
-																									</div>
-																									<a href="info.html">
-																										<p class="followers"
-																											style="text-align: center;">
-																											</i>Informação
-																										</p>
-																									</a>
-																								</div>
-																							</div>
-																							<!--/col-md-4-->
-																				</div><!-- /END 5TH ROW OF PANELS -->
-																	</div><!-- col-lg-12-->
-														</div><!-- /row -->
+													</div><!-- /row -->
 			</section>
 			<!--/wrapper -->
 		</section><!-- /MAIN CONTENT -->
@@ -1836,7 +1755,7 @@
 		});
 
 		// FICAR UM POUCO ACIMA NO SALTO
-		
+
 	</script>
 
 </body>
