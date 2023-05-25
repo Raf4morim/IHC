@@ -26,31 +26,11 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-	<script>
-        function showPopup() {
-            var popup = document.getElementById("popup");
-            popup.style.display = "block";
-        }
-        function hidePopup() {
-            var popup = document.getElementById("popup");
-            popup.style.display = "none";
-        }
-        function showConfirmationPopup() {
-            var popup = document.getElementById("popup");
-            popup.style.display = "none";
-            var confirmationPopup = document.getElementById("confirmation-popup");
-            confirmationPopup.style.display = "block";
-        }
-        function hideConfirmationPopup() {
-            var confirmationPopup = document.getElementById("confirmation-popup");
-            confirmationPopup.style.display = "none";
-        }
-    </script>
     <script>
         function showPopup() {
           var popup = document.getElementById("popup");
           popup.style.display = "block";
-          setTimeout(hidePopup, 3000); // Hide the popup after 3 seconds (3000 milliseconds)
+          //setTimeout(hidePopup, 3000); // Hide the popup after 3 seconds (3000 milliseconds)
         }
       
         function hidePopup() {
@@ -372,8 +352,10 @@
 			<div id="popup">
                 <div id="popup-inner">
                     <h4>De certeza que deseja remover a série da sua lista de guardados?</h4>
-                    <button style="background-color: green;" onclick="showConfirmationPopup()">Sim</button>
-                    <button id="close-button" onclick="hidePopup()">Não</button>
+                    <div style="display: flex; justify-content: center;">
+                        <a href="index.html"><button >Sim</button></a> <!--style="background-color: green;"-->
+                        <button id="close-button" onclick="hidePopup()">Não</button>
+                    </div>
                 </div>
             </div>
 
@@ -390,7 +372,8 @@
                     <div class="col-lg-12">
                         <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
                             <div style="text-align: center;">
-                                <strong style="font-size: 25px; color: darkgreen;">Esta nova fragância vai te deixar irresitível</strong>
+                                <strong style="font-size: 25px; color: darkgreen;">Breaking Bad</strong>
+                                <p>Disponível na <span style="color: red;">Netflix</span></p>
                             </div>
                             <a href="infoRemove.html#">
                                 <i class="fa fa-minus-circle" onclick="showPopup()"

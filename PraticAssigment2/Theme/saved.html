@@ -27,29 +27,9 @@
 
     <script>
         function showPopup() {
-            var popup = document.getElementById("popup");
-            popup.style.display = "block";
-        }
-        function hidePopup() {
-            var popup = document.getElementById("popup");
-            popup.style.display = "none";
-        }
-        function showConfirmationPopup() {
-            var popup = document.getElementById("popup");
-            popup.style.display = "none";
-            var confirmationPopup = document.getElementById("confirmation-popup");
-            confirmationPopup.style.display = "block";
-        }
-        function hideConfirmationPopup() {
-            var confirmationPopup = document.getElementById("confirmation-popup");
-            confirmationPopup.style.display = "none";
-        }
-    </script>
-    <script>
-        function showPopup() {
           var popup = document.getElementById("popup");
           popup.style.display = "block";
-          setTimeout(hidePopup, 3000); // Hide the popup after 3 seconds (3000 milliseconds)
+          //setTimeout(hidePopup, 3000); // Hide the popup after 3 seconds (3000 milliseconds)
         }
       
         function hidePopup() {
